@@ -3,6 +3,7 @@ import { Inter, Syne, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { SITE } from "@/lib/settings";
 import { LOCATION_COUNT } from "@/lib/locations";
+import Navigation from "@/components/layout/Navigation";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -202,7 +203,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       </head>
       <body suppressHydrationWarning>
-        {children}
+        <Navigation />
+        <div style={{ paddingTop: "60px" }}>{children}</div>
       </body>
     </html>
   );

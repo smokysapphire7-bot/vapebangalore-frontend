@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
+import ProductGrid from "@/components/home/ProductGrid";
 import { SITE } from "@/lib/settings";
 import { LOCATION_COUNT } from "@/lib/locations";
-import { products, getBestsellers } from "@/lib/products";
 
 export const metadata: Metadata = {
   title: "Buy Vapes in Bangalore — 30-45 Min Delivery | VapeBangalore.com",
@@ -10,8 +10,6 @@ export const metadata: Metadata = {
 };
 
 export default function HomePage() {
-  const bestsellers = getBestsellers();
-
   return (
     <main>
       <section style={{ minHeight: "100svh", display: "flex", flexDirection: "column", justifyContent: "center", padding: "80px 20px 40px", background: "var(--bg)", position: "relative", overflow: "hidden" }}>
