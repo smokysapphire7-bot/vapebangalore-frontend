@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import ProductGrid from "@/components/home/ProductGrid";
 import { SITE } from "@/lib/settings";
 import { LOCATION_COUNT } from "@/lib/locations";
+import { products } from "@/lib/products";
+import ProductGrid from "@/components/home/ProductGrid";
 
 export const metadata: Metadata = {
   title: "Buy Vapes in Bangalore — 30-45 Min Delivery | VapeBangalore.com",
-  description: `Buy vapes in Bangalore with 30-45 min delivery. Elfbar, Lost Mary, Caliburn, ZYN, Nasty & more. 100% original. Discreet delivery across ${LOCATION_COUNT}+ areas. Order on Telegram or WhatsApp now.`,
+  description: `Buy vapes in Bangalore with 30-45 min delivery. Elfbar, Lost Mary, Caliburn, ZYN, Nasty and more. 100% original. Discreet delivery across ${LOCATION_COUNT}+ areas. Order on Telegram or WhatsApp now.`,
   alternates: { canonical: SITE.url },
 };
 
@@ -36,7 +37,12 @@ export default function HomePage() {
             </a>
           </div>
           <div style={{ display: "flex", gap: "20px", flexWrap: "wrap" }}>
-            {[{ icon: "⚡", text: "30-45 Min" }, { icon: "✅", text: "100% Original" }, { icon: "📦", text: "Discreet Pack" }, { icon: "🗺️", text: `${LOCATION_COUNT}+ Areas` }].map((t) => (
+            {[
+              { icon: "⚡", text: "30-45 Min" },
+              { icon: "✅", text: "100% Original" },
+              { icon: "📦", text: "Discreet Pack" },
+              { icon: "🗺️", text: `${LOCATION_COUNT}+ Areas` },
+            ].map((t) => (
               <div key={t.text} style={{ display: "flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "var(--dim)", fontWeight: 500 }}>
                 <span>{t.icon}</span><span>{t.text}</span>
               </div>
@@ -48,28 +54,15 @@ export default function HomePage() {
       <section style={{ padding: "60px 0", background: "var(--s1)", borderTop: "1px solid var(--b0)" }}>
         <div className="container">
           <div style={{ marginBottom: "32px" }}>
-            <p style={{ fontSize: "9px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--orange)", marginBottom: "8px", fontWeight: 600 }}>Best Sellers</p>
-            <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(22px, 4vw, 36px)", fontWeight: 800, color: "var(--white)", letterSpacing: "-0.02em" }}>Top Vapes in Bangalore</h2>
+            <p style={{ fontSize: "9px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--orange)", marginBottom: "8px", fontWeight: 600 }}>All Products</p>
+            <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(22px, 4vw, 36px)", fontWeight: 800, color: "var(--white)", letterSpacing: "-0.02em" }}>
+              Vapes in Bangalore
+            </h2>
+            <p style={{ fontSize: "12px", color: "var(--dim)", marginTop: "6px" }}>
+              {products.length} products · Fast delivery across {LOCATION_COUNT}+ areas
+            </p>
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(160px, 1fr))", gap: "12px" }}>
-            {bestsellers.map((product) => (
-              <a key={product.slug} href={`/products/${product.slug}`} style={{ background: "var(--s2)", border: "1px solid var(--b0)", borderRadius: "8px", padding: "16px", textDecoration: "none", display: "block" }}>
-                <div style={{ fontSize: "9px", letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--orange)", fontWeight: 700, marginBottom: "8px" }}>{product.brand}</div>
-                <div style={{ fontSize: "13px", fontWeight: 600, color: "var(--white)", marginBottom: "4px", lineHeight: 1.3 }}>{product.name}</div>
-                {product.puffCount && (
-                  <div style={{ fontSize: "11px", color: "var(--dim)", fontFamily: "var(--font-mono)" }}>{product.puffCount.toLocaleString()} puffs</div>
-                )}
-                <div style={{ marginTop: "12px", fontSize: "15px", fontWeight: 700, color: "var(--orange)", fontFamily: "var(--font-mono)" }}>
-                  {"\u20B9"}{product.price.toLocaleString()}
-                </div>
-              </a>
-            ))}
-          </div>
-          <div style={{ marginTop: "24px", textAlign: "center" }}>
-            <a href="/products" style={{ display: "inline-flex", alignItems: "center", gap: "6px", color: "var(--orange)", fontSize: "13px", fontWeight: 600, textDecoration: "none", border: "1px solid rgba(255,92,0,0.3)", padding: "10px 24px", borderRadius: "6px" }}>
-              View All {products.length} Products
-            </a>
-          </div>
+          <ProductGrid />
         </div>
       </section>
     </main>
