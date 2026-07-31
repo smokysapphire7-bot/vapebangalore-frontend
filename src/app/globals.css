@@ -1,26 +1,167 @@
 @import "tailwindcss";
 
+@theme {
+  --font-sans: "Inter", "system-ui", sans-serif;
+  --font-display: "Syne", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Backgrounds */
+  --bg: #030303;
+  --s1: #0a0a0a;
+  --s2: #0f0f0f;
+  --s3: #141414;
+  --s4: #1a1a1a;
+
+  /* Borders */
+  --b0: #1f1f1f;
+  --b1: #282828;
+  --b2: #333333;
+
+  /* Brand */
+  --orange: #FF5C00;
+  --orange-hover: #FF7A00;
+  --orange-dim: rgba(255, 92, 0, 0.1);
+  --orange-glow: rgba(255, 92, 0, 0.05);
+
+  /* Text */
+  --white: #F0F0EE;
+  --text: #C0C0BC;
+  --dim: #606060;
+  --dim2: #3a3a3a;
+
+  /* Semantic */
+  --green: #22C55E;
+  --green-dim: rgba(34, 197, 94, 0.08);
+  --red: #EF4444;
+  --red-dim: rgba(239, 68, 68, 0.08);
+  --yellow: #EAB308;
+  --yellow-dim: rgba(234, 179, 8, 0.08);
+  --blue: #3B82F6;
+  --blue-dim: rgba(59, 130, 246, 0.08);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Mobile bottom tab bar padding */
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 72px;
+  }
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  color: var(--white);
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+h1 { font-size: clamp(28px, 6vw, 56px); font-weight: 900; }
+h2 { font-size: clamp(20px, 4vw, 36px); font-weight: 800; }
+h3 { font-size: clamp(16px, 3vw, 24px); font-weight: 700; }
+h4 { font-size: 16px; font-weight: 700; }
+
+p { color: var(--text); line-height: 1.75; }
+
+a { color: inherit; text-decoration: none; }
+
+/* Focus */
+:focus-visible {
+  outline: 2px solid var(--orange);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: var(--s1); }
+::-webkit-scrollbar-thumb { background: var(--b2); border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: var(--dim); }
+
+/* Selection */
+::selection { background: var(--orange-dim); color: var(--orange); }
+
+/* Utility classes */
+.text-orange { color: var(--orange); }
+.text-white { color: var(--white); }
+.text-dim { color: var(--dim); }
+.text-green { color: var(--green); }
+.bg-orange { background: var(--orange); }
+.border-orange { border-color: var(--orange); }
+
+.font-display { font-family: var(--font-display); }
+.font-mono { font-family: var(--font-mono); }
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+  .container { padding: 0 32px; }
+}
+
+@media (min-width: 1024px) {
+  .container { padding: 0 48px; }
+}
+
+/* Animations */
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes pulse-orange {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(255, 92, 0, 0.4); }
+  50% { box-shadow: 0 0 0 8px rgba(255, 92, 0, 0); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-ticker { animation: ticker 30s linear infinite; }
+.animate-pulse-orange { animation: pulse-orange 2s ease-in-out infinite; }
+.animate-fade-in { animation: fade-in 0.4s ease-out forwards; }
+.animate-slide-up { animation: slide-up 0.5s ease-out forwards; }
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-ticker,
+  .animate-pulse-orange,
+  .animate-fade-in,
+  .animate-slide-up {
+    animation: none;
+  }
 }
