@@ -7,34 +7,7 @@ interface OrderPayload {
   flavour?: string;
   area: string;
   phone?: string;
-  channel: "telegram" | "whatsapp";
-}
-
-async function notifyTelegram(order: OrderPayload) {
-  const token = process.env.TELEGRAM_BOT_TOKEN;
-  const chatId = process.env.TELEGRAM_OWNER_CHAT_ID;
-  if (!token || !chatId) return;
-
-  const msg = [
-    "🛒 *New Order — VapeBangalore*",
-    "",
-    `📦 *Product:* ${order.product}`,
-    order.flavour ? `🍓 *Flavour:* ${order.flavour}` : "",
-    `📍 *Area:* ${order.area}`,
-    order.phone ? `📞 *Phone:* ${order.phone}` : "",
-    `💬 *Channel:* ${order.channel}`,
-    `🕐 *Time:* ${new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })}`,
-  ].filter(Boolean).join("\n");
-
-  await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      chat_id: chatId,
-      text: msg,
-      parse_mode: "Markdown",
-    }),
-  });
+  channel: "whatsapp";
 }
 
 export async function POST(req: NextRequest) {
@@ -48,9 +21,6 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // Notify owner via Telegram
-    await notifyTelegram(body);
-
     // Log to FastAPI backend if configured
     const apiUrl = process.env.NEXT_PUBLIC_API_URL;
     if (apiUrl) {
@@ -62,7 +32,7 @@ export async function POST(req: NextRequest) {
           timestamp: new Date().toISOString(),
           source: "vapebangalore.com",
         }),
-      }).catch(() => {}); // fail silently — order still goes through
+      }).catch(() => {});
     }
 
     return NextResponse.json({ success: true });
