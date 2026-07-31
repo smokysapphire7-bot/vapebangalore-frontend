@@ -14,7 +14,7 @@ export default function HomePage() {
   return (
     <main>
       {/* ── COMPACT MOBILE HERO ── */}
-      <section style={{ background: "var(--bg)", position: "relative", overflow: "hidden", paddingTop: "60px" }}>
+      <section style={{ background: "var(--bg)", position: "relative", overflow: "hidden", paddingTop: "0" }}>
 
         {/* Gradient orb */}
         <div aria-hidden style={{ position: "absolute", top: "-100px", right: "-100px", width: "500px", height: "500px", background: "radial-gradient(circle, rgba(255,45,85,0.08) 0%, rgba(255,92,0,0.06) 40%, transparent 70%)", pointerEvents: "none", zIndex: 0 }} />
