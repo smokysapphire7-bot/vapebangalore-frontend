@@ -5,6 +5,7 @@ import { SITE } from "@/lib/settings";
 import { LOCATION_COUNT } from "@/lib/locations";
 import Navigation from "@/components/layout/Navigation";
 import CartDrawer from "@/components/layout/CartDrawer";
+import Footer from "@/components/layout/Footer";
 import { CartProvider } from "@/lib/cart";
 
 const inter = Inter({
@@ -208,7 +209,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <CartProvider>
           <Navigation />
           <CartDrawer />
-          <div style={{ paddingTop: "60px" }}>{children}</div>
+          <div style={{ paddingTop: "60px" }}>{children}<Footer /></div>
         </CartProvider>
       </body>
     </html>
