@@ -2,7 +2,7 @@ export const SITE = {
   name: "VapeBangalore",
   url: "https://vapebangalore.com",
   tagline: "Your city. Your vape. 30 mins.",
-  description: "Buy vapes in Bangalore with 30-45 min delivery. Elfbar, Lost Mary, Caliburn, ZYN, Nasty & more. 100% original products. Discreet delivery across 125+ areas. Order on Telegram or WhatsApp.",
+  description: "Buy vapes in Bangalore with 30-45 min delivery. Elfbar, Lost Mary, Caliburn, ZYN, Nasty and more. 100% original products. Discreet delivery across 125+ areas. Order on WhatsApp.",
   phone: "+916282878843",
   email: "hello@vapebangalore.com",
   address: {
@@ -19,33 +19,18 @@ export const SITE = {
   priceRange: "₹₹",
 };
 
-export const TELEGRAM = {
-  botUsername: "vapebangalorebot",
-  botUrl: "https://t.me/vapebangalorebot",
-  channelUrl: "https://t.me/vapebangalore",
-  orderLink: (productSlug?: string, flavour?: string) => {
-    const base = "https://t.me/vapebangalorebot";
-    if (productSlug) {
-      const msg = flavour
-        ? `I want to order ${productSlug} in ${flavour} flavour`
-        : `I want to order ${productSlug}`;
-      return `${base}?start=${encodeURIComponent(productSlug)}&text=${encodeURIComponent(msg)}`;
-    }
-    return `${base}?start=order`;
-  },
-};
-
 export const WHATSAPP = {
   number: "916282878843",
+  url: "https://wa.me/916282878843",
   orderLink: (productName?: string, flavour?: string) => {
     const base = "https://wa.me/916282878843";
     if (productName) {
       const msg = flavour
-        ? `Hi VapeBangalore, I want to order ${productName} in ${flavour} flavour.`
-        : `Hi VapeBangalore, I want to order ${productName}.`;
+        ? `Hi VapeBangalore, I want to order ${productName} in ${flavour} flavour. Please confirm availability and delivery time.`
+        : `Hi VapeBangalore, I want to order ${productName}. Please confirm availability.`;
       return `${base}?text=${encodeURIComponent(msg)}`;
     }
-    return `${base}?text=${encodeURIComponent("Hi VapeBangalore, I want to place an order.")}`;
+    return `${base}?text=${encodeURIComponent("Hi VapeBangalore, I want to place an order. Please share the product list.")}`;
   },
 };
 

@@ -292,4 +292,4 @@ export function getNearbyLocations(slug: string, count = 5): Location[] {
 }
 
 export const WHATSAPP_URL = "https://wa.me/916282878843?text=Hi%20VapeBangalore%2C%20I%20want%20to%20place%20an%20order.";
-export const TELEGRAM_URL = "https://t.me/vapebangalorebot?start=order";
+export const TELEGRAM_URL = "https://wa.me/916282878843?text=Hi%20VapeBangalore%2C%20I%20want%20to%20place%20an%20order.";

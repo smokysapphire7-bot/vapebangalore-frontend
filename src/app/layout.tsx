@@ -176,7 +176,7 @@ const faqSchema = {
       name: "How do I order vapes in Bangalore?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Order on Telegram @vapebangalorebot or WhatsApp. Browse products on our website, select your product and flavour, then tap Order on Telegram or WhatsApp. No login or app download required.",
+        text: "Order on Telegram VapeBangalore or WhatsApp. Browse products on our website, select your product and flavour, then tap Order on Telegram or WhatsApp. No login or app download required.",
       },
     },
     {

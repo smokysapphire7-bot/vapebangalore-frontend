@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Product } from "@/lib/products";
-import { TELEGRAM, WHATSAPP } from "@/lib/settings";
+import { WHATSAPP } from "@/lib/settings";
 
 interface ProductCardProps {
   product: Product;
@@ -44,7 +44,7 @@ export default function ProductCard({ product }: ProductCardProps) {
   const [hovered, setHovered] = useState(false);
 
   const ratingData = RATINGS[product.slug];
-  const telegramLink = TELEGRAM.orderLink(product.name, selectedFlavour);
+  const telegramLink = WHATSAPP.orderLink(product.name, selectedFlavour);
   const waLink = WHATSAPP.orderLink(product.name, selectedFlavour);
 
   const specLine = [
