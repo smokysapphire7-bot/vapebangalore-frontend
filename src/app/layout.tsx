@@ -4,6 +4,8 @@ import "./globals.css";
 import { SITE } from "@/lib/settings";
 import { LOCATION_COUNT } from "@/lib/locations";
 import Navigation from "@/components/layout/Navigation";
+import CartDrawer from "@/components/layout/CartDrawer";
+import { CartProvider } from "@/lib/cart";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -203,8 +205,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       </head>
       <body suppressHydrationWarning>
-        <Navigation />
-        <div style={{ paddingTop: "60px" }}>{children}</div>
+        <CartProvider>
+          <Navigation />
+          <CartDrawer />
+          <div style={{ paddingTop: "60px" }}>{children}</div>
+        </CartProvider>
       </body>
     </html>
   );

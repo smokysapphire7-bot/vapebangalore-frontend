@@ -4,10 +4,10 @@ import { useState } from "react";
 import Link from "next/link";
 import { Product } from "@/lib/products";
 import { WHATSAPP } from "@/lib/settings";
+import { useCart } from "@/lib/cart";
 
 interface ProductCardProps {
   product: Product;
-  onAddToCart?: (product: Product, flavour: string) => void;
 }
 
 const RATINGS: Record<string, { rating: number; count: number }> = {
@@ -23,12 +23,13 @@ const RATINGS: Record<string, { rating: number; count: number }> = {
   "elfbar-600": { rating: 4.5, count: 201 },
 };
 
-export default function ProductCard({ product, onAddToCart }: ProductCardProps) {
+export default function ProductCard({ product }: ProductCardProps) {
   const [selectedFlavour, setSelectedFlavour] = useState(product.flavours[0]?.name || "");
   const [hovered, setHovered] = useState(false);
   const [added, setAdded] = useState(false);
 
   const ratingData = RATINGS[product.slug];
+  const { addItem } = useCart();
   const waLink = WHATSAPP.orderLink(product.name, selectedFlavour);
 
   const specLine = [
@@ -38,9 +39,7 @@ export default function ProductCard({ product, onAddToCart }: ProductCardProps) 
   ].filter(Boolean).join(" · ");
 
   const handleAddToCart = () => {
-    if (onAddToCart) {
-      onAddToCart(product, selectedFlavour);
-    }
+    addItem(product, selectedFlavour);
     setAdded(true);
     setTimeout(() => setAdded(false), 2000);
   };
