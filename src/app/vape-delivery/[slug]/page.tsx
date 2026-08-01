@@ -6,7 +6,7 @@ import { SITE, WHATSAPP } from "@/lib/settings";
 import { products, getBestsellers } from "@/lib/products";
 
 interface Props {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }
 
 export async function generateStaticParams() {
@@ -14,25 +14,27 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const loc = getLocationBySlug(params.slug);
+  const { slug } = await params;
+  const loc = getLocationBySlug(slug);
   if (!loc) return {};
   return {
-    title: `Vape Delivery in ${loc.name} Bangalore — 30-45 Min | VapeBangalore.com`,
-    description: `Buy vapes in ${loc.name} Bangalore with 30-45 min delivery. Elfbar, Lost Mary, Caliburn, ZYN and more. 100% original products. Order on WhatsApp now.`,
+    title: `Vapes in ${loc.name} Bangalore — Buy Elfbar, Lost Mary, ZYN | 30 Min Delivery | VapeBangalore.com`,
+    description: `Buy vapes in ${loc.name}, Bangalore in 30 minutes. Elfbar Raya D1, Lost Mary, Caliburn, ZYN nicotine pouches, rolling tobacco & more. 100% original. Cash on delivery. Order on WhatsApp now — fastest vape delivery in ${loc.name}.`,
     alternates: { canonical: `${SITE.url}/vape-delivery/${loc.slug}` },
     openGraph: {
-      title: `Vape Delivery ${loc.name} Bangalore | VapeBangalore.com`,
-      description: `Fast vape delivery in ${loc.name}. 30-45 min. 100% original. Order on WhatsApp.`,
+      title: `Vapes in ${loc.name} Bangalore — 30 Min Delivery | VapeBangalore.com`,
+      description: `Buy Elfbar, Lost Mary, ZYN & more in ${loc.name} in 30 minutes. 100% original. Cash on delivery.`,
       url: `${SITE.url}/vape-delivery/${loc.slug}`,
     },
   };
 }
 
-export default function LocationPage({ params }: Props) {
-  const loc = getLocationBySlug(params.slug);
+export default async function LocationPage({ params }: Props) {
+  const { slug } = await params;
+  const loc = getLocationBySlug(slug);
   if (!loc) notFound();
 
-  const nearby = getNearbyLocations(params.slug, 6);
+  const nearby = getNearbyLocations(slug, 6);
   const bestsellers = getBestsellers().slice(0, 4);
   const waLink = WHATSAPP.orderLink(`vape delivery in ${loc.name}`);
 

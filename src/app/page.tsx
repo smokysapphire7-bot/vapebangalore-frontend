@@ -5,8 +5,8 @@ import { products } from "@/lib/products";
 import ProductGrid from "@/components/home/ProductGrid";
 
 export const metadata: Metadata = {
-  title: "Buy Vapes in Bangalore — 30-45 Min Delivery | VapeBangalore.com",
-  description: `Buy vapes in Bangalore with 30-45 min delivery. Elfbar, Lost Mary, Caliburn, ZYN, Nasty and more. 100% original. Discreet delivery across ${LOCATION_COUNT}+ areas. Order on Telegram or WhatsApp now.`,
+  title: "Vapes in Bangalore — Buy Elfbar, Lost Mary, ZYN | 30 Min Delivery | VapeBangalore.com",
+  description: `#1 Vape Delivery in Bangalore. Elfbar Raya D1, Lost Mary MT35000, Caliburn G4, ZYN Cool Mint, Nasty, IGET & more. 30 min delivery across ${LOCATION_COUNT}+ areas. 100% original products. Cash on delivery available. Order on WhatsApp now.`,
   alternates: { canonical: SITE.url },
 };
 
