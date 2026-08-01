@@ -38,7 +38,7 @@ export default function CartDrawer() {
   return (
     <>
       <div onClick={closeCart} style={{ position: "fixed", inset: 0, background: "rgba(0,0,0,0.6)", zIndex: 60, backdropFilter: "blur(4px)" }} />
-      <div style={{ position: "fixed", bottom: 0, left: 0, right: 0, zIndex: 70, background: "var(--s1)", borderTop: "1px solid var(--b0)", borderRadius: "16px 16px 0 0", padding: "0 0 80px", maxHeight: "90vh", display: "flex", flexDirection: "column", boxShadow: "0 -8px 40px rgba(0,0,0,0.5)" }}>
+      <div style={{ position: "fixed", bottom: 0, left: 0, right: 0, zIndex: 70, background: "var(--s1)", borderTop: "1px solid var(--b0)", borderRadius: "16px 16px 0 0", height: "92vh", display: "flex", flexDirection: "column", boxShadow: "0 -8px 40px rgba(0,0,0,0.5)" }}>
 
         <div style={{ display: "flex", justifyContent: "center", padding: "12px 0 8px" }}>
           <div style={{ width: "40px", height: "4px", background: "var(--b2)", borderRadius: "2px" }} />
@@ -57,7 +57,7 @@ export default function CartDrawer() {
           </div>
         </div>
 
-        <div style={{ flex: 1, overflowY: "auto", padding: "12px 20px" }}>
+        <div style={{ flex: 1, overflowY: "auto", padding: "12px 20px", minHeight: 0 }}>
           {items.length === 0 ? (
             <div style={{ textAlign: "center", padding: "40px 20px" }}>
               <div style={{ fontSize: "40px", marginBottom: "12px" }}>🛒</div>

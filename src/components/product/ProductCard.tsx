@@ -97,12 +97,12 @@ export default function ProductCard({ product }: ProductCardProps) {
           &#8377;{product.price.toLocaleString()}
         </div>
 
-        {/* BUTTONS — side by side */}
-        <div style={{ display: "flex", gap: "6px", marginTop: "auto" }}>
-          <button onClick={handleAddToCart} style={{ flex: 1, display: "flex", alignItems: "center", justifyContent: "center", gap: "5px", background: added ? "rgba(34,197,94,0.15)" : "var(--s3)", color: added ? "#22C55E" : "var(--white)", border: added ? "1px solid rgba(34,197,94,0.3)" : "1px solid var(--b1)", padding: "9px 8px", borderRadius: "8px", fontSize: "11px", fontWeight: 700, cursor: "pointer", transition: "all 0.2s", minHeight: "38px" }}>
-            {added ? "✓ Added" : <><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>Cart</>}
+        {/* BUTTONS — stacked, full width */}
+        <div style={{ display: "flex", flexDirection: "column", gap: "6px", marginTop: "auto" }}>
+          <button onClick={handleAddToCart} style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "6px", background: added ? "rgba(34,197,94,0.15)" : "var(--s3)", color: added ? "#22C55E" : "var(--white)", border: added ? "1px solid rgba(34,197,94,0.3)" : "1px solid var(--b1)", padding: "9px 12px", borderRadius: "8px", fontSize: "12px", fontWeight: 700, cursor: "pointer", transition: "all 0.2s", minHeight: "38px", width: "100%" }}>
+            {added ? <><span>✓</span> Added to Cart!</> : <><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>Add to Cart</>}
           </button>
-          <a href={waLink} target="_blank" rel="noopener noreferrer" style={{ flex: 1, display: "flex", alignItems: "center", justifyContent: "center", gap: "5px", background: "linear-gradient(135deg, #FF5C00, #FF2D55)", color: "#fff", padding: "9px 8px", borderRadius: "8px", fontSize: "11px", fontWeight: 700, textDecoration: "none", minHeight: "38px", boxShadow: "0 3px 10px rgba(255,92,0,0.25)" }}>
+          <a href={waLink} target="_blank" rel="noopener noreferrer" style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "6px", background: "linear-gradient(135deg, #FF5C00, #FF2D55)", color: "#fff", padding: "9px 12px", borderRadius: "8px", fontSize: "12px", fontWeight: 700, textDecoration: "none", minHeight: "38px", boxShadow: "0 3px 10px rgba(255,92,0,0.25)" }}>
             ⚡ Quick Order
           </a>
         </div>
