@@ -20,12 +20,12 @@ const TOP_AREAS = [
 
 const TOP_PRODUCTS = [
   { name: "Elfbar Raya D1", slug: "elfbar-raya-d1" },
-  { name: "Lost Mary MT35000", slug: "lost-mary-mt35000" },
+  { name: "Lost Mary MT35000 Turbo", slug: "lost-mary-mt35000-turbo" },
   { name: "ZYN Cool Mint", slug: "zyn-cool-mint" },
   { name: "Caliburn G4", slug: "caliburn-g4" },
   { name: "Nasty Bolt WTF 50K", slug: "nasty-bolt-wtf-50k" },
   { name: "IGET Astro B18000", slug: "iget-astro-b18000" },
-  { name: "Elfbar Ice King 30K", slug: "elfbar-ice-king-30k" },
+  { name: "Elfbar Ice King", slug: "elfbar-ice-king" },
   { name: "Lost Mary MO10000", slug: "lost-mary-mo10000" },
 ];
 
@@ -108,7 +108,7 @@ export default function Footer() {
             <p style={{ fontSize: "9px", fontWeight: 700, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--orange)", marginBottom: "14px" }}>Brands</p>
             <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
               {["Elfbar", "Lost Mary", "Caliburn", "ZYN", "Nasty", "IGET", "Yuoto", "Velo"].map((brand) => (
-                <Link key={brand} href={`/brands/${brand.toLowerCase().replace(" ", "-")}-bangalore`} style={{ fontSize: "12px", color: "var(--dim)", textDecoration: "none" }}>
+                <Link key={brand} href={`/brands/${brand.toLowerCase().replace(" ", "-")}`} style={{ fontSize: "12px", color: "var(--dim)", textDecoration: "none" }}>
                   {brand}
                 </Link>
               ))}
@@ -130,7 +130,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div style={{ borderTop: "1px solid var(--b0)", paddingTop: "24px", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "12px" }}>
           <p style={{ fontSize: "11px", color: "var(--dim2)" }}>
-            © 2025 VapeBangalore.com · Bangalore, Karnataka, India
+            © 2026 VapeBangalore.com · Bangalore, Karnataka, India
           </p>
           <p style={{ fontSize: "11px", color: "var(--dim2)" }}>
             For adults 18+ only · Nicotine is addictive
