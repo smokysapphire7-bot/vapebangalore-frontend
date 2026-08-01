@@ -1,6 +1,9 @@
 import { MetadataRoute } from "next";
 import { locations } from "@/lib/locations";
 import { products } from "@/lib/products";
+import { brands } from "@/lib/brands";
+import { comparisons } from "@/lib/comparisons";
+import { blogPosts } from "@/lib/blogs";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://vapebangalore.com";
@@ -19,6 +22,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }));
 
+  const brandPages = brands.map((b) => ({
+    url: `${base}/brands/${b.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.85,
+  }));
+
+  const comparePages = comparisons.map((c) => ({
+    url: `${base}/compare/${c.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.8,
+  }));
+
+  const blogPages = blogPosts.map((p) => ({
+    url: `${base}/blog/${p.slug}`,
+    lastModified: new Date(p.publishedAt),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
   return [
     { url: base, lastModified: new Date(), changeFrequency: "daily" as const, priority: 1.0 },
     { url: `${base}/products`, lastModified: new Date(), changeFrequency: "daily" as const, priority: 0.95 },
@@ -28,5 +52,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/about`, lastModified: new Date(), changeFrequency: "monthly" as const, priority: 0.6 },
     ...productPages,
     ...locationPages,
+    ...brandPages,
+    ...comparePages,
+    ...blogPages,
   ];
 }
