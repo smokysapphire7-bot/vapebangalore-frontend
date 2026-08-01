@@ -62,7 +62,7 @@ export default async function proxy(req: NextRequest) {
 
       const ratelimit = new Ratelimit({
         redis: new Redis({ url: redisUrl, token: redisToken }),
-        limiter: Ratelimit.slidingWindow(60, "1 m"),
+        limiter: Ratelimit.slidingWindow(200, "1 m"),
         analytics: false,
         prefix: "vb_rl",
       });
