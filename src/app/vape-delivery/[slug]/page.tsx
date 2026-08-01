@@ -4,6 +4,7 @@ import Link from "next/link";
 import { getLocationBySlug, getNearbyLocations, locations, LOCATION_COUNT } from "@/lib/locations";
 import { SITE, WHATSAPP } from "@/lib/settings";
 import { products, getBestsellers } from "@/lib/products";
+import ProductCard from "@/components/product/ProductCard";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -35,7 +36,7 @@ export default async function LocationPage({ params }: Props) {
   if (!loc) notFound();
 
   const nearby = getNearbyLocations(slug, 6);
-  const bestsellers = getBestsellers().slice(0, 4);
+  const bestsellers = getBestsellers().slice(0, 8);
   const waLink = WHATSAPP.orderLink(`vape delivery in ${loc.name}`);
 
   const schema = {
@@ -150,14 +151,7 @@ export default async function LocationPage({ params }: Props) {
             </h2>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: "10px" }} className="prod-grid">
               {bestsellers.map((product) => (
-                <Link key={product.slug} href={`/products/${product.slug}`} style={{ background: "var(--s2)", border: "1px solid var(--b0)", borderRadius: "10px", padding: "14px", textDecoration: "none", display: "block" }}>
-                  <div style={{ fontSize: "9px", fontWeight: 700, color: "var(--orange)", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "6px" }}>{product.brand}</div>
-                  <div style={{ fontSize: "13px", fontWeight: 600, color: "var(--white)", marginBottom: "4px", lineHeight: 1.3 }}>{product.name}</div>
-                  {product.puffCount && <div style={{ fontSize: "10px", color: "var(--dim)", fontFamily: "var(--font-mono)" }}>{product.puffCount.toLocaleString()} puffs</div>}
-                  <div style={{ marginTop: "10px", fontSize: "15px", fontWeight: 700, fontFamily: "var(--font-mono)", background: "linear-gradient(135deg, #FF5C00, #FF2D55)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
-                    &#8377;{product.price.toLocaleString()}
-                  </div>
-                </Link>
+                <ProductCard key={product.slug} product={product} />
               ))}
             </div>
             <div style={{ marginTop: "16px", textAlign: "center" }}>
