@@ -12,10 +12,10 @@ interface ProductCardProps {
 
 const RATINGS: Record<string, { rating: number; count: number }> = {
   "elfbar-raya-d1": { rating: 4.9, count: 312 },
-  "lost-mary-mt35000": { rating: 4.9, count: 198 },
+  "lost-mary-mt35000-turbo": { rating: 4.9, count: 198 },
   "zyn-cool-mint": { rating: 4.8, count: 267 },
   "caliburn-g4": { rating: 4.8, count: 145 },
-  "elfbar-ice-king-30k": { rating: 4.7, count: 89 },
+  "elfbar-ice-king": { rating: 4.7, count: 89 },
   "nasty-bolt-wtf-50k": { rating: 4.7, count: 76 },
   "lost-mary-mo10000": { rating: 4.8, count: 134 },
   "iget-astro-b18000": { rating: 4.6, count: 92 },
