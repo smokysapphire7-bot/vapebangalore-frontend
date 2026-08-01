@@ -8,6 +8,7 @@ export default function CartDrawer() {
   const { items, count, removeItem, updateQty, clearCart, isOpen, closeCart } = useCart();
   const [name, setName] = useState("");
   const [area, setArea] = useState("");
+  const [ageConfirmed, setAgeConfirmed] = useState(false);
 
   const total = items.reduce((sum, i) => sum + i.product.price * i.quantity, 0);
 
@@ -30,7 +31,7 @@ export default function CartDrawer() {
     return `https://wa.me/${WHATSAPP.number}?text=${encodeURIComponent(msg)}`;
   };
 
-  const canCheckout = items.length > 0 && name.trim().length > 0 && area.trim().length > 0;
+  const canCheckout = items.length !== 0 && name.trim().length !== 0 && area.trim().length !== 0 && ageConfirmed;
 
   if (!isOpen) return null;
 
@@ -123,6 +124,8 @@ export default function CartDrawer() {
             canCheckout={canCheckout}
             name={name}
             area={area}
+            ageConfirmed={ageConfirmed}
+            onAgeToggle={() => setAgeConfirmed(!ageConfirmed)}
             waLink={buildWhatsAppMessage()}
             onClose={closeCart}
           />
@@ -138,11 +141,13 @@ interface CartFooterProps {
   canCheckout: boolean;
   name: string;
   area: string;
+  ageConfirmed: boolean;
+  onAgeToggle: () => void;
   waLink: string;
   onClose: () => void;
 }
 
-function CartFooter({ count, total, canCheckout, name, area, waLink, onClose }: CartFooterProps) {
+function CartFooter({ count, total, canCheckout, name, area, ageConfirmed, onAgeToggle, waLink, onClose }: CartFooterProps) {
   const btnStyle: React.CSSProperties = {
     display: "flex", alignItems: "center", justifyContent: "center", gap: "10px",
     background: canCheckout ? "linear-gradient(135deg, #FF5C00, #FF2D55)" : "var(--s3)",
@@ -153,7 +158,9 @@ function CartFooter({ count, total, canCheckout, name, area, waLink, onClose }: 
     transition: "all 0.2s",
   };
 
-  const hint = !name.trim() && !area.trim()
+  const hint = !ageConfirmed
+    ? "Confirm you are 21+ to checkout"
+    : !name.trim() && !area.trim()
     ? "Enter your name and delivery area to checkout"
     : !name.trim() ? "Enter your name to checkout"
     : "Enter your delivery area to checkout";
@@ -164,6 +171,17 @@ function CartFooter({ count, total, canCheckout, name, area, waLink, onClose }: 
         <span style={{ fontSize: "13px", color: "var(--dim)" }}>Total ({count} items)</span>
         <span style={{ fontSize: "20px", fontWeight: 800, fontFamily: "var(--font-mono)", background: "linear-gradient(135deg, #FF5C00, #FF2D55)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
           &#8377;{total.toLocaleString("en-IN")}
+        </span>
+      </div>
+      <div
+        onClick={onAgeToggle}
+        style={{ display: "flex", alignItems: "center", gap: "10px", background: "var(--s2)", border: `1px solid ${ageConfirmed ? "var(--orange)" : "var(--b1)"}`, borderRadius: "8px", padding: "12px 14px", cursor: "pointer", marginBottom: "12px", userSelect: "none" }}
+      >
+        <div style={{ width: "20px", height: "20px", borderRadius: "4px", border: `2px solid ${ageConfirmed ? "var(--orange)" : "var(--b2)"}`, background: ageConfirmed ? "var(--orange)" : "transparent", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, transition: "all 0.15s" }}>
+          {ageConfirmed && <span style={{ color: "#fff", fontSize: "12px", fontWeight: 800, lineHeight: 1 }}>✓</span>}
+        </div>
+        <span style={{ fontSize: "12px", color: ageConfirmed ? "var(--white)" : "var(--dim)", fontWeight: ageConfirmed ? 600 : 400 }}>
+          I confirm I am 21 years or older
         </span>
       </div>
       {!canCheckout && (
