@@ -25,7 +25,7 @@ export default function Navigation() {
   const navLinks = [
     { href: "/products", label: "Products" },
     { href: "/brands", label: "Brands" },
-    { href: "/vape-delivery/koramangala", label: "Areas" },
+    { href: "/areas", label: "Areas" },
     { href: "/blog", label: "Blog" },
   ];
 
@@ -81,9 +81,9 @@ export default function Navigation() {
           <span style={{ fontSize: "9px", fontWeight: 800, color: "var(--orange)" }}>Order</span>
         </a>
 
-        <Link href="/vape-delivery/koramangala" style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: "2px", textDecoration: "none", padding: "8px 4px" }}>
-          <span style={{ fontSize: "20px", lineHeight: 1, filter: "grayscale(1) opacity(0.5)" }}>📍</span>
-          <span style={{ fontSize: "9px", fontWeight: 500, color: "var(--dim)" }}>Areas</span>
+        <Link href="/areas" style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: "2px", textDecoration: "none", padding: "8px 4px" }}>
+          <span style={{ fontSize: "20px", lineHeight: 1, filter: pathname === "/areas" ? "none" : "grayscale(1) opacity(0.5)" }}>📍</span>
+          <span style={{ fontSize: "9px", fontWeight: pathname === "/areas" ? 700 : 500, color: pathname === "/areas" ? "var(--orange)" : "var(--dim)" }}>Areas</span>
         </Link>
 
         {/* Cart tab with count */}
