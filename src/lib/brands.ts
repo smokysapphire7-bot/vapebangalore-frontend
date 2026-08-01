@@ -19,7 +19,7 @@ export const brands: Brand[] = [
     heroProduct: "elfbar-raya-d1",
     metaTitle: "Elfbar Vapes in Bangalore — Raya D1, D3, Ice King | VapeBangalore.com",
     metaDescription: "Buy original Elfbar vapes in Bangalore. Raya D1, Raya D3, Ice King 30K and more. 30-45 min delivery. 100% authentic. Order on WhatsApp now.",
-    productSlugs: ["elfbar-raya-d1", "elfbar-raya-d3", "elfbar-ice-king-30k"],
+    productSlugs: ["elfbar-raya-d1", "elfbar-raya-d3", "elfbar-ice-king"],
     tags: ["Disposable", "Bestseller", "Most Popular"],
   },
   {
