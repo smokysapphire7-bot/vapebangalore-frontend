@@ -151,10 +151,10 @@ All major Caliburn models come in KOKO variants — these are more compact, desi
 
 ## Which Caliburn Should You Buy?
 
-- **First pod device?** → Caliburn A2 or G4
-- **Experienced vaper?** → Caliburn G4 Pro
-- **Want latest tech?** → Caliburn G5 Lite
-- **Prefer compact?** → Any KOKO variant
+- **First pod device?** -> Caliburn A2 or G4
+- **Experienced vaper?** -> Caliburn G4 Pro
+- **Want latest tech?** -> Caliburn G5 Lite
+- **Prefer compact?** -> Any KOKO variant
 
 ## Caliburn Delivery in Bangalore
 
@@ -407,7 +407,7 @@ Order on WhatsApp for 30-45 minute delivery across 120+ Bangalore areas. ₹699 
 
 ## 1. Elfbar Raya D1 — Best for Beginners
 
-₹1,789 · 7,000 puffs · 50mg nicotine
+₹1,789 - 7,000 puffs - 50mg nicotine
 
 The most popular vape in Bangalore. Easy to use, consistent flavour delivery, and available in 15+ flavours. The perfect starting point for anyone new to vaping.
 
@@ -415,7 +415,7 @@ The most popular vape in Bangalore. Easy to use, consistent flavour delivery, an
 
 ## 2. Lost Mary MO10000 — Best for Heavy Vapers
 
-₹2,199 · 10,000 puffs · 50mg nicotine
+₹2,199 - 10,000 puffs - 50mg nicotine
 
 For vapers who go through a Raya D1 in under a week. The MO10000 lasts nearly twice as long with bolder, more intense flavours.
 
@@ -423,19 +423,19 @@ For vapers who go through a Raya D1 in under a week. The MO10000 lasts nearly tw
 
 ## 3. Caliburn G4 — Best Pod Device
 
-₹2,499 · Refillable · 750mAh battery
+₹2,499 - Refillable - 750mAh battery
 
 The best long-term investment for regular vapers. Costs more upfront but saves money over time. Use any nic salt e-liquid.
 
 ## 4. ZYN Cool Mint — Best Nicotine Pouch
 
-₹699 · 15 pouches · Tobacco-free
+₹699 - 15 pouches - Tobacco-free
 
 The only smoke-free, vapour-free option on this list. Perfect for offices, travel and anywhere vaping isn't possible.
 
 ## 5. Elfbar Ice King 30K — Best for Long Trips
 
-₹3,499 · 30,000 puffs · Rechargeable
+₹3,499 - 30,000 puffs - Rechargeable
 
 For vapers who want to go weeks without reordering. The Ice King 30K is built for heavy users who hate running out.
 
