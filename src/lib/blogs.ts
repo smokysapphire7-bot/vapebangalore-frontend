@@ -14,7 +14,7 @@ export type BlogPost = {
     slug: "best-disposable-vape-bangalore-2026",
     title: "Best Disposable Vapes in Bangalore 2026 — Elfbar vs Lost Mary vs Nasty",
     excerpt: "Looking for the best disposable vape in Bangalore? We compare Elfbar Raya D1, Lost Mary MT35000 Turbo and Nasty Bolt WTF 50K — price, puffs, flavour and delivery.",
-    category: "Comparison" as const,
+    category: "Comparison",
     metaTitle: "Best Disposable Vapes Bangalore 2026 — Elfbar vs Lost Mary vs Nasty | VapeBangalore.com",
     metaDescription: "Best disposable vapes in Bangalore 2026. Elfbar Raya D1 vs Lost Mary MT35000 Turbo vs Nasty Bolt WTF 50K — full comparison on price, puffs, flavour and availability.",
     publishedAt: "2026-07-01",
@@ -76,7 +76,7 @@ All three are available for 30-minute delivery across 120+ areas in Bangalore. O
     slug: "zyn-nicotine-pouches-bangalore-guide",
     title: "ZYN Nicotine Pouches in Bangalore — Complete Buyer's Guide",
     excerpt: "Everything you need to know about buying ZYN nicotine pouches in Bangalore. Price, how to use, delivery and why thousands are switching from smoking to ZYN.",
-    category: "Guide" as const,
+    category: "Guide",
     metaTitle: "ZYN Nicotine Pouches Bangalore — Price, How to Use, Delivery Guide | VapeBangalore.com",
     metaDescription: "Buy ZYN nicotine pouches in Bangalore. Complete guide on ZYN price, how to use, flavours available and 30 min delivery across 120+ Bangalore areas.",
     publishedAt: "2026-07-10",
@@ -121,7 +121,7 @@ We deliver ZYN Cool Mint across 120+ areas in Bangalore in 30-45 minutes. Order 
     slug: "caliburn-pod-system-bangalore-guide",
     title: "Caliburn Pod Systems in Bangalore — Which One to Buy in 2026",
     excerpt: "Caliburn has 14 models available in Bangalore. We break down every Caliburn pod system — G4, G4 Pro, G5 Lite, A2 and more — to help you pick the right one.",
-    category: "Guide" as const,
+    category: "Guide",
     metaTitle: "Caliburn Pod System Bangalore 2026 — G4, G4 Pro, G5 Lite Guide | VapeBangalore.com",
     metaDescription: "Which Caliburn pod system to buy in Bangalore? Complete guide to Caliburn G4, G4 Pro, G5 Lite, A2 and more. Prices, specs and 30 min delivery.",
     publishedAt: "2026-07-20",
@@ -165,7 +165,7 @@ All Caliburn models are available for 30-minute delivery across Bangalore. Order
     slug: "vape-delivery-koramangala-indiranagar-hsr",
     title: "Vape Delivery in Koramangala, Indiranagar and HSR Layout — 30 Min",
     excerpt: "Fast vape delivery across Bangalore's top three neighbourhoods. Koramangala, Indiranagar and HSR Layout covered in 30 minutes. Elfbar, Lost Mary, ZYN and more.",
-    category: "Local" as const,
+    category: "Local",
     metaTitle: "Vape Delivery Koramangala Indiranagar HSR Layout — 30 Min | VapeBangalore.com",
     metaDescription: "Vape delivery in Koramangala, Indiranagar and HSR Layout in 30 minutes. Elfbar, Lost Mary, ZYN, Caliburn and more. Cash on delivery. Order on WhatsApp.",
     publishedAt: "2026-07-25",
@@ -205,7 +205,7 @@ No app download, no account, no prepayment. Just WhatsApp and cash.`,
   },
 }
 
-export const blogPosts: BlogPost[] = [
+export const blogPosts = [
   {
     slug: "vape-delivery-bangalore-cash-on-delivery",
     title: "Vape Delivery in Bangalore with Cash on Delivery — How It Works",
@@ -448,10 +448,10 @@ All 5 are available on VapeBangalore.com with 30-45 minute delivery across 120+ 
 
 export const BLOG_COUNT = blogPosts.length;
 
-export function getBlogPost(slug: string): BlogPost | undefined {
+export function getBlogPost(slug) {
   return blogPosts.find((p) => p.slug === slug);
 }
 
-export function getBlogsByCategory(category: BlogPost["category"]): BlogPost[] {
+export function getBlogsByCategory(category) {
   return blogPosts.filter((p) => p.category === category);
 }
