@@ -81,7 +81,7 @@ function Cobweb({ position }: { position: "tl" | "tr" | "bl" | "br" }) {
 function SpiderMan() {
   const [swinging, setSwinging] = useState(false);
   const [flipping, setFlipping] = useState(false);
-  const [webLength, setWebLength] = useState(120);
+  const [webLength, setWebLength] = useState(60);
   const intervalRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const handleClick = () => {
@@ -92,8 +92,8 @@ function SpiderMan() {
       setTimeout(() => setFlipping(false), 800);
     } else {
       setSwinging(true);
-      setWebLength(180);
-      setTimeout(() => { setWebLength(120); }, 400);
+      setWebLength(90);
+      setTimeout(() => { setWebLength(60); }, 400);
       setTimeout(() => setSwinging(false), 900);
     }
   };
@@ -103,8 +103,8 @@ function SpiderMan() {
     intervalRef.current = setInterval(() => {
       if (Math.random() > 0.7) {
         setSwinging(true);
-        setWebLength(160);
-        setTimeout(() => setWebLength(120), 400);
+        setWebLength(80);
+        setTimeout(() => setWebLength(60), 400);
         setTimeout(() => setSwinging(false), 900);
       }
     }, 5000);
@@ -116,9 +116,9 @@ function SpiderMan() {
       onClick={handleClick}
       style={{
         position: "fixed",
-        right: 0,
-        top: "30%",
-        zIndex: 56,
+        right: 8,
+        top: 60,
+        zIndex: 49,
         cursor: "pointer",
         transformOrigin: "top right",
         animation: swinging ? "swing 0.9s ease-in-out" : "hang 3s ease-in-out infinite",
@@ -136,7 +136,7 @@ function SpiderMan() {
       </svg>
 
       {/* Spider-Man SVG body */}
-      <svg width="60" height="80" viewBox="0 0 60 80" style={{ display: "block" }}>
+      <svg width="44" height="58" viewBox="0 0 60 80" style={{ display: "block" }}>
         {/* Body */}
         <ellipse cx="30" cy="48" rx="14" ry="18" fill="#E23D28"/>
         {/* Chest web pattern */}
@@ -179,12 +179,7 @@ function SpiderMan() {
         <line x1="2" y1="16" x2="-10" y2="8" stroke="#aab4d4" strokeWidth="1" opacity="0.7"/>
       </svg>
 
-      {/* Tap hint */}
-      <div style={{
-        fontSize: "9px", color: "rgba(170,180,212,0.6)",
-        textAlign: "center", marginTop: 4, fontFamily: "monospace",
-        letterSpacing: "0.05em",
-      }}>tap me</div>
+
     </div>
   );
 }
