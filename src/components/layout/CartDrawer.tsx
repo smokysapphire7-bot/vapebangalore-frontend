@@ -16,17 +16,30 @@ export default function CartDrawer() {
     const orderLines = items.map((i) =>
       `• ${i.product.name}${i.flavour ? ` (${i.flavour})` : ""} x${i.quantity} — ₹${(i.product.price * i.quantity).toLocaleString("en-IN")}`
     ).join("\n");
+    const intros = [
+      "🛒 New order from VapeBangalore.com",
+      "📦 Order placed via VapeBangalore.com",
+      "🛍️ New delivery request — VapeBangalore",
+      "✅ Order via VapeBangalore.com",
+    ];
+    const closings = [
+      "Please confirm availability and delivery time. Thank you!",
+      "Kindly confirm if all items are available. Thanks!",
+      "Can you confirm availability and ETA? Thanks.",
+      "Please check stock and confirm delivery time.",
+    ];
+    const r = (arr: string[]) => arr[Math.floor(Math.random() * arr.length)];
     const msg = [
-      "🛒 *New Order — VapeBangalore.com*",
+      `*${r(intros)}*`,
       "",
       orderLines,
       "",
       `💰 *Total: ₹${total.toLocaleString("en-IN")}*`,
       "",
       `👤 *Name:* ${name || "Not provided"}`,
-      `📍 *Delivery Area:* ${area || "Not provided"}`,
+      `📍 *Area:* ${area || "Not provided"}`,
       "",
-      "Please confirm availability and delivery time. Thank you!",
+      r(closings),
     ].join("\n");
     return `https://wa.me/${WHATSAPP.number}?text=${encodeURIComponent(msg)}`;
   };
