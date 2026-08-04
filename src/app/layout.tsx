@@ -7,7 +7,6 @@ import Navigation from "@/components/layout/Navigation";
 import CartDrawer from "@/components/layout/CartDrawer";
 import Footer from "@/components/layout/Footer";
 import { CartProvider } from "@/lib/cart";
-import SpiderManEaster from "@/components/SpiderManEaster";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -230,7 +229,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body suppressHydrationWarning>
         <CartProvider>
-        <SpiderManEaster />
           <Navigation />
           <CartDrawer />
           <div style={{ paddingTop: "60px" }}>{children}<Footer /></div>
