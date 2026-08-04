@@ -8,7 +8,201 @@ export interface BlogPost {
   metaDescription: string;
   publishedAt: string;
   readTime: number;
-  tags: string[];
+  tags: string[
+  {
+    slug: "best-disposable-vape-bangalore-2026",
+    title: "Best Disposable Vapes in Bangalore 2026 — Elfbar vs Lost Mary vs Nasty",
+    excerpt: "Looking for the best disposable vape in Bangalore? We compare Elfbar Raya D1, Lost Mary MT35000 Turbo and Nasty Bolt WTF 50K — price, puffs, flavour and delivery.",
+    category: "Comparison" as const,
+    metaTitle: "Best Disposable Vapes Bangalore 2026 — Elfbar vs Lost Mary vs Nasty | VapeBangalore.com",
+    metaDescription: "Best disposable vapes in Bangalore 2026. Elfbar Raya D1 vs Lost Mary MT35000 Turbo vs Nasty Bolt WTF 50K — full comparison on price, puffs, flavour and availability.",
+    publishedAt: "2026-07-01",
+    readTime: 5,
+    tags: ["best disposable vape bangalore", "elfbar vs lost mary", "disposable vape comparison", "vape bangalore 2026"],
+    content: `Looking for the best disposable vape in Bangalore in 2026? We've delivered thousands of orders and know exactly which products customers love. Here's our honest comparison.
+
+## The Top 3 Disposable Vapes in Bangalore
+
+### 1. Elfbar Raya D1 — ₹1,789
+
+The Elfbar Raya D1 is our single most ordered product in Bangalore. It delivers 13,000 puffs, has a built-in display showing battery and e-liquid level, and the flavour quality is exceptional.
+
+**Why customers love it:** Consistent flavour, long-lasting, compact design, easy to use.
+
+**Best for:** First-time vapers, regular users who want reliability.
+
+**Verdict:** Best value for money in Bangalore right now.
+
+### 2. Lost Mary MT35000 Turbo — ₹2,799
+
+The Lost Mary MT35000 Turbo delivers 35,000 puffs — one of the highest puff counts available. It has dual mesh coil technology which gives a smoother, richer vaping experience.
+
+**Why customers love it:** Incredible longevity, great flavour, premium feel.
+
+**Best for:** Heavy vapers who don't want to reorder frequently.
+
+**Verdict:** Premium choice if you vape heavily.
+
+### 3. Nasty Bolt WTF 50K — ₹3,499
+
+The Nasty Bolt WTF 50K is the puff count champion — 50,000 puffs in one device. It's larger than typical disposables but the price-per-puff ratio is unbeatable.
+
+**Why customers love it:** Massive puff count, great flavours, good build quality.
+
+**Best for:** Value-conscious heavy vapers.
+
+**Verdict:** Best price per puff in the market.
+
+## Quick Comparison Table
+
+| Product | Price | Puffs | Price per 1000 puffs |
+|---------|-------|-------|---------------------|
+| Elfbar Raya D1 | ₹1,789 | 13,000 | ₹138 |
+| Lost Mary MT35000 | ₹2,799 | 35,000 | ₹80 |
+| Nasty Bolt WTF 50K | ₹3,499 | 50,000 | ₹70 |
+
+## Which One Should You Buy?
+
+- **New to vaping?** Start with the Elfbar Raya D1. It's the most popular, easy to use and reasonably priced.
+- **Heavy vaper?** Go for the Lost Mary MT35000 Turbo or Nasty Bolt WTF 50K for better value.
+- **Budget-conscious?** The Nasty Bolt WTF 50K gives the best price per puff.
+
+## How to Order in Bangalore
+
+All three are available for 30-minute delivery across 120+ areas in Bangalore. Order on WhatsApp, pay cash on delivery. No prepayment required.`,
+  },
+  {
+    slug: "zyn-nicotine-pouches-bangalore-guide",
+    title: "ZYN Nicotine Pouches in Bangalore — Complete Buyer's Guide",
+    excerpt: "Everything you need to know about buying ZYN nicotine pouches in Bangalore. Price, how to use, delivery and why thousands are switching from smoking to ZYN.",
+    category: "Guide" as const,
+    metaTitle: "ZYN Nicotine Pouches Bangalore — Price, How to Use, Delivery Guide | VapeBangalore.com",
+    metaDescription: "Buy ZYN nicotine pouches in Bangalore. Complete guide on ZYN price, how to use, flavours available and 30 min delivery across 120+ Bangalore areas.",
+    publishedAt: "2026-07-10",
+    readTime: 4,
+    tags: ["zyn bangalore", "nicotine pouches bangalore", "zyn cool mint", "tobacco free bangalore"],
+    content: `ZYN nicotine pouches are the fastest growing nicotine product in Bangalore — and for good reason. No smoke, no vaping, no tobacco. Just clean nicotine in a discreet pouch. Here's everything you need to know.
+
+## What is ZYN?
+
+ZYN is a tobacco-free nicotine pouch made by Swedish Match. You place it between your upper lip and gum, and it delivers nicotine without any smoke, vapour or smell. It's completely discreet — nobody knows you're using it.
+
+## Why People in Bangalore are Switching to ZYN
+
+- **No smell** — your breath, clothes and car don't smell
+- **Use anywhere** — offices, flights, restaurants, gyms
+- **No smoke** — no secondhand smoke affecting others
+- **Discreet** — nobody can tell you're using it
+- **Tobacco-free** — no tobacco leaf, just pharmaceutical grade nicotine
+
+## ZYN Flavours Available in Bangalore
+
+**ZYN Cool Mint** — Our most popular. Fresh, clean mint flavour with a satisfying nicotine hit. Available in regular strength.
+
+## ZYN Price in Bangalore
+
+ZYN Cool Mint is available at ₹999 per tin. Each tin contains multiple pouches.
+
+## How to Use ZYN
+
+1. Take one pouch from the tin
+2. Place it under your upper lip
+3. Leave it for 20-30 minutes
+4. Remove and dispose in the tin lid (it has a bin built in)
+
+You may feel a slight tingling when you first use it — this is normal and is the nicotine releasing.
+
+## ZYN Delivery in Bangalore
+
+We deliver ZYN Cool Mint across 120+ areas in Bangalore in 30-45 minutes. Order on WhatsApp, pay cash on delivery. Discreet packaging with no product branding on the bag.`,
+  },
+  {
+    slug: "caliburn-pod-system-bangalore-guide",
+    title: "Caliburn Pod Systems in Bangalore — Which One to Buy in 2026",
+    excerpt: "Caliburn has 14 models available in Bangalore. We break down every Caliburn pod system — G4, G4 Pro, G5 Lite, A2 and more — to help you pick the right one.",
+    category: "Guide" as const,
+    metaTitle: "Caliburn Pod System Bangalore 2026 — G4, G4 Pro, G5 Lite Guide | VapeBangalore.com",
+    metaDescription: "Which Caliburn pod system to buy in Bangalore? Complete guide to Caliburn G4, G4 Pro, G5 Lite, A2 and more. Prices, specs and 30 min delivery.",
+    publishedAt: "2026-07-20",
+    readTime: 6,
+    tags: ["caliburn bangalore", "caliburn g4 bangalore", "caliburn g4 pro bangalore", "pod system bangalore", "caliburn g5 lite"],
+    content: `Caliburn by Uwell is the most popular pod system brand in Bangalore. With over 14 models, choosing the right one can be confusing. Here's our complete breakdown.
+
+## Why Caliburn?
+
+Caliburn devices are refillable pod systems — you buy the device once and then refill it with e-liquid. They're more economical long-term than disposables, produce better flavour and give you control over your nicotine levels.
+
+## Caliburn Models Available in Bangalore
+
+### Best for Beginners — Caliburn A2 (₹3,499)
+Simple, reliable, no settings to adjust. Just fill, click and vape. Excellent flavour for the price.
+
+### Most Popular — Caliburn G4 (₹6,499)
+The G4 is our most ordered Caliburn. Compact design, excellent battery life, great flavour. Compatible with all G4 series pods.
+
+### Premium Choice — Caliburn G4 Pro (₹7,199)
+Adds a display screen and adjustable wattage over the G4. Better for experienced vapers who want control.
+
+### Latest Generation — Caliburn G5 Lite (₹6,799)
+Uwell's newest series with improved coil technology and longer pod life.
+
+### KOKO Variants
+All major Caliburn models come in KOKO variants — these are more compact, designed for mouth-to-lung vaping. Great if you prefer a tighter draw.
+
+## Which Caliburn Should You Buy?
+
+- **First pod device?** → Caliburn A2 or G4
+- **Experienced vaper?** → Caliburn G4 Pro
+- **Want latest tech?** → Caliburn G5 Lite
+- **Prefer compact?** → Any KOKO variant
+
+## Caliburn Delivery in Bangalore
+
+All Caliburn models are available for 30-minute delivery across Bangalore. Order on WhatsApp with the model name, pay cash on delivery.`,
+  },
+  {
+    slug: "vape-delivery-koramangala-indiranagar-hsr",
+    title: "Vape Delivery in Koramangala, Indiranagar and HSR Layout — 30 Min",
+    excerpt: "Fast vape delivery across Bangalore's top three neighbourhoods. Koramangala, Indiranagar and HSR Layout covered in 30 minutes. Elfbar, Lost Mary, ZYN and more.",
+    category: "Local" as const,
+    metaTitle: "Vape Delivery Koramangala Indiranagar HSR Layout — 30 Min | VapeBangalore.com",
+    metaDescription: "Vape delivery in Koramangala, Indiranagar and HSR Layout in 30 minutes. Elfbar, Lost Mary, ZYN, Caliburn and more. Cash on delivery. Order on WhatsApp.",
+    publishedAt: "2026-07-25",
+    readTime: 3,
+    tags: ["vape delivery koramangala", "vape delivery indiranagar", "vape delivery hsr layout", "vape bangalore"],
+    content: `Koramangala, Indiranagar and HSR Layout are three of Bangalore's most popular residential and nightlife areas — and three of our busiest delivery zones. Here's what you need to know.
+
+## Vape Delivery in Koramangala
+
+Koramangala is our single highest-volume delivery area. We cover all 8 blocks, ST Bed, Ejipura, Sony Signal and the entire 80 Feet Road stretch.
+
+**Average delivery time:** 25-35 minutes
+**Popular products:** Elfbar Raya D1, ZYN Cool Mint, Lost Mary MT35000 Turbo
+
+## Vape Delivery in Indiranagar
+
+Indiranagar's bar and restaurant scene makes it a top evening delivery zone. We cover 100 Feet Road, 12th Main, CMH Road, Domlur, HAL 1st and 2nd Stage.
+
+**Average delivery time:** 30-40 minutes
+**Popular products:** Elfbar Raya D1, Caliburn G4 Pro, Lost Mary MO10000
+
+## Vape Delivery in HSR Layout
+
+HSR Layout's tech professional community orders heavily. We cover all 7 sectors plus Agara, BDA Complex and Kudlu Gate.
+
+**Average delivery time:** 30-40 minutes
+**Popular products:** ZYN Cool Mint, Caliburn G4, Elfbar Raya D1
+
+## How to Order
+
+1. Open WhatsApp and message us
+2. Tell us what you want and your address
+3. We confirm availability and price
+4. Pay cash when rider arrives
+
+No app download, no account, no prepayment. Just WhatsApp and cash.`,
+  },
+];
 }
 
 export const blogPosts: BlogPost[] = [

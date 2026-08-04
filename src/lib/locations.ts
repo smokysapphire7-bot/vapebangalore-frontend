@@ -24,7 +24,7 @@ export const locations: Location[] = [
     category: "residential",
     geoLat: 12.9784, geoLng: 77.6408,
     sublocations: ["100 Feet Road", "12th Main", "CMH Road", "HAL 1st Stage", "HAL 2nd Stage", "Domlur", "Old Airport Road", "Kodihalli", "Defence Colony"],
-    localNote: "Indiranagar is home to Bangalore's best bars and cafes — and we make sure the vapes arrive before your evening starts. We deliver across 100 Feet Road, 12th Main, CMH Road, Toit area, Domlur and all of HAL stages in 30-45 minutes. Our top sellers here are Elfbar Raya D1, Lost Mary MO10000, ZYN Cool Mint and Caliburn G4. Order on WhatsApp — give us your flat number or drop pin and we're there. No fuss, no questions, completely discreet. Available all day from 10am to 10pm. We also cover Kodihalli, Defence Colony and Old Airport Road.",
+    localNote: "Indiranagar is home to Bangalore's best bars and cafes — and we make sure the vapes arrive before your evening starts. We deliver across 100 Feet Road, 12th Main, CMH Road, Toit area, Domlur and all of HAL stages in 30-45 minutes. Top sellers here are Elfbar Raya D1, Lost Mary MO10000, ZYN Cool Mint and Caliburn G4. Order on WhatsApp — give us your flat number or drop pin and we're there. No fuss, completely discreet. We also cover Kodihalli, Defence Colony and Old Airport Road.",
   },
   {
     slug: "hsr-layout",
@@ -32,7 +32,7 @@ export const locations: Location[] = [
     category: "residential",
     geoLat: 12.9116, geoLng: 77.6389,
     sublocations: ["Sector 1", "Sector 2", "Sector 3", "Sector 4", "Sector 5", "Sector 6", "Sector 7", "Agara", "Kudlu Gate", "BDA Complex"],
-    localNote: "HSR Layout is one of Bangalore's most planned residential areas and a top delivery zone for us. We cover all 7 sectors — from Sector 1 near Agara Lake to Sector 7 near Kudlu Gate — delivering vapes in 30-45 minutes. Popular products in HSR include Elfbar Raya D1, ZYN nicotine pouches, Caliburn G4 Pro and Lost Mary MT35000 Turbo. Order on WhatsApp with your sector and block number. We also serve BDA Complex, Agara and Kudlu Gate areas. Cash on delivery accepted. Discreet packaging always.",
+    localNote: "HSR Layout is one of Bangalore's most planned residential areas and a top delivery zone for us. We cover all 7 sectors — from Sector 1 near Agara Lake to Sector 7 near Kudlu Gate — delivering vapes in 30-45 minutes. Popular products in HSR include Elfbar Raya D1, ZYN nicotine pouches, Caliburn G4 Pro and Lost Mary MT35000 Turbo. Order on WhatsApp with your sector and block number. We also serve BDA Complex, Agara and Kudlu Gate. Cash on delivery accepted.",
   },
   {
     slug: "btm-layout",
@@ -40,7 +40,7 @@ export const locations: Location[] = [
     category: "residential",
     geoLat: 12.9166, geoLng: 77.6101,
     sublocations: ["BTM 1st Stage", "BTM 2nd Stage", "Madiwala", "Tavarekere", "Udupi Garden", "Silk Board Junction"],
-    localNote: "BTM Layout is one of Bangalore's most densely populated residential areas and we deliver here daily. Whether you are in BTM 1st Stage, 2nd Stage, Madiwala market area, Tavarekere or near Udupi Garden — we reach you in 30-45 minutes. We stock all major brands including Elfbar, Lost Mary, Caliburn pod systems, ZYN and Velo nicotine pouches, Nasty disposables and rolling tobacco like Amber Leaf and Golden Virginia. WhatsApp your order and address, we confirm availability and dispatch immediately. Cash on delivery available. We also deliver near Silk Board Junction.",
+    localNote: "BTM Layout is one of Bangalore's most densely populated residential areas and we deliver here daily. Whether you are in BTM 1st Stage, 2nd Stage, Madiwala market area, Tavarekere or near Udupi Garden — we reach you in 30-45 minutes. We stock Elfbar, Lost Mary, Caliburn pod systems, ZYN and Velo nicotine pouches, Nasty disposables and rolling tobacco. WhatsApp your order and address, we confirm and dispatch immediately. Cash on delivery. We also deliver near Silk Board Junction.",
   },
   {
     slug: "whitefield",
@@ -48,7 +48,7 @@ export const locations: Location[] = [
     category: "tech",
     geoLat: 12.9698, geoLng: 77.7499,
     sublocations: ["ITPL", "Brookefield", "AECS Layout", "Kundalahalli", "Hope Farm", "Kadugodi", "Varthur", "Mahadevapura", "Hoodi"],
-    localNote: "Whitefield is Bangalore's IT hub and we deliver vapes across the entire corridor in 30-45 minutes. ITPL, Brookefield, AECS Layout, Hope Farm Junction, Kadugodi, Mahadevapura, Hoodi and Varthur — all covered. Popular with tech professionals, our top sellers in Whitefield are Elfbar Raya D1, Caliburn G4 Pro pod system, ZYN Cool Mint nicotine pouches and Lost Mary MT35000 Turbo. Order on WhatsApp, share your apartment gate or office address and we deliver discreetly. No prepayment required — cash or UPI on delivery.",
+    localNote: "Whitefield is Bangalore's IT hub and we deliver vapes across the entire corridor in 30-45 minutes. ITPL, Brookefield, AECS Layout, Hope Farm Junction, Kadugodi, Mahadevapura, Hoodi and Varthur — all covered. Popular with tech professionals, our top sellers in Whitefield are Elfbar Raya D1, Caliburn G4 Pro pod system, ZYN Cool Mint nicotine pouches and Lost Mary MT35000 Turbo. Order on WhatsApp, share your apartment gate or office address. No prepayment required — cash or UPI on delivery.",
   },
   {
     slug: "electronic-city",
@@ -56,7 +56,7 @@ export const locations: Location[] = [
     category: "tech",
     geoLat: 12.8399, geoLng: 77.6770,
     sublocations: ["Phase 1", "Phase 2", "Doddathogur", "Neeladri Nagar", "Huskur", "Bommasandra", "Hosur Road"],
-    localNote: "Electronic City is Bangalore's largest tech park zone and we cover the entire area. Phase 1, Phase 2, Neeladri Nagar, Doddathogur, Bommasandra and Hosur Road — all covered in 30-45 minutes. We deliver Elfbar, Lost Mary, Caliburn, ZYN, Nasty, IGET and more. Many customers here are IT professionals who order regularly — we know the area well. WhatsApp us your address, we confirm and dispatch. Cash on delivery, discreet packaging.",
+    localNote: "Electronic City is Bangalore's largest tech park zone and we cover the entire area. Phase 1, Phase 2, Neeladri Nagar, Doddathogur, Bommasandra and Hosur Road — all covered in 30-45 minutes. We deliver Elfbar, Lost Mary, Caliburn, ZYN, Nasty, IGET and more. Many customers here order regularly — we know the area well. WhatsApp your address, we confirm and dispatch. Cash on delivery, discreet packaging.",
   },
   {
     slug: "marathahalli",
@@ -180,8 +180,7 @@ export const locations: Location[] = [
   { slug: "commercial-street", name: "Commercial Street", category: "landmark", geoLat: 12.9816, geoLng: 77.6109, sublocations: ["Commercial Street", "Shivajinagar", "MG Road", "Frazer Town"], localNote: "Vape delivery near Commercial Street Bangalore — Central shopping area." },
   { slug: "cubbon-park", name: "Cubbon Park", category: "landmark", geoLat: 12.9763, geoLng: 77.5929, sublocations: ["Cubbon Park", "MG Road", "Kasturba Road", "Shivajinagar"], localNote: "Vape delivery near Cubbon Park Bangalore — Central Bangalore." },
   { slug: "lalbagh", name: "Lalbagh", category: "landmark", geoLat: 12.9507, geoLng: 77.5848, sublocations: ["Lalbagh", "Basavanagudi", "Jayanagar", "South End Road"], localNote: "Vape delivery near Lalbagh Bangalore — South Bangalore botanical garden area." },
-  { slug: "bannerghatta-road", name: "Bannerghatta Road", category: "road", geoLat: 12.8965, geoLng: 77.5993, sublocations: ["Bannerghatta Road", "JP Nagar", "Arekere", "Gottigere", "Hulimavu"], localNote: "Vape delivery along Bannerghatta Road Bangalore — South Bangalore corridor." },
-  { slug: "outer-ring-road", name: "Outer Ring Road", category: "road", geoLat: 12.9334, geoLng: 77.6855, sublocations: ["Marathahalli", "Bellandur", "Kadubeesanahalli", "Panathur", "Sarjapur Junction"], localNote: "Vape delivery along Outer Ring Road Bangalore — full ORR tech corridor." },
+  { slug: "bannerghatta-road", name: "Bannerghatta Road", category: "road", geoLat: 12.8965, geoLng: 77.5993, sublocations: ["Bannerghatta Road", "JP Nagar", "Arekere", "Gottigere", "Hulimavu"], localNote: "Bannerghatta Road is one of south Bangalore's busiest residential and commercial stretches. We deliver vapes to JP Nagar, Arekere, Gottigere, Hulimavu and the entire Bannerghatta Road stretch in 30-45 minutes. Elfbar Raya D1, Lost Mary, ZYN, Caliburn and Nasty are available. Order on WhatsApp, cash on delivery, discreet packaging always.", name: "Outer Ring Road", category: "road", geoLat: 12.9334, geoLng: 77.6855, sublocations: ["Marathahalli", "Bellandur", "Kadubeesanahalli", "Panathur", "Sarjapur Junction"], localNote: "Vape delivery along Outer Ring Road Bangalore — full ORR tech corridor." },
   { slug: "hosur-road", name: "Hosur Road", category: "road", geoLat: 12.8957, geoLng: 77.6360, sublocations: ["Dairy Circle", "BTM Layout", "Electronic City", "Bommanahalli", "Silk Board"], localNote: "Vape delivery along Hosur Road Bangalore — South Bangalore arterial road." },
   { slug: "mysore-road", name: "Mysore Road", category: "road", geoLat: 12.9389, geoLng: 77.4986, sublocations: ["Kengeri", "Rajarajeshwari Nagar", "Vijayanagar", "Nagarbhavi", "NICE Road"], localNote: "Vape delivery along Mysore Road Bangalore — West Bangalore corridor." },
   { slug: "tumkur-road", name: "Tumkur Road", category: "road", geoLat: 13.0178, geoLng: 77.5186, sublocations: ["Yeshwanthpur", "Peenya", "Rajajinagar", "Nagasandra"], localNote: "Vape delivery along Tumkur Road Bangalore — North-West Bangalore." },
