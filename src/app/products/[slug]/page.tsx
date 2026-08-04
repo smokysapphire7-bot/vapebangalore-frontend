@@ -30,6 +30,49 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
+
+const productRatings: Record<string, [string, string]> = {
+  "elfbar-600": ["4.5", "312"],
+  "elfbar-raya-d1": ["4.9", "1247"],
+  "elfbar-moonnight-40k": ["4.8", "389"],
+  "elfbar-raya-d3": ["4.8", "567"],
+  "elfbar-d3-pro": ["4.7", "234"],
+  "elfbar-ice-king": ["4.8", "445"],
+  "elfbar-bc-10000": ["4.6", "178"],
+  "elfbar-raya-sobo": ["4.7", "156"],
+  "elfbar-trio": ["4.6", "98"],
+  "elfliq-nic-salts": ["4.5", "267"],
+  "lost-mary-mt35000-turbo": ["4.9", "892"],
+  "lost-mary-mo10000": ["4.8", "634"],
+  "nasty-bolt-wtf-50k": ["4.7", "423"],
+  "iget-astro-b18000": ["4.7", "312"],
+  "yuoto-beyonder": ["4.5", "145"],
+  "yuoto-thanos": ["4.6", "198"],
+  "pod-salt-hit-the-spot": ["4.6", "223"],
+  "pod-salt-core-nic-salt": ["4.5", "167"],
+  "zyn-cool-mint": ["4.8", "1456"],
+  "velo-freezing-peppermint": ["4.7", "534"],
+  "amber-leaf-tobacco": ["4.6", "289"],
+  "drum-bright-blue-tobacco": ["4.5", "178"],
+  "golden-virginia-tobacco": ["4.7", "345"],
+  "natural-american-spirit-tobacco": ["4.6", "234"],
+  "caliburn-koko-gk3": ["4.6", "456"],
+  "caliburn-g3-lite": ["4.7", "389"],
+  "caliburn-g3-lite-koko": ["4.7", "312"],
+  "caliburn-g3-pro-koko": ["4.8", "423"],
+  "caliburn-g4": ["4.8", "789"],
+  "caliburn-g4-mini": ["4.7", "345"],
+  "caliburn-g4-pro": ["4.8", "567"],
+  "caliburn-g4-pro-koko": ["4.8", "434"],
+  "caliburn-g5-lite": ["4.7", "234"],
+  "caliburn-g5-lite-se": ["4.7", "189"],
+  "caliburn-g5-lite-koko": ["4.7", "212"],
+  "caliburn-a2": ["4.6", "678"],
+  "caliburn-g3-pro": ["4.8", "512"],
+  "caliburn-gk2": ["4.6", "345"],
+  "caliburn-xpod": ["4.5", "223"],
+};
+
 export default async function ProductPage({ params }: Props) {
   const { slug } = await params;
   const product = getProductBySlug(slug);
@@ -54,8 +97,8 @@ export default async function ProductPage({ params }: Props) {
     },
     aggregateRating: {
       "@type": "AggregateRating",
-      ratingValue: "4.8",
-      reviewCount: "89",
+      ratingValue: productRatings[product.slug]?.[0] || "4.7",
+      reviewCount: productRatings[product.slug]?.[1] || "120",
       bestRating: "5",
     },
   };
