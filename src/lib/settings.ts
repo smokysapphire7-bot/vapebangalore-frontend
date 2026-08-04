@@ -3,7 +3,7 @@ export const SITE = {
   url: "https://vapebangalore.com",
   tagline: "Your city. Your vape. 30 mins.",
   description: "Buy vapes in Bangalore with 30-45 min delivery. Elfbar, Lost Mary, Caliburn, ZYN, Nasty and more. 100% original products. Discreet delivery across 125+ areas. Order on WhatsApp.",
-  phone: "+919074445985",
+  phone: "+916282878843",
   email: "hello@vapebangalore.com",
   address: {
     city: "Bangalore",
@@ -20,10 +20,10 @@ export const SITE = {
 };
 
 export const WHATSAPP = {
-  number: "919074445985",
-  url: "https://wa.me/919074445985",
+  number: "916282878843",
+  url: "https://wa.me/916282878843",
   orderLink: (productName?: string, flavour?: string) => {
-    const base = "https://wa.me/919074445985";
+    const base = "https://wa.me/916282878843";
     const greetings = ["Hi", "Hey", "Hello", "Hi there"];
     const names = ["VapeBangalore", "team", "there"];
     const confirmPhrases = [
