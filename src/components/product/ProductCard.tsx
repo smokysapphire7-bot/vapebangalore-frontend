@@ -44,7 +44,7 @@ export default function ProductCard({ product }: ProductCardProps) {
   };
 
   return (
-    <div onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)} style={{ background: hovered ? "var(--s2)" : "var(--s1)", border: `1px solid ${hovered ? "rgba(255,92,0,0.2)" : "var(--b0)"}`, borderRadius: "12px", overflow: "hidden", transition: "all 0.2s ease", display: "flex", flexDirection: "column", position: "relative", boxShadow: hovered ? "0 8px 32px rgba(255,92,0,0.08)" : "none" }}>
+    <div onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)} style={{ background: "var(--s3)", border: "1px solid rgba(200,16,46,0.35)", borderRadius: "12px", overflow: "hidden", transition: "all 0.2s ease", display: "flex", flexDirection: "column", position: "relative", animation: "redglow 3.5s ease-in-out infinite" }}>
 
       {/* Badges */}
       <div style={{ position: "absolute", top: "8px", left: "8px", display: "flex", gap: "4px", zIndex: 2 }}>
@@ -99,10 +99,10 @@ export default function ProductCard({ product }: ProductCardProps) {
 
         {/* BUTTONS — stacked, full width */}
         <div style={{ display: "flex", flexDirection: "column", gap: "6px", marginTop: "auto" }}>
-          <button onClick={handleAddToCart} style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "6px", background: added ? "rgba(34,197,94,0.15)" : "var(--s3)", color: added ? "#22C55E" : "var(--white)", border: added ? "1px solid rgba(34,197,94,0.3)" : "1px solid var(--b1)", padding: "9px 12px", borderRadius: "8px", fontSize: "12px", fontWeight: 700, cursor: "pointer", transition: "all 0.2s", minHeight: "38px", width: "100%" }}>
+          <button onClick={handleAddToCart} style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "6px", background: added ? "rgba(34,197,94,0.1)" : "rgba(255,255,255,0.05)", color: added ? "#22C55E" : "rgba(255,255,255,0.5)", border: added ? "1px solid rgba(34,197,94,0.2)" : "1px solid rgba(255,255,255,0.08)", padding: "9px 12px", borderRadius: "8px", fontSize: "12px", fontWeight: 400, cursor: "pointer", transition: "all 0.2s", minHeight: "38px", width: "100%", fontFamily: "var(--font-sans)" }}>
             {added ? <><span>✓</span> Added to Cart!</> : <><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>Add to Cart</>}
           </button>
-          <a href={waLink} target="_blank" rel="noopener noreferrer" style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "6px", background: "#25D366", color: "#fff", padding: "9px 12px", borderRadius: "8px", fontSize: "12px", fontWeight: 700, textDecoration: "none", minHeight: "38px", boxShadow: "0 3px 10px rgba(37,211,102,0.25)" }}>
+          <a href={waLink} target="_blank" rel="noopener noreferrer" style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "6px", background: "#25D366", color: "#fff", padding: "9px 12px", borderRadius: "8px", fontSize: "12px", fontWeight: 500, textDecoration: "none", minHeight: "38px", fontFamily: "var(--font-sans)" }}>
             ⚡ Quick Order
           </a>
         </div>

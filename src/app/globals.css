@@ -2,16 +2,17 @@
 
 @theme {
   --font-sans: "Inter", "system-ui", sans-serif;
-  --font-display: "Syne", sans-serif;
+  --font-display: "Bebas Neue", "Syne", sans-serif;
+  --font-bebas: "Bebas Neue", sans-serif;
   --font-mono: "JetBrains Mono", monospace;
 }
 
 :root {
   /* Backgrounds */
-  --bg: #030303;
-  --s1: #0a0a0a;
-  --s2: #0f0f0f;
-  --s3: #141414;
+  --bg: #0a0a0a;
+  --s1: #111111;
+  --s2: #161616;
+  --s3: #1a0a0a;
   --s4: #1a1a1a;
 
   /* Borders */
@@ -20,10 +21,12 @@
   --b2: #333333;
 
   /* Brand */
-  --orange: #FF5C00;
-  --orange-hover: #FF7A00;
-  --orange-dim: rgba(255, 92, 0, 0.1);
-  --orange-glow: rgba(255, 92, 0, 0.05);
+  --orange: #C8102E;
+  --orange-hover: #E8192C;
+  --orange-dim: rgba(200, 16, 46, 0.12);
+  --orange-glow: rgba(200, 16, 46, 0.06);
+  --red-glow: rgba(200, 16, 46, 0.35);
+  --card-bg: #1a0a0a;
 
   /* Text */
   --white: #F0F0EE;
@@ -164,4 +167,9 @@ a { color: inherit; text-decoration: none; }
   .animate-slide-up {
     animation: none;
   }
+}
+
+@keyframes redglow {
+  0%, 100% { box-shadow: 0 0 8px rgba(200,16,46,0.35), 0 0 16px rgba(200,16,46,0.15); }
+  50% { box-shadow: 0 0 14px rgba(200,16,46,0.55), 0 0 28px rgba(200,16,46,0.25); }
 }

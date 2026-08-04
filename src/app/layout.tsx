@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Syne, JetBrains_Mono } from "next/font/google";
+import { Inter, Syne, JetBrains_Mono, Bebas_Neue } from "next/font/google";
 import "./globals.css";
 import { SITE } from "@/lib/settings";
 import { LOCATION_COUNT } from "@/lib/locations";
@@ -20,6 +20,13 @@ const syne = Syne({
   variable: "--font-display",
   display: "swap",
   weight: ["400", "500", "600", "700", "800"],
+});
+
+const bebasNeue = Bebas_Neue({
+  subsets: ["latin"],
+  variable: "--font-bebas",
+  display: "swap",
+  weight: ["400"],
 });
 
 const jetbrainsMono = JetBrains_Mono({
@@ -211,7 +218,7 @@ const faqSchema = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${inter.variable} ${syne.variable} ${jetbrainsMono.variable}`}>
+    <html lang="en" className={`${inter.variable} ${syne.variable} ${jetbrainsMono.variable} ${bebasNeue.variable}`}>
       <head>
         <meta name="geo.region" content="IN-KA" />
         <meta name="geo.placename" content="Bangalore" />
