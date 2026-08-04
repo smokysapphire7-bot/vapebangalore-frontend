@@ -202,7 +202,6 @@ HSR Layout's tech professional community orders heavily. We cover all 7 sectors 
 
 No app download, no account, no prepayment. Just WhatsApp and cash.`,
   },
-];
 }
 
 export const blogPosts: BlogPost[] = [
