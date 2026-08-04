@@ -24,13 +24,31 @@ export const WHATSAPP = {
   url: "https://wa.me/919074445985",
   orderLink: (productName?: string, flavour?: string) => {
     const base = "https://wa.me/919074445985";
+    const greetings = ["Hi", "Hey", "Hello", "Hi there"];
+    const names = ["VapeBangalore", "team", "there"];
+    const confirmPhrases = [
+      "Please confirm availability and delivery time.",
+      "Can you confirm if this is available?",
+      "Let me know the availability and ETA.",
+      "Please check availability and confirm.",
+      "How soon can this be delivered?",
+    ];
+    const listPhrases = [
+      "I want to place an order. Please share what\'s available.",
+      "Can I see your current product list?",
+      "I\'d like to order something. What do you have available?",
+      "Please share your menu/product list.",
+    ];
+    const r = (arr: string[]) => arr[Math.floor(Math.random() * arr.length)];
+    const greeting = `${r(greetings)} ${r(names)}`;
+    const confirm = r(confirmPhrases);
     if (productName) {
       const msg = flavour
-        ? `Hi VapeBangalore, I want to order ${productName} in ${flavour} flavour. Please confirm availability and delivery time.`
-        : `Hi VapeBangalore, I want to order ${productName}. Please confirm availability.`;
+        ? `${greeting}, I want to order ${productName} — ${flavour} flavour. ${confirm}`
+        : `${greeting}, I want to order ${productName}. ${confirm}`;
       return `${base}?text=${encodeURIComponent(msg)}`;
     }
-    return `${base}?text=${encodeURIComponent("Hi VapeBangalore, I want to place an order. Please share the product list.")}`;
+    return `${base}?text=${encodeURIComponent(`${greeting}, ${r(listPhrases)}`)}`;
   },
 };
 
