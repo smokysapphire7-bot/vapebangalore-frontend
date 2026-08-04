@@ -1,3 +1,4 @@
+// Blog posts — VapeBangalore.com
 export interface BlogPost {
   slug: string;
   title: string;
