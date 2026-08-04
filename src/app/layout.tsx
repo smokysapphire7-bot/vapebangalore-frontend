@@ -89,13 +89,13 @@ export const metadata: Metadata = {
     url: SITE.url,
     siteName: "VapeBangalore.com",
     title: "Buy Vapes in Bangalore — 30-45 Min Delivery | VapeBangalore.com",
-    description: `Fast, discreet vape delivery across all of Bangalore. ${LOCATION_COUNT}+ areas covered. Elfbar, Lost Mary, Caliburn, ZYN and more. Order on Telegram.`,
+    description: `Fast, discreet vape delivery across Bangalore. ${LOCATION_COUNT}+ areas. Elfbar, Lost Mary, Caliburn, ZYN & more. 30 min delivery. Order on WhatsApp now.`,
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "VapeBangalore — Fast Vape Delivery in Bangalore" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Buy Vapes in Bangalore — 30-45 Min Delivery",
-    description: `Fast, discreet vape delivery across ${LOCATION_COUNT}+ areas in Bangalore. Order on Telegram now.`,
+    description: `Vapes in Bangalore in 30 min. Elfbar, Lost Mary, ZYN & more. 100% original. Order on WhatsApp.`,
     images: ["/og-image.png"],
   },
   robots: {
@@ -122,7 +122,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#FF5C00",
+  themeColor: "#C8102E",
   width: "device-width",
   initialScale: 1,
   maximumScale: 5,
@@ -201,7 +201,7 @@ const faqSchema = {
       name: "How do I order vapes in Bangalore?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Order on Telegram VapeBangalore or WhatsApp. Browse products on our website, select your product and flavour, then tap Order on Telegram or WhatsApp. No login or app download required.",
+        text: "Order on WhatsApp. Browse products on our website, select your product, then tap Quick Order or Order on WhatsApp. No login or app download required.",
       },
     },
     {
