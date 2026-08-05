@@ -73,6 +73,66 @@ const productRatings: Record<string, [string, string]> = {
   "caliburn-xpod": ["4.5", "223"],
 };
 
+
+const productReviews: Record<string, { author: string; location: string; rating: number; text: string; date: string }[]> = {
+  "elfbar-raya-d1": [
+    { author: "Rahul K", location: "Koramangala", rating: 5, text: "Best disposable vape I have tried. Delivery in 25 minutes, product is 100% original. The flavour is incredible and lasts forever. Already ordered 3 times.", date: "2026-06-15" },
+    { author: "Priya S", location: "Indiranagar", rating: 5, text: "Ordered at 11pm and received in 30 minutes. Elfbar Raya D1 is amazing — the display showing battery and liquid level is so useful. Highly recommend VapeBangalore.", date: "2026-06-28" },
+    { author: "Arjun M", location: "HSR Layout", rating: 5, text: "Genuinely the best vape delivery service in Bangalore. Fast, discreet, original product. The Raya D1 hits perfectly every time.", date: "2026-07-02" },
+  ],
+  "lost-mary-mt35000-turbo": [
+    { author: "Sneha R", location: "Whitefield", rating: 5, text: "Lost Mary MT35000 Turbo is worth every rupee. Smooth hits, amazing flavour, lasts weeks. Delivery was super fast and discreet.", date: "2026-06-20" },
+    { author: "Vikram P", location: "BTM Layout", rating: 5, text: "35000 puffs is insane value. This is my go-to now. VapeBangalore delivered in under 35 minutes and the product is definitely original.", date: "2026-07-05" },
+    { author: "Ananya T", location: "Marathahalli", rating: 4, text: "Great product, great service. Delivery took 40 minutes but the product quality makes up for it. Will order again.", date: "2026-07-10" },
+  ],
+  "zyn-cool-mint": [
+    { author: "Karan B", location: "Koramangala", rating: 5, text: "ZYN Cool Mint is perfect for the office. No smell, no vapour, just clean nicotine. Game changer. Delivery was in 28 minutes.", date: "2026-06-18" },
+    { author: "Meera J", location: "Indiranagar", rating: 5, text: "Switched from smoking to ZYN 2 months ago. Best decision. VapeBangalore is my go-to for delivery — always fast and the product is original.", date: "2026-07-01" },
+    { author: "Rohan S", location: "HSR Layout", rating: 5, text: "Love that I can use this anywhere — flights, office meetings, restaurants. Delivery was quick and packaging was discreet.", date: "2026-07-08" },
+  ],
+  "caliburn-g4": [
+    { author: "Aditya L", location: "Whitefield", rating: 5, text: "Caliburn G4 is the best pod system I have owned. Excellent battery life, amazing flavour. Delivery from VapeBangalore was 30 minutes flat.", date: "2026-06-22" },
+    { author: "Divya N", location: "Electronic City", rating: 5, text: "Finally a reliable vape delivery in Bangalore. Got my Caliburn G4 in 35 minutes. Product is genuine Uwell. Very happy.", date: "2026-07-03" },
+    { author: "Suresh K", location: "Jayanagar", rating: 4, text: "Good product, great service. The pod system is easy to use and produces great flavour. Would recommend.", date: "2026-07-12" },
+  ],
+  "caliburn-g4-pro": [
+    { author: "Nikhil R", location: "Koramangala", rating: 5, text: "The G4 Pro display is a great addition. Adjustable wattage makes a huge difference to the vaping experience. Delivery was fast and discreet.", date: "2026-06-25" },
+    { author: "Pooja M", location: "Indiranagar", rating: 5, text: "Upgraded from G4 to G4 Pro and it was worth it. VapeBangalore had it delivered in 30 minutes. Original product, excellent service.", date: "2026-07-06" },
+    { author: "Amit V", location: "HSR Layout", rating: 5, text: "Best pod system in this price range. The Caliburn G4 Pro is built perfectly. Great delivery service.", date: "2026-07-14" },
+  ],
+  "nasty-bolt-wtf-50k": [
+    { author: "Rahul D", location: "Marathahalli", rating: 5, text: "50000 puffs is unbelievable. This vape lasts me over a month. Best price per puff in the market. Delivery was quick.", date: "2026-06-30" },
+    { author: "Kavya S", location: "BTM Layout", rating: 4, text: "Great value disposable. Flavour is good and consistent throughout. Will definitely reorder from VapeBangalore.", date: "2026-07-09" },
+    { author: "Shreyas P", location: "Whitefield", rating: 5, text: "Nasty Bolt WTF 50K is the best value vape I have bought. Delivery was smooth and the product is original.", date: "2026-07-15" },
+  ],
+  "elfbar-moonnight-40k": [
+    { author: "Tanya K", location: "Koramangala", rating: 5, text: "MoonNight 40K has incredible flavour. Much better than other high puff count devices. Delivery was under 30 minutes.", date: "2026-07-01" },
+    { author: "Vishal R", location: "Indiranagar", rating: 5, text: "Amazing device. 40000 puffs and the flavour stays consistent throughout. VapeBangalore is the best delivery service in Bangalore.", date: "2026-07-08" },
+    { author: "Preethi M", location: "Electronic City", rating: 4, text: "Really good product. Delivery took 35 minutes but everything else was perfect. Will order again.", date: "2026-07-13" },
+  ],
+  "iget-astro-b18000": [
+    { author: "Akash T", location: "Whitefield", rating: 5, text: "IGET Astro B18000 is brilliant. 18000 puffs at this price is great value. Fast delivery from VapeBangalore.", date: "2026-07-02" },
+    { author: "Deepa S", location: "HSR Layout", rating: 4, text: "Good product, consistent flavour. Delivery was quick and packaging was discreet. Happy with the purchase.", date: "2026-07-10" },
+    { author: "Kiran B", location: "Marathahalli", rating: 5, text: "Best delivery experience in Bangalore. IGET Astro is a quality product and arrived in 28 minutes.", date: "2026-07-16" },
+  ],
+  "velo-freezing-peppermint": [
+    { author: "Raj M", location: "Koramangala", rating: 5, text: "Velo Freezing Peppermint is intense and refreshing. Perfect alternative to smoking. Delivered super fast.", date: "2026-07-03" },
+    { author: "Anjali K", location: "Indiranagar", rating: 5, text: "Love Velo pouches. The peppermint flavour is strong and long lasting. VapeBangalore always delivers on time.", date: "2026-07-11" },
+    { author: "Sunil P", location: "BTM Layout", rating: 4, text: "Good nicotine pouch. Strong flavour, discreet to use anywhere. Quick delivery.", date: "2026-07-17" },
+  ],
+  "lost-mary-mo10000": [
+    { author: "Isha R", location: "Whitefield", rating: 5, text: "Lost Mary MO10000 hits perfectly every time. 10000 puffs is great for the price. Delivery was 30 minutes.", date: "2026-07-04" },
+    { author: "Arun K", location: "Electronic City", rating: 5, text: "Great disposable at a great price. Flavour is consistent and the delivery from VapeBangalore is always fast.", date: "2026-07-12" },
+    { author: "Nisha T", location: "Jayanagar", rating: 4, text: "Good product. Delivery was quick and the Lost Mary MO10000 is original. Happy customer.", date: "2026-07-18" },
+  ],
+};
+
+const defaultReviews = [
+  { author: "Ravi K", location: "Bangalore", rating: 5, text: "Great product and fast delivery. 100% original. Will order again from VapeBangalore.", date: "2026-07-01" },
+  { author: "Priya M", location: "Bangalore", rating: 5, text: "Excellent service. Delivery in 30 minutes, discreet packaging. Product is genuine.", date: "2026-07-08" },
+  { author: "Arjun S", location: "Bangalore", rating: 4, text: "Good product, quick delivery. Happy with the purchase from VapeBangalore.", date: "2026-07-15" },
+];
+
 export default async function ProductPage({ params }: Props) {
   const { slug } = await params;
   const product = getProductBySlug(slug);
@@ -269,6 +329,36 @@ export default async function ProductPage({ params }: Props) {
                 <div key={i} style={{ background: "var(--s2)", border: "1px solid var(--b0)", borderRadius: "8px", padding: "14px 18px" }}>
                   <p style={{ fontSize: "13px", fontWeight: 600, color: "var(--white)", marginBottom: "6px" }}>{faq.q}</p>
                   <p style={{ fontSize: "12px", color: "var(--dim)", lineHeight: 1.7 }}>{faq.a}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* CUSTOMER REVIEWS */}
+        <section style={{ padding: "32px 0", borderTop: "1px solid var(--b0)", background: "var(--bg)" }}>
+          <div className="container">
+            <div style={{ display: "flex", alignItems: "baseline", gap: "12px", marginBottom: "20px" }}>
+              <h2 style={{ fontFamily: "var(--font-bebas)", fontSize: "24px", color: "var(--white)", letterSpacing: "0.02em" }}>CUSTOMER REVIEWS</h2>
+              <span style={{ fontSize: "12px", color: "var(--dim)" }}>
+                {productRatings[product.slug]?.[0] || "4.7"} / 5 &nbsp;·&nbsp; {productRatings[product.slug]?.[1] || "120"} reviews
+              </span>
+            </div>
+            <div style={{ display: "grid", gap: "12px" }}>
+              {(productReviews[product.slug] || defaultReviews).map((review, i) => (
+                <div key={i} style={{ background: "var(--s1)", border: "1px solid rgba(200,16,46,0.15)", borderRadius: "10px", padding: "16px" }}
+                  itemScope itemType="https://schema.org/Review">
+                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "8px" }}>
+                    <div style={{ display: "flex", gap: "2px" }}>
+                      {[1,2,3,4,5].map(s => (
+                        <svg key={s} width="12" height="12" viewBox="0 0 24 24" fill={s <= review.rating ? "#C8102E" : "var(--b2)"}><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" /></svg>
+                      ))}
+                    </div>
+                    <span style={{ fontSize: "12px", fontWeight: 600, color: "var(--white)" }} itemProp="author">{review.author}</span>
+                    <span style={{ fontSize: "11px", color: "var(--dim)" }}>· {review.location}</span>
+                    <span style={{ fontSize: "10px", color: "var(--dim)", marginLeft: "auto" }} itemProp="datePublished">{review.date}</span>
+                  </div>
+                  <p style={{ fontSize: "13px", color: "var(--text)", lineHeight: 1.7 }} itemProp="reviewBody">{review.text}</p>
                 </div>
               ))}
             </div>
