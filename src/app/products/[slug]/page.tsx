@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import ProductCard from "@/components/product/ProductCard";
 import Link from "next/link";
 import { getProductBySlug, products, getProductsByBrand } from "@/lib/products";
 import { SITE, WHATSAPP } from "@/lib/settings";

@@ -1,4 +1,7 @@
 import { notFound } from "next/navigation";
+import Link from "next/link";
+import { getBestsellers } from "@/lib/products";
+import ProductCard from "@/components/product/ProductCard";
 import type { Metadata } from "next";
 import { blogPosts, getBlogPost } from "@/lib/blogs";
 import { WHATSAPP, SITE } from "@/lib/settings";
@@ -34,6 +37,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   };
 
   const paragraphs = post.content.split("\n\n");
+  const featured = getBestsellers().slice(0, 4);
 
   return (
     <>
