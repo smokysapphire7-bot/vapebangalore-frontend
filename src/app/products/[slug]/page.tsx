@@ -275,6 +275,22 @@ export default async function ProductPage({ params }: Props) {
           </div>
         </section>
 
+        {/* AREA LINKS */}
+        <section style={{ padding: "20px 0", borderTop: "1px solid var(--b0)", background: "var(--bg)" }}>
+          <div className="container">
+            <p style={{ fontSize: "11px", color: "var(--dim)", marginBottom: "12px", textTransform: "uppercase", letterSpacing: "0.08em", fontWeight: 600 }}>
+              {product.name} delivery near you
+            </p>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
+              {["koramangala", "indiranagar", "hsr-layout", "whitefield", "btm-layout", "marathahalli", "electronic-city", "jayanagar"].map(area => (
+                <Link key={area} href={`/vape-delivery/${area}`} style={{ background: "var(--s2)", border: "1px solid var(--b0)", borderRadius: "6px", padding: "6px 14px", fontSize: "11px", color: "var(--text)", textDecoration: "none", textTransform: "capitalize" }}>
+                  {area.split("-").map((w: string) => w.charAt(0).toUpperCase() + w.slice(1)).join(" ")}
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* RELATED */}
         {related.length > 0 && (
           <section style={{ padding: "40px 0", background: "var(--bg)" }}>

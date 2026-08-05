@@ -162,6 +162,28 @@ export default async function LocationPage({ params }: Props) {
           </div>
         </section>
 
+        {/* Internal Links */}
+        <section style={{ padding: "24px 0", borderBottom: "1px solid var(--b0)", background: "var(--bg)" }}>
+          <div className="container">
+            <p style={{ fontSize: "11px", color: "var(--dim)", marginBottom: "12px", textTransform: "uppercase", letterSpacing: "0.08em", fontWeight: 600 }}>Shop by brand in {loc.name}</p>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "8px", marginBottom: "20px" }}>
+              {[
+                { href: "/elfbar-bangalore", label: "Elfbar" },
+                { href: "/lost-mary-bangalore", label: "Lost Mary" },
+                { href: "/zyn-bangalore", label: "ZYN" },
+                { href: "/brands/caliburn", label: "Caliburn" },
+                { href: "/brands/nasty", label: "Nasty" },
+                { href: "/disposable-vapes-bangalore", label: "Disposables" },
+                { href: "/nicotine-pouches-bangalore", label: "Nicotine Pouches" },
+              ].map(b => (
+                <Link key={b.href} href={b.href} style={{ background: "var(--s2)", border: "1px solid rgba(200,16,46,0.2)", borderRadius: "6px", padding: "7px 14px", fontSize: "12px", fontWeight: 500, color: "var(--text)", textDecoration: "none" }}>
+                  {b.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* FAQ */}
         <section style={{ padding: "40px 0", background: "var(--bg)", borderBottom: "1px solid var(--b0)" }}>
           <div className="container">
