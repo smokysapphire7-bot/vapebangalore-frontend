@@ -57,14 +57,7 @@ export default function HomePage() {
             </a>
           </div>
 
-          <div style={{ display: "flex", marginTop: "16px", borderTop: "1px solid var(--b0)" }}>
-            {[["30m", "Delivery"], ["120+", "Areas"], ["41+", "Products"], ["100%", "Original"]].map(([val, lbl]) => (
-              <div key={lbl} style={{ flex: 1, padding: "12px 0", textAlign: "center", borderRight: "1px solid var(--b0)" }}>
-                <div style={{ fontFamily: "var(--font-bebas)", fontSize: "22px", color: "var(--white)", letterSpacing: "0.03em" }}>{val}</div>
-                <div style={{ fontSize: "7px", color: "rgba(255,255,255,0.28)", textTransform: "uppercase", letterSpacing: "0.12em", marginTop: "1px" }}>{lbl}</div>
-              </div>
-            ))}
-          </div>
+
 
         </div>
       </section>
