@@ -167,7 +167,7 @@ export default async function ProductPage({ params }: Props) {
               {/* Image */}
               <div style={{ background: "linear-gradient(135deg, var(--s2), var(--s3))", borderRadius: "16px", padding: "40px", display: "flex", alignItems: "center", justifyContent: "center", minHeight: "280px", position: "relative", overflow: "hidden" }}>
                 <div aria-hidden style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,-50%)", width: "300px", height: "300px", background: "radial-gradient(circle, rgba(255,92,0,0.08) 0%, transparent 70%)", pointerEvents: "none" }} />
-                <img src={product.image} alt={product.name} style={{ maxHeight: "220px", maxWidth: "100%", objectFit: "contain", position: "relative", zIndex: 1 }}  />
+                <img src={product.image} alt={`${product.name} - Buy ${product.brand} in Bangalore | VapeBangalore.com`} style={{ maxHeight: "220px", maxWidth: "100%", objectFit: "contain", position: "relative", zIndex: 1 }}  />
                 <div aria-hidden style={{ position: "absolute", fontSize: "120px", opacity: 0.05, userSelect: "none" }}>
                   {product.category === "Nicotine Pouches" ? "🌿" : product.category === "Tobacco" ? "🌱" : product.category === "Pod Device" ? "⚡" : "💨"}
                 </div>
