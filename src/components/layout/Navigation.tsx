@@ -27,6 +27,7 @@ export default function Navigation() {
     { href: "/brands", label: "Brands" },
     { href: "/areas", label: "Areas" },
     { href: "/blog", label: "Blog" },
+    { href: "/reviews", label: "Reviews" },
   ];
 
   return (
