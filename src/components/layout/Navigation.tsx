@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 import { WHATSAPP } from "@/lib/settings";
 import { useCart } from "@/lib/cart";
 
-const WA_URL = "https://wa.me/916282878843?text=Hi%20VapeBangalore%2C%20I%20want%20to%20place%20an%20order.";
+const WA_URL = WHATSAPP.orderLink();
 
 export default function Navigation() {
   const pathname = usePathname();
