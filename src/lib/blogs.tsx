@@ -364,6 +364,296 @@ All 7 sectors plus Agara, BDA Complex, Kudlu Gate. Average delivery 30-40 minute
 
 Order on WhatsApp, pay cash on delivery. No prepayment required.`,
   },
+  {
+    slug: "vape-delivery-near-me-bangalore",
+    title: "Vape Delivery Near Me in Bangalore - How to Order in 30 Minutes",
+    excerpt: "Looking for vape delivery near you in Bangalore? Here is exactly how to get vapes delivered to your door in 30 minutes anywhere in Bangalore.",
+    category: "Guide" as const,
+    metaTitle: "Vape Delivery Near Me Bangalore - 30 Min Delivery | VapeBangalore.com",
+    metaDescription: "Vape delivery near me in Bangalore. Get vapes delivered in 30 minutes to Koramangala, Indiranagar, HSR, Whitefield and 120+ areas. Order on WhatsApp.",
+    publishedAt: "2026-07-26",
+    readTime: 3,
+    tags: ["vape delivery near me bangalore", "vape delivery bangalore", "order vape bangalore"],
+    content: `If you are searching for vape delivery near you in Bangalore, you are in the right place. VapeBangalore.com delivers to 120+ areas across the city in 30-45 minutes.
+
+## How to Order
+
+Open WhatsApp and message us your order and address. We confirm availability and dispatch immediately. Pay cash when the rider arrives. No app, no account, no prepayment.
+
+## Areas We Cover
+
+Koramangala, Indiranagar, HSR Layout, Whitefield, BTM Layout, Marathahalli, Electronic City, Jayanagar, Hebbal, Yelahanka and 110+ more areas.
+
+## What We Stock
+
+Elfbar, Lost Mary, Caliburn, ZYN, Velo, Nasty, IGET, Yuoto, Pod Salt, Amber Leaf, Golden Virginia, American Spirit and more.`,
+  },
+  {
+    slug: "best-vape-under-2000-bangalore",
+    title: "Best Vapes Under Rs 2000 in Bangalore - Top Picks for 2026",
+    excerpt: "Looking for the best vape under Rs 2000 in Bangalore? We have picked the top options available with 30 min delivery.",
+    category: "Comparison" as const,
+    metaTitle: "Best Vape Under 2000 Rupees Bangalore 2026 | VapeBangalore.com",
+    metaDescription: "Best vapes under Rs 2000 in Bangalore. Elfbar 600, Lost Mary MO10000, ZYN Cool Mint and more. 30 min delivery, cash on delivery.",
+    publishedAt: "2026-07-27",
+    readTime: 4,
+    tags: ["best vape under 2000 bangalore", "cheap vape bangalore", "affordable vape bangalore"],
+    content: `You do not need to spend a lot to get a great vaping experience in Bangalore. Here are the best vapes under Rs 2000 with 30 minute delivery.
+
+## 1. Elfbar 600 - Rs 999
+
+Simple, lightweight, 600 puffs. Perfect for trying vaping without a big investment.
+
+## 2. ZYN Cool Mint - Rs 999
+
+Tobacco-free nicotine pouch. No smoke, no vapour, use anywhere including offices and flights.
+
+## 3. Velo Freezing Peppermint - Rs 999
+
+Intense peppermint nicotine pouch. Strong cooling sensation, completely discreet.
+
+## 4. Lost Mary MO10000 - Rs 1,999
+
+10,000 puffs from one of the most trusted disposable vape brands. Excellent flavour throughout.
+
+All available for 30 minute delivery across Bangalore. Order on WhatsApp, cash on delivery.`,
+  },
+  {
+    slug: "rolling-tobacco-bangalore-delivery",
+    title: "Rolling Tobacco Delivery in Bangalore - Amber Leaf, Golden Virginia, American Spirit",
+    excerpt: "Buy rolling tobacco in Bangalore with 30 min delivery. Amber Leaf, Golden Virginia, American Spirit and Drum tobacco delivered to your door.",
+    category: "Guide" as const,
+    metaTitle: "Rolling Tobacco Delivery Bangalore - Amber Leaf, Golden Virginia | VapeBangalore.com",
+    metaDescription: "Rolling tobacco delivery in Bangalore. Buy Amber Leaf, Golden Virginia, American Spirit and Drum tobacco online with 30 min delivery. Cash on delivery.",
+    publishedAt: "2026-07-28",
+    readTime: 3,
+    tags: ["rolling tobacco bangalore", "amber leaf bangalore", "golden virginia bangalore", "american spirit bangalore"],
+    content: `We deliver rolling tobacco across 120+ areas in Bangalore in 30-45 minutes.
+
+## Rolling Tobacco Available
+
+Amber Leaf - Rs 999. Smooth, mild flavour. 50g pouch. Very popular.
+
+Golden Virginia - Rs 1,199. Richer, fuller flavour. Slightly stronger than Amber Leaf.
+
+Natural American Spirit - Rs 1,199. Additive-free. Slower burn, full flavour.
+
+Drum Bright Blue - Rs 1,199. Lighter, aromatic. Great for those who prefer milder smoke.
+
+Message us on WhatsApp with the brand and your address. Cash on delivery available across all areas.`,
+  },
+  {
+    slug: "how-to-use-caliburn-g4",
+    title: "How to Use Caliburn G4 - Complete Beginner Guide",
+    excerpt: "Just got a Caliburn G4 in Bangalore? Here is everything you need to know - how to fill, charge and get the best flavour.",
+    category: "Guide" as const,
+    metaTitle: "How to Use Caliburn G4 - Complete Guide for Beginners | VapeBangalore.com",
+    metaDescription: "How to use Caliburn G4 pod system. Complete guide on filling, charging and getting the best flavour from your Caliburn G4 in Bangalore.",
+    publishedAt: "2026-07-29",
+    readTime: 5,
+    tags: ["how to use caliburn g4", "caliburn g4 guide", "caliburn g4 bangalore"],
+    content: `The Caliburn G4 is one of the best pod systems in Bangalore at Rs 7,499. Here is everything you need to know.
+
+## How to Fill
+
+Remove the pod from the device. Locate the silicone fill port on the side. Remove the stopper, fill slowly, replace stopper firmly. Wait 5 minutes before vaping.
+
+## How to Charge
+
+Connect USB-C cable to the bottom port. Full charge takes 45-60 minutes. LED turns off when complete.
+
+## Best Practices
+
+Use nicotine salt e-liquid for best results. Keep pod full to protect the coil. Replace pod when you notice burnt taste - typically after 3-5 refills.
+
+Available for 30 minute delivery across Bangalore. Order on WhatsApp.`,
+  },
+  {
+    slug: "elfbar-raya-d1-review-bangalore",
+    title: "Elfbar Raya D1 Review - Is It Worth Rs 2199 in Bangalore?",
+    excerpt: "Full review of the Elfbar Raya D1 at Rs 2,199. Puff count, flavour, battery, display and value for money in Bangalore.",
+    category: "Guide" as const,
+    metaTitle: "Elfbar Raya D1 Review Bangalore 2026 - Is It Worth Rs 2199? | VapeBangalore.com",
+    metaDescription: "Elfbar Raya D1 review in Bangalore. Full breakdown of puff count, flavour quality, battery life, display and whether it is worth Rs 2,199.",
+    publishedAt: "2026-07-30",
+    readTime: 5,
+    tags: ["elfbar raya d1 review", "elfbar raya d1 bangalore", "best disposable vape bangalore"],
+    content: `The Elfbar Raya D1 is our most ordered product in Bangalore at Rs 2,199. Here is our honest review.
+
+## Design
+
+Slim, lightweight, well built. The display shows battery percentage and e-liquid level - very useful.
+
+## Flavour
+
+Exceptional and consistent from first to last puff. Mesh coil technology ensures even heating throughout 13,000 puffs.
+
+## Battery
+
+Strong battery with USB-C charging. Display means you never get caught off guard with a dead device.
+
+## Value at Rs 2,199
+
+Rs 2,199 for 13,000 puffs works out to Rs 169 per 1,000 puffs. Excellent value for the quality delivered.
+
+## Verdict
+
+Best disposable vape in Bangalore. Best flavour, best display, best longevity. Overall rating 4.9/5.
+
+Available for 30 minute delivery across Bangalore.`,
+  },
+  {
+    slug: "zyn-vs-velo-bangalore",
+    title: "ZYN vs Velo Nicotine Pouches in Bangalore - Which is Better?",
+    excerpt: "Comparing ZYN and Velo nicotine pouches in Bangalore. Flavour, strength, price and which one to buy.",
+    category: "Comparison" as const,
+    metaTitle: "ZYN vs Velo Bangalore - Which Nicotine Pouch to Buy? | VapeBangalore.com",
+    metaDescription: "ZYN vs Velo nicotine pouches in Bangalore. Full comparison of flavour, strength and price. Which one should you buy?",
+    publishedAt: "2026-07-31",
+    readTime: 4,
+    tags: ["zyn vs velo bangalore", "nicotine pouches bangalore", "zyn bangalore", "velo bangalore"],
+    content: `ZYN and Velo are the two most popular nicotine pouches in Bangalore, both at Rs 999.
+
+## ZYN Cool Mint - Rs 999
+
+Made by Swedish Match. Fresh, clean mint flavour. Smooth nicotine release. Comfortable in mouth with minimal drip. Best for new pouch users.
+
+## Velo Freezing Peppermint - Rs 999
+
+Made by British American Tobacco. Intense, cold peppermint sensation. Stronger cooling than ZYN. Quick nicotine release. Best for experienced users wanting intensity.
+
+## Which to Buy
+
+New to nicotine pouches - ZYN Cool Mint. More comfortable, gentler experience.
+
+Experienced user wanting intensity - Velo Freezing Peppermint. Stronger sensation.
+
+Both at Rs 999 with 30 minute delivery across Bangalore.`,
+  },
+  {
+    slug: "nicotine-pouch-vs-vape-bangalore",
+    title: "Nicotine Pouches vs Vaping - Which is Better for You in Bangalore?",
+    excerpt: "Nicotine pouches or vaping? We compare ZYN pouches vs Elfbar on convenience, cost and best use cases.",
+    category: "Comparison" as const,
+    metaTitle: "Nicotine Pouches vs Vaping Bangalore - ZYN vs Elfbar | VapeBangalore.com",
+    metaDescription: "Nicotine pouches vs vaping in Bangalore. Full comparison of ZYN nicotine pouches vs Elfbar disposable vapes on cost, convenience and use cases.",
+    publishedAt: "2026-08-01",
+    readTime: 4,
+    tags: ["nicotine pouch vs vape", "zyn vs elfbar", "nicotine pouches bangalore", "vape bangalore"],
+    content: `Both nicotine pouches and vapes are popular in Bangalore. Here is an honest comparison.
+
+## Nicotine Pouches - ZYN, Velo - Rs 999
+
+Completely smoke-free and vapour-free. Place under upper lip, delivers nicotine through gum tissue. Best for offices, flights and anywhere vaping is restricted. Maximum discretion.
+
+## Vaping - Elfbar, Lost Mary, Caliburn
+
+Produces vapour you inhale. Disposables are easy with no setup. Pod systems are refillable for better long term value. Wide variety of flavours. Best for those who enjoy the act of smoking.
+
+## When to Choose Pouches
+
+Need nicotine in offices, flights, public transport. Want zero visible nicotine use. Prefer tobacco-free option.
+
+## When to Choose Vaping
+
+Enjoy the physical act of smoking. Want wide flavour variety. Prefer disposable convenience or refillable value.
+
+Both options with 30 minute delivery across Bangalore.`,
+  },
+  {
+    slug: "how-long-does-elfbar-raya-d1-last",
+    title: "How Long Does Elfbar Raya D1 Last? - Real World Test",
+    excerpt: "How many days does the Elfbar Raya D1 actually last? Real world test across light, moderate and heavy usage.",
+    category: "Guide" as const,
+    metaTitle: "How Long Does Elfbar Raya D1 Last? Real World Test | VapeBangalore.com",
+    metaDescription: "How long does the Elfbar Raya D1 last? Real world test across light, moderate and heavy usage. Plus how to make it last longer.",
+    publishedAt: "2026-08-02",
+    readTime: 4,
+    tags: ["how long does elfbar raya d1 last", "elfbar raya d1 puffs", "elfbar bangalore"],
+    content: `The Elfbar Raya D1 claims 13,000 puffs. Here is how long that actually lasts in real life.
+
+## Light User - 50 puffs per day
+
+The Raya D1 lasts approximately 8-9 weeks. Over two months from a single device at Rs 2,199.
+
+## Moderate User - 150 puffs per day
+
+Approximately 3-4 weeks. Roughly one device per month.
+
+## Heavy User - 300 puffs per day
+
+Approximately 2 weeks. Still excellent value at Rs 2,199 for two weeks of use.
+
+## Tips to Make It Last Longer
+
+Take shorter puffs. Monitor usage via the display. Recharge before battery dies completely. Store at room temperature.
+
+## The Display Advantage
+
+The built-in display shows battery percentage and e-liquid level. You always know exactly what is left - unlike older disposables.
+
+Available for 30 minute delivery across Bangalore.`,
+  },
+  {
+    slug: "best-vape-for-beginners-bangalore",
+    title: "Best Vape for Beginners in Bangalore 2026 - Easy to Use Options",
+    excerpt: "New to vaping in Bangalore? We have picked the best beginner-friendly vapes with 30 minute delivery.",
+    category: "Guide" as const,
+    metaTitle: "Best Vape for Beginners Bangalore 2026 - Easy Options | VapeBangalore.com",
+    metaDescription: "Best vapes for beginners in Bangalore 2026. Simple to use, 30 min delivery, cash on delivery. Elfbar, Lost Mary and more.",
+    publishedAt: "2026-08-03",
+    readTime: 4,
+    tags: ["best vape for beginners bangalore", "beginner vape bangalore", "first vape bangalore"],
+    content: `Starting your vaping journey in Bangalore? Here are the best beginner-friendly options.
+
+## What Makes a Good Beginner Vape
+
+Easy to use with no complicated settings. Reliable and consistent. Affordable enough to try. Available quickly.
+
+## Top Beginner Options
+
+Elfbar 600 - Rs 999. Simplest possible vape. No buttons, no settings. Just inhale. 600 puffs. Perfect for testing if vaping is for you.
+
+Elfbar Raya D1 - Rs 2,199. Best overall beginner vape. Display shows status, 13,000 puffs, no settings needed. Our top recommendation.
+
+Lost Mary MO10000 - Rs 1,999. 10,000 puffs with excellent flavour. Great once you know you enjoy vaping.
+
+Caliburn A2 - Rs 5,899. Best refillable pod system for beginners. Simple to fill and use. Better long term value than disposables.
+
+## Our Recommendation
+
+Start with the Elfbar 600 at Rs 999 to test if vaping is for you. If you like it, upgrade to the Elfbar Raya D1.
+
+All available for 30 minute delivery across Bangalore.`,
+  },
+  {
+    slug: "vape-delivery-whitefield-bangalore",
+    title: "Vape Delivery in Whitefield Bangalore - 30 Min to ITPL and More",
+    excerpt: "Fast vape delivery in Whitefield Bangalore. ITPL, Brookefield, AECS Layout, Hope Farm, Kadugodi, Mahadevapura all covered.",
+    category: "Local" as const,
+    metaTitle: "Vape Delivery Whitefield Bangalore - ITPL, Brookefield, Hope Farm | VapeBangalore.com",
+    metaDescription: "Vape delivery in Whitefield Bangalore in 30 minutes. ITPL, Brookefield, AECS Layout, Hope Farm, Kadugodi, Mahadevapura covered. Cash on delivery.",
+    publishedAt: "2026-08-04",
+    readTime: 3,
+    tags: ["vape delivery whitefield", "vape delivery itpl", "vape delivery brookefield", "vape whitefield bangalore"],
+    content: `Whitefield is one of our busiest delivery zones. Here is everything you need to know.
+
+## Areas We Cover
+
+ITPL, Brookefield, AECS Layout, Kundalahalli, Hope Farm Junction, Kadugodi, Varthur, Mahadevapura and Hoodi. If you work at TCS, Wipro, IBM, SAP or Oracle we deliver to your building gate.
+
+## Delivery Time
+
+Average 30-40 minutes. ITPL and Brookefield are typically faster. Varthur and Kadugodi may take up to 45 minutes during peak traffic.
+
+## Most Popular in Whitefield
+
+Elfbar Raya D1 at Rs 2,199, Caliburn G4 Pro at Rs 7,199, ZYN Cool Mint at Rs 999 and Lost Mary MT35000 Turbo at Rs 2,799.
+
+## How to Order
+
+WhatsApp your order and Whitefield address or drop a pin. We confirm and dispatch immediately. Cash or UPI on delivery.`,
+  },
 ];
 
 export const BLOG_COUNT = blogPosts.length;
