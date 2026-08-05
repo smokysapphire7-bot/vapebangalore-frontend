@@ -1,5 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Syne, JetBrains_Mono, Bebas_Neue } from "next/font/google";
+// Fonts loaded with display:swap for performance
+// Fonts loaded with display:swap for performance
 import "./globals.css";
 import { SITE } from "@/lib/settings";
 import { LOCATION_COUNT } from "@/lib/locations";

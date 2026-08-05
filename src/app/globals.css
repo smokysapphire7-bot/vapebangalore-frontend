@@ -169,7 +169,33 @@ a { color: inherit; text-decoration: none; }
   }
 }
 
+/* GPU accelerated glow animation */
 @keyframes redglow {
   0%, 100% { box-shadow: 0 0 8px rgba(200,16,46,0.35), 0 0 16px rgba(200,16,46,0.15); }
   50% { box-shadow: 0 0 14px rgba(200,16,46,0.55), 0 0 28px rgba(200,16,46,0.25); }
+}
+
+/* Performance optimizations */
+[style*="redglow"] {
+  will-change: box-shadow;
+}
+.container img {
+  content-visibility: auto;
+}
+
+/* Scroll performance */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reduce paint on animated elements */
+.floating-col {
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+/* Optimize off-screen content */
+section + section {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 400px;
 }

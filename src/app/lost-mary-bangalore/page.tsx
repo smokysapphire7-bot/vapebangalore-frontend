@@ -32,7 +32,7 @@ export default function LostMaryBangalorePage() {
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(160px, 1fr))", gap: "12px" }}>
           {lostMaryProducts.map(p => (
             <Link key={p.slug} href={`/products/${p.slug}`} style={{ background: "var(--s3)", border: "1px solid rgba(200,16,46,0.3)", borderRadius: "12px", padding: "16px", textDecoration: "none", display: "block" }}>
-              <img src={p.image} alt={`${p.name} - Buy ${p.brand} in Bangalore`} style={{ width: "100%", height: "100px", objectFit: "contain", marginBottom: "10px" }} />
+              <img src={p.image} alt={`${p.name} - Buy ${p.brand} in Bangalore`} loading="lazy" style={{ width: "100%", height: "100px", objectFit: "contain", marginBottom: "10px" }} />
               <div style={{ fontSize: "10px", color: "var(--orange)", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "4px" }}>Lost Mary</div>
               <div style={{ fontSize: "13px", fontWeight: 600, color: "var(--white)", marginBottom: "4px" }}>{p.name}</div>
               <div style={{ fontSize: "14px", fontWeight: 800, color: "var(--orange)" }}>₹{p.price.toLocaleString("en-IN")}</div>
