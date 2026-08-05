@@ -82,9 +82,9 @@ export default function Navigation() {
           <span style={{ fontSize: "9px", fontWeight: 800, color: "var(--orange)" }}>Order</span>
         </a>
 
-        <Link href="/areas" style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: "2px", textDecoration: "none", padding: "8px 4px" }}>
-          <span style={{ fontSize: "20px", lineHeight: 1, filter: pathname === "/areas" ? "none" : "grayscale(1) opacity(0.5)" }}>📍</span>
-          <span style={{ fontSize: "9px", fontWeight: pathname === "/areas" ? 700 : 500, color: pathname === "/areas" ? "var(--orange)" : "var(--dim)" }}>Areas</span>
+        <Link href="/reviews" style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: "2px", textDecoration: "none", padding: "8px 4px" }}>
+          <span style={{ fontSize: "20px", lineHeight: 1, filter: pathname === "/reviews" ? "none" : "grayscale(1) opacity(0.5)" }}>⭐</span>
+          <span style={{ fontSize: "9px", fontWeight: pathname === "/reviews" ? 700 : 500, color: pathname === "/reviews" ? "var(--orange)" : "var(--dim)" }}>Reviews</span>
         </Link>
 
         {/* Cart tab with count */}
