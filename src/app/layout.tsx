@@ -84,7 +84,19 @@ export const metadata: Metadata = {
   authors: [{ name: "VapeBangalore" }],
   creator: "VapeBangalore",
   publisher: "VapeBangalore",
-  alternates: { canonical: SITE.url },
+  alternates: {
+    canonical: "https://vapebangalore.com",
+    languages: {
+      "en-IN": "https://vapebangalore.com",
+    },
+  },
+  other: {
+    "geo.region": "IN-KA",
+    "geo.placename": "Bangalore",
+    "geo.position": "12.9716;77.5946",
+    "ICBM": "12.9716, 77.5946",
+  },
+  // duplicate alternates below for Next.js canonical: SITE.url },
   openGraph: {
     type: "website",
     locale: "en_IN",
