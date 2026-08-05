@@ -214,7 +214,7 @@ Order on WhatsApp for 30-45 minute delivery across 120+ Bangalore areas. ₹699 
 
 ## 1. Elfbar Raya D1 — Best for Beginners
 
-₹1,789 · 7,000 puffs · 50mg nicotine
+₹2,199 · 7,000 puffs · 50mg nicotine
 
 The most popular vape in Bangalore. Easy to use, consistent flavour delivery, and available in 15+ flavours. The perfect starting point for anyone new to vaping.
 
@@ -262,7 +262,7 @@ All 5 are available on VapeBangalore.com with 30-45 minute delivery across 120+ 
     tags: ["best disposable vape bangalore", "elfbar vs lost mary", "disposable vape comparison"],
     content: `The best disposable vapes in Bangalore right now are the Elfbar Raya D1, Lost Mary MT35000 Turbo and Nasty Bolt WTF 50K. Here is our honest comparison.
 
-## Elfbar Raya D1 - Rs 1,789
+## Elfbar Raya D1 - Rs 2,199
 
 Our single most ordered product. 13,000 puffs, built-in display, exceptional flavour. Best value for money.
 
@@ -316,11 +316,11 @@ ZYN Cool Mint available at Rs 999 per tin. Delivered in 30-45 minutes across 120
     tags: ["caliburn bangalore", "caliburn g4 bangalore", "pod system bangalore"],
     content: `Caliburn by Uwell is the most popular pod system brand in Bangalore. With 14 models, here is our breakdown.
 
-## Caliburn A2 - Rs 3,499
+## Caliburn A2 - Rs 5,899
 
 Best for beginners. Simple, reliable, no settings. Just fill and vape.
 
-## Caliburn G4 - Rs 6,499
+## Caliburn G4 - Rs 7,499
 
 Our most ordered Caliburn. Compact, excellent battery, great flavour.
 
