@@ -117,10 +117,22 @@ export default async function LocationPage({ params }: Props) {
               <span style={{ fontSize: "10px", fontWeight: 700, color: "var(--orange)", letterSpacing: "0.08em" }}>DELIVERING NOW</span>
             </div>
 
-            <h1 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(26px, 5vw, 48px)", fontWeight: 900, letterSpacing: "-0.03em", lineHeight: 1.1, marginBottom: "12px" }}>
-              Vape Delivery in<br />
-              <span style={{ background: "linear-gradient(135deg, #FF5C00, #FF2D55)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>{loc.name}</span>
+            <h1 style={{ fontFamily: "var(--font-bebas)", fontSize: "clamp(2rem,8vw,3.5rem)", color: "var(--white)", letterSpacing: "0.02em", lineHeight: 0.95, marginBottom: "20px" }}>
+              VAPE DELIVERY IN<br />
+              <span style={{ color: "var(--orange)" }}>{loc.name.toUpperCase()}</span>
             </h1>
+
+            {/* Product Cards — right after heading */}
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: "10px", marginBottom: "28px" }}>
+              {bestsellers.map((product) => (
+                <ProductCard key={product.slug} product={product} />
+              ))}
+            </div>
+            <div style={{ marginBottom: "24px" }}>
+              <Link href="/products" style={{ fontSize: "12px", color: "var(--orange)", textDecoration: "none", fontWeight: 600, border: "1px solid rgba(200,16,46,0.25)", padding: "7px 16px", borderRadius: "6px", display: "inline-block" }}>
+                View All {products.length} Products
+              </Link>
+            </div>
 
             <p style={{ fontSize: "14px", color: "var(--dim)", lineHeight: 1.7, maxWidth: "560px", marginBottom: "24px" }}>
               {loc.localNote}
