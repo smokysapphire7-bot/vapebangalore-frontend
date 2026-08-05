@@ -85,6 +85,15 @@ export default async function LocationPage({ params }: Props) {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://vapebangalore.com" },
+        { "@type": "ListItem", "position": 2, "name": "Vape Delivery Areas", "item": "https://vapebangalore.com/areas" },
+        { "@type": "ListItem", "position": 3, "name": `Vape Delivery ${loc.name}`, "item": `https://vapebangalore.com/vape-delivery/${loc.slug}` },
+      ]
+    }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <main style={{ paddingTop: "60px" }}>
