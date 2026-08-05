@@ -6,7 +6,7 @@ import ProductCard from "@/components/product/ProductCard";
 
 export const metadata: Metadata = {
   title: "Caliburn Bangalore — Buy Caliburn Pod Systems | 30 Min Delivery | VapeBangalore.com",
-  description: "Buy Caliburn pod systems in Bangalore with 30 min delivery. Caliburn G4, G4 Pro, G5 Lite, A2 and more. 100% original Uwell. Cash on delivery.",
+  description: "Buy Caliburn pod systems in Bangalore with 30 min delivery. Caliburn G4, G4 Pro, G5 Lite, A2 and more. 100% original Uwell.",
   alternates: { canonical: "https://vapebangalore.com/caliburn-bangalore" },
   keywords: ["caliburn bangalore", "buy caliburn bangalore", "caliburn g4 bangalore", "caliburn g4 pro bangalore", "uwell caliburn bangalore"],
 };
@@ -21,7 +21,7 @@ export default function CaliburBangalorePage() {
           <div style={{ fontSize: "11px", color: "var(--orange)", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "8px" }}>Pod Systems</div>
           <h1 style={{ fontFamily: "var(--font-bebas)", fontSize: "clamp(2rem,6vw,3.5rem)", color: "var(--white)", marginBottom: "12px", letterSpacing: "0.02em" }}>CALIBURN BANGALORE</h1>
           <p style={{ color: "var(--dim)", fontSize: "14px", lineHeight: 1.7, maxWidth: "600px", marginBottom: "24px" }}>
-            Buy 100% original Caliburn pod systems in Bangalore with 30-minute delivery. We stock the full Uwell Caliburn range — G4, G4 Pro, G4 Mini, G5 Lite, A2, GK2, G3 Pro and more. All products are authentic. Order on WhatsApp, cash on delivery available across 120+ areas.
+            Buy 100% original Caliburn pod systems in Bangalore with 30-minute delivery. We stock the full Uwell Caliburn range — G4, G4 Pro, G4 Mini, G5 Lite, A2, GK2, G3 Pro and more. All products are authentic. Order on WhatsApp.
           </p>
           <a href={WHATSAPP.orderLink("Caliburn pod system")} target="_blank" rel="noopener noreferrer"
             style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "#25D366", color: "#fff", padding: "12px 24px", borderRadius: "8px", fontWeight: 600, fontSize: "14px", textDecoration: "none" }}>

@@ -5,7 +5,7 @@ import { products } from "@/lib/products";
 
 export const metadata: Metadata = {
   title: "Buy Vapes in Bangalore — Elfbar, Lost Mary, Caliburn, ZYN | VapeBangalore.com",
-  description: `Shop ${products.length}+ vapes in Bangalore. Elfbar, Lost Mary, Caliburn, ZYN, Nasty, IGET & more. 30 min delivery across ${LOCATION_COUNT}+ areas. 100% original. Cash on delivery.`,
+  description: `Shop ${products.length}+ vapes in Bangalore. Elfbar, Lost Mary, Caliburn, ZYN, Nasty, IGET & more. 30 min delivery across ${LOCATION_COUNT}+ areas. 100% original.`,
   alternates: { canonical: "https://vapebangalore.com/products" },
 };
 

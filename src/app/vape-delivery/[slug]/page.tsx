@@ -20,11 +20,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!loc) return {};
   return {
     title: `Vapes in ${loc.name} Bangalore — Buy Elfbar, Lost Mary, ZYN | 30 Min Delivery | VapeBangalore.com`,
-    description: `Buy vapes in ${loc.name}, Bangalore in 30 minutes. Elfbar Raya D1, Lost Mary, Caliburn, ZYN nicotine pouches, rolling tobacco & more. 100% original. Cash on delivery. Order on WhatsApp now — fastest vape delivery in ${loc.name}.`,
+    description: `Buy vapes in ${loc.name}, Bangalore in 30 minutes. Elfbar Raya D1, Lost Mary, Caliburn, ZYN nicotine pouches, rolling tobacco & more. 100% original. Order on WhatsApp now — fastest vape delivery in ${loc.name}.`,
     alternates: { canonical: `${SITE.url}/vape-delivery/${loc.slug}` },
     openGraph: {
       title: `Vapes in ${loc.name} Bangalore — 30 Min Delivery | VapeBangalore.com`,
-      description: `Buy Elfbar, Lost Mary, ZYN & more in ${loc.name} in 30 minutes. 100% original. Cash on delivery.`,
+      description: `Buy Elfbar, Lost Mary, ZYN & more in ${loc.name} in 30 minutes. 100% original.`,
       url: `${SITE.url}/vape-delivery/${loc.slug}`,
     },
   };

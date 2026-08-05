@@ -24,7 +24,7 @@ export default function AreasPage() {
             {LOCATION_COUNT}+ AREAS IN BANGALORE
           </h1>
           <p style={{ color: "var(--dim)", fontSize: "13px", lineHeight: 1.6 }}>
-            30-45 min delivery across all areas. Order on WhatsApp, pay cash on delivery.
+            30-45 min delivery across all areas. Order on WhatsApp.
           </p>
         </div>
 

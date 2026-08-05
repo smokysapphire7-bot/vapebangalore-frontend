@@ -97,7 +97,7 @@ export default async function BrandPage({ params }: { params: Promise<{ slug: st
               Order {brand.name} in Bangalore
             </h2>
             <p style={{ color: "var(--dim)", marginBottom: "24px", fontSize: "0.9rem" }}>
-              30-45 minute delivery · 100% original · Cash on delivery available
+              30-45 minute delivery · 100% original ·  available
             </p>
             <a
               href={WHATSAPP.orderLink(`${brand.name} products`)}

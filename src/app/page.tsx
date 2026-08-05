@@ -7,7 +7,7 @@ import FloatingColumn from "@/components/home/FloatingColumn";
 
 export const metadata: Metadata = {
   title: "Vapes in Bangalore — Buy Elfbar, Lost Mary, ZYN | 30 Min Delivery | VapeBangalore.com",
-  description: `#1 Vape Delivery in Bangalore. Elfbar Raya D1, Lost Mary MT35000, Caliburn G4, ZYN Cool Mint, Nasty, IGET & more. 30 min delivery across ${LOCATION_COUNT}+ areas. 100% original products. Cash on delivery available. Order on WhatsApp now.`,
+  description: `#1 Vape Delivery in Bangalore. Elfbar Raya D1, Lost Mary MT35000, Caliburn G4, ZYN Cool Mint, Nasty, IGET & more. 30 min delivery across ${LOCATION_COUNT}+ areas. 100% original products.  available. Order on WhatsApp now.`,
   alternates: { canonical: SITE.url },
 };
 
@@ -35,7 +35,7 @@ export default function HomePage() {
                 <span style={{ fontSize: "clamp(56px,14vw,80px)", color: "var(--orange)", display: "block" }}>BANGALORE.</span>
               </h1>
               <p style={{ fontSize: "11px", color: "rgba(255,255,255,0.38)", lineHeight: 1.65 }}>
-                Elfbar, Lost Mary, ZYN &amp; more.<br />100% original. Cash on delivery.
+                Elfbar, Lost Mary, ZYN &amp; more.<br />100% original.
               </p>
             </div>
 
@@ -87,7 +87,7 @@ export default function HomePage() {
               "✅ 100% Original Products",
               "📦 Discreet Packaging",
               `🗺️ ${LOCATION_COUNT}+ Areas in Bangalore`,
-              "💵 Cash on Delivery",
+              
               "🌙 Late Night Available",
               "🛵 Express Dispatch",
               "🔒 Privacy Guaranteed",
@@ -95,7 +95,7 @@ export default function HomePage() {
               "✅ 100% Original Products",
               "📦 Discreet Packaging",
               `🗺️ ${LOCATION_COUNT}+ Areas in Bangalore`,
-              "💵 Cash on Delivery",
+              
               "🌙 Late Night Available",
               "🛵 Express Dispatch",
               "🔒 Privacy Guaranteed",

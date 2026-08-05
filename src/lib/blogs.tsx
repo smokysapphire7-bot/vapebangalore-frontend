@@ -14,15 +14,15 @@ export interface BlogPost {
 export const blogPosts: BlogPost[] = [
   {
     slug: "vape-delivery-bangalore-cash-on-delivery",
-    title: "Vape Delivery in Bangalore with Cash on Delivery — How It Works",
-    excerpt: "Order vapes in Bangalore and pay cash when your rider arrives. No prepayment needed. Here's exactly how our cash on delivery works.",
+    title: "Vape Delivery in Bangalore with  — How It Works",
+    excerpt: "Order vapes in Bangalore and pay cash when your rider arrives. No prepayment needed. Here's exactly how our  works.",
     category: "Guide",
-    metaTitle: "Vape Delivery Bangalore Cash on Delivery — How to Order | VapeBangalore.com",
-    metaDescription: "Order vapes in Bangalore with cash on delivery. Pay when your rider arrives. No prepayment. Covers Koramangala, Indiranagar, HSR, Whitefield and 120+ areas.",
+    metaTitle: "Vape Delivery Bangalore  — How to Order | VapeBangalore.com",
+    metaDescription: "Order vapes in Bangalore with . Pay when your rider arrives. No prepayment. Covers Koramangala, Indiranagar, HSR, Whitefield and 120+ areas.",
     publishedAt: "2025-01-15",
     readTime: 3,
-    tags: ["cash on delivery", "vape delivery bangalore", "how to order"],
-    content: `Ordering vapes in Bangalore with cash on delivery is simple. Here's how it works at VapeBangalore.com.
+    tags: ["", "vape delivery bangalore", "how to order"],
+    content: `Ordering vapes in Bangalore with  is simple. Here's how it works at VapeBangalore.com.
 
 ## How to Order
 
@@ -38,7 +38,7 @@ We deliver across 120+ areas in Bangalore including Koramangala, Indiranagar, HS
 
 ## Payment Methods
 
-- Cash on delivery (most popular)
+-  (most popular)
 - UPI (GPay, PhonePe, Paytm)
 - No card payments currently
 
@@ -278,7 +278,7 @@ Our single most ordered product. 13,000 puffs, built-in display, exceptional fla
 
 New to vaping - Elfbar Raya D1. Heavy vaper - Lost Mary MT35000. Best value - Nasty Bolt WTF 50K.
 
-All three available for 30 min delivery across 120+ Bangalore areas. Order on WhatsApp, cash on delivery.`,
+All three available for 30 min delivery across 120+ Bangalore areas. Order on WhatsApp.`,
   },
   {
     slug: "zyn-nicotine-pouches-bangalore-guide",
@@ -302,7 +302,7 @@ No smell on breath or clothes. Use anywhere - offices, flights, restaurants. Tob
 
 ## ZYN in Bangalore
 
-ZYN Cool Mint available at Rs 999 per tin. Delivered in 30-45 minutes across 120+ Bangalore areas. Order on WhatsApp, cash on delivery.`,
+ZYN Cool Mint available at Rs 999 per tin. Delivered in 30-45 minutes across 120+ Bangalore areas. Order on WhatsApp.`,
   },
   {
     slug: "caliburn-pod-system-bangalore-guide",
@@ -336,7 +336,7 @@ Latest generation with improved coil technology.
 
 First pod device - Caliburn A2 or G4. Experienced vaper - G4 Pro. Latest tech - G5 Lite.
 
-All models available for 30 min delivery. Order on WhatsApp, cash on delivery.`,
+All models available for 30 min delivery. Order on WhatsApp.`,
   },
   {
     slug: "vape-delivery-koramangala-indiranagar-hsr",
@@ -344,7 +344,7 @@ All models available for 30 min delivery. Order on WhatsApp, cash on delivery.`,
     excerpt: "Fast vape delivery across Bangalore top three neighbourhoods. 30 minutes to Koramangala, Indiranagar and HSR Layout.",
     category: "Local" as const,
     metaTitle: "Vape Delivery Koramangala Indiranagar HSR Layout - 30 Min | VapeBangalore.com",
-    metaDescription: "Vape delivery in Koramangala, Indiranagar and HSR Layout in 30 minutes. Elfbar, Lost Mary, ZYN, Caliburn and more. Cash on delivery.",
+    metaDescription: "Vape delivery in Koramangala, Indiranagar and HSR Layout in 30 minutes. Elfbar, Lost Mary, ZYN, Caliburn and more.",
     publishedAt: "2026-07-25",
     readTime: 3,
     tags: ["vape delivery koramangala", "vape delivery indiranagar", "vape delivery hsr layout"],
@@ -362,7 +362,7 @@ All 8 blocks, ST Bed, Ejipura, Sony Signal and 80 Feet Road. Average delivery 25
 
 All 7 sectors plus Agara, BDA Complex, Kudlu Gate. Average delivery 30-40 minutes. Top sellers: ZYN Cool Mint, Caliburn G4.
 
-Order on WhatsApp, pay cash on delivery. No prepayment required.`,
+Order on WhatsApp. No prepayment required.`,
   },
   {
     slug: "vape-delivery-near-me-bangalore",
@@ -394,7 +394,7 @@ Elfbar, Lost Mary, Caliburn, ZYN, Velo, Nasty, IGET, Yuoto, Pod Salt, Amber Leaf
     excerpt: "Looking for the best vape under Rs 2000 in Bangalore? We have picked the top options available with 30 min delivery.",
     category: "Comparison" as const,
     metaTitle: "Best Vape Under 2000 Rupees Bangalore 2026 | VapeBangalore.com",
-    metaDescription: "Best vapes under Rs 2000 in Bangalore. Elfbar 600, Lost Mary MO10000, ZYN Cool Mint and more. 30 min delivery, cash on delivery.",
+    metaDescription: "Best vapes under Rs 2000 in Bangalore. Elfbar 600, Lost Mary MO10000, ZYN Cool Mint and more. 30 min delivery.",
     publishedAt: "2026-07-27",
     readTime: 4,
     tags: ["best vape under 2000 bangalore", "cheap vape bangalore", "affordable vape bangalore"],
@@ -416,7 +416,7 @@ Intense peppermint nicotine pouch. Strong cooling sensation, completely discreet
 
 10,000 puffs from one of the most trusted disposable vape brands. Excellent flavour throughout.
 
-All available for 30 minute delivery across Bangalore. Order on WhatsApp, cash on delivery.`,
+All available for 30 minute delivery across Bangalore. Order on WhatsApp.`,
   },
   {
     slug: "rolling-tobacco-bangalore-delivery",
@@ -424,7 +424,7 @@ All available for 30 minute delivery across Bangalore. Order on WhatsApp, cash o
     excerpt: "Buy rolling tobacco in Bangalore with 30 min delivery. Amber Leaf, Golden Virginia, American Spirit and Drum tobacco delivered to your door.",
     category: "Guide" as const,
     metaTitle: "Rolling Tobacco Delivery Bangalore - Amber Leaf, Golden Virginia | VapeBangalore.com",
-    metaDescription: "Rolling tobacco delivery in Bangalore. Buy Amber Leaf, Golden Virginia, American Spirit and Drum tobacco online with 30 min delivery. Cash on delivery.",
+    metaDescription: "Rolling tobacco delivery in Bangalore. Buy Amber Leaf, Golden Virginia, American Spirit and Drum tobacco online with 30 min delivery.",
     publishedAt: "2026-07-28",
     readTime: 3,
     tags: ["rolling tobacco bangalore", "amber leaf bangalore", "golden virginia bangalore", "american spirit bangalore"],
@@ -440,7 +440,7 @@ Natural American Spirit - Rs 1,199. Additive-free. Slower burn, full flavour.
 
 Drum Bright Blue - Rs 1,199. Lighter, aromatic. Great for those who prefer milder smoke.
 
-Message us on WhatsApp with the brand and your address. Cash on delivery available across all areas.`,
+Message us on WhatsApp with the brand and your address.  available across all areas.`,
   },
   {
     slug: "how-to-use-caliburn-g4",
@@ -600,7 +600,7 @@ Available for 30 minute delivery across Bangalore.`,
     excerpt: "New to vaping in Bangalore? We have picked the best beginner-friendly vapes with 30 minute delivery.",
     category: "Guide" as const,
     metaTitle: "Best Vape for Beginners Bangalore 2026 - Easy Options | VapeBangalore.com",
-    metaDescription: "Best vapes for beginners in Bangalore 2026. Simple to use, 30 min delivery, cash on delivery. Elfbar, Lost Mary and more.",
+    metaDescription: "Best vapes for beginners in Bangalore 2026. Simple to use, 30 min delivery. Elfbar, Lost Mary and more.",
     publishedAt: "2026-08-03",
     readTime: 4,
     tags: ["best vape for beginners bangalore", "beginner vape bangalore", "first vape bangalore"],
@@ -632,7 +632,7 @@ All available for 30 minute delivery across Bangalore.`,
     excerpt: "Fast vape delivery in Whitefield Bangalore. ITPL, Brookefield, AECS Layout, Hope Farm, Kadugodi, Mahadevapura all covered.",
     category: "Local" as const,
     metaTitle: "Vape Delivery Whitefield Bangalore - ITPL, Brookefield, Hope Farm | VapeBangalore.com",
-    metaDescription: "Vape delivery in Whitefield Bangalore in 30 minutes. ITPL, Brookefield, AECS Layout, Hope Farm, Kadugodi, Mahadevapura covered. Cash on delivery.",
+    metaDescription: "Vape delivery in Whitefield Bangalore in 30 minutes. ITPL, Brookefield, AECS Layout, Hope Farm, Kadugodi, Mahadevapura covered.",
     publishedAt: "2026-08-04",
     readTime: 3,
     tags: ["vape delivery whitefield", "vape delivery itpl", "vape delivery brookefield", "vape whitefield bangalore"],

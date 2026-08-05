@@ -5,7 +5,7 @@ import { WHATSAPP } from "@/lib/settings";
 
 export const metadata: Metadata = {
   title: "Disposable Vapes Bangalore — Buy Online | 30 Min Delivery | VapeBangalore.com",
-  description: "Buy disposable vapes in Bangalore with 30 min delivery. Elfbar, Lost Mary, Nasty, IGET, Yuoto and more. 100% original. Cash on delivery. Order on WhatsApp.",
+  description: "Buy disposable vapes in Bangalore with 30 min delivery. Elfbar, Lost Mary, Nasty, IGET, Yuoto and more. 100% original. Order on WhatsApp.",
   alternates: { canonical: "https://vapebangalore.com/disposable-vapes-bangalore" },
   keywords: ["disposable vapes bangalore", "buy disposable vape bangalore", "disposable vape delivery bangalore", "best disposable vape bangalore"],
 };
@@ -20,7 +20,7 @@ export default function DisposableVapesBangalorePage() {
           <div style={{ fontSize: "11px", color: "var(--orange)", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "8px" }}>Disposables</div>
           <h1 style={{ fontFamily: "var(--font-bebas)", fontSize: "clamp(2rem,6vw,3.5rem)", color: "var(--white)", marginBottom: "12px", letterSpacing: "0.02em" }}>DISPOSABLE VAPES BANGALORE</h1>
           <p style={{ color: "var(--dim)", fontSize: "14px", lineHeight: 1.7, maxWidth: "600px", marginBottom: "24px" }}>
-            Buy disposable vapes in Bangalore with 30-minute delivery. We stock the best disposable vape brands — Elfbar, Lost Mary, Nasty, IGET, Yuoto and more. From 600 puffs to 50,000 puffs. All products are 100% original. No charge needed, no refill — just open and vape. Order on WhatsApp, get it in 30 minutes. Cash on delivery available across 120+ Bangalore areas.
+            Buy disposable vapes in Bangalore with 30-minute delivery. We stock the best disposable vape brands — Elfbar, Lost Mary, Nasty, IGET, Yuoto and more. From 600 puffs to 50,000 puffs. All products are 100% original. No charge needed, no refill — just open and vape. Order on WhatsApp, get it in 30 minutes.  available across 120+ Bangalore areas.
           </p>
           <a href={WHATSAPP.orderLink("disposable vape")} target="_blank" rel="noopener noreferrer"
             style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "#25D366", color: "#fff", padding: "12px 24px", borderRadius: "8px", fontWeight: 600, fontSize: "14px", textDecoration: "none" }}>

@@ -5,7 +5,7 @@ import { WHATSAPP } from "@/lib/settings";
 
 export const metadata: Metadata = {
   title: "Elfbar Bangalore — Buy Elfbar Vapes Online | 30 Min Delivery | VapeBangalore.com",
-  description: "Buy Elfbar vapes in Bangalore with 30 min delivery. Elfbar Raya D1, MoonNight 40K, Raya D3, Ice King, BC10000 and more. 100% original. Cash on delivery. Order on WhatsApp now.",
+  description: "Buy Elfbar vapes in Bangalore with 30 min delivery. Elfbar Raya D1, MoonNight 40K, Raya D3, Ice King, BC10000 and more. 100% original. Order on WhatsApp now.",
   alternates: { canonical: "https://vapebangalore.com/elfbar-bangalore" },
   keywords: ["elfbar bangalore", "buy elfbar bangalore", "elfbar delivery bangalore", "elfbar raya d1 bangalore", "elfbar moonnight bangalore", "elfbar price bangalore"],
 };
@@ -23,7 +23,7 @@ export default function ElfbarBangalorePage() {
             ELFBAR BANGALORE
           </h1>
           <p style={{ color: "var(--dim)", fontSize: "14px", lineHeight: 1.7, maxWidth: "600px", marginBottom: "24px" }}>
-            Buy 100% original Elfbar vapes in Bangalore with 30-minute delivery. We stock the full Elfbar range — Raya D1, MoonNight 40K, Raya D3, Ice King, BC10000, Raya SOBO, D3 Pro and more. All products are authentic, sourced directly. Order on WhatsApp and get it at your door — discreet packaging, cash on delivery available.
+            Buy 100% original Elfbar vapes in Bangalore with 30-minute delivery. We stock the full Elfbar range — Raya D1, MoonNight 40K, Raya D3, Ice King, BC10000, Raya SOBO, D3 Pro and more. All products are authentic, sourced directly. Order on WhatsApp and get it at your door — discreet packaging.
           </p>
           <a href={WHATSAPP.orderLink("Elfbar vape")} target="_blank" rel="noopener noreferrer"
             style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "#25D366", color: "#fff", padding: "12px 24px", borderRadius: "8px", fontWeight: 600, fontSize: "14px", textDecoration: "none" }}>
@@ -51,7 +51,7 @@ export default function ElfbarBangalorePage() {
               ["100% Original", "All Elfbar products are authentic. No fakes, no refills."],
               ["30 Min Delivery", "Fastest vape delivery in Bangalore. Order now, get it in 30 minutes."],
               ["120+ Areas", "We deliver across Koramangala, Indiranagar, HSR, Whitefield and 120+ more areas."],
-              ["Cash on Delivery", "No prepayment needed. Pay when you receive."],
+              
               ["Full Range", "Every Elfbar model in stock — disposables, pod systems, nic salts."],
               ["Discreet Packaging", "Plain bag, no branding. Your privacy is protected."],
             ].map(([title, desc]) => (

@@ -5,7 +5,7 @@ import ProductCard from "@/components/product/ProductCard";
 
 export const metadata: Metadata = {
   title: "Rolling Tobacco Bangalore — Buy Amber Leaf, Golden Virginia | 30 Min Delivery | VapeBangalore.com",
-  description: "Buy rolling tobacco in Bangalore with 30 min delivery. Amber Leaf, Golden Virginia, American Spirit, Drum tobacco. 100% original. Cash on delivery.",
+  description: "Buy rolling tobacco in Bangalore with 30 min delivery. Amber Leaf, Golden Virginia, American Spirit, Drum tobacco. 100% original.",
   alternates: { canonical: "https://vapebangalore.com/rolling-tobacco-bangalore" },
   keywords: ["rolling tobacco bangalore", "amber leaf bangalore", "golden virginia bangalore", "american spirit bangalore", "buy tobacco bangalore"],
 };
@@ -20,7 +20,7 @@ export default function RollingTobaccoBangalorePage() {
           <div style={{ fontSize: "11px", color: "var(--orange)", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "8px" }}>Rolling Tobacco</div>
           <h1 style={{ fontFamily: "var(--font-bebas)", fontSize: "clamp(2rem,6vw,3.5rem)", color: "var(--white)", marginBottom: "12px", letterSpacing: "0.02em" }}>ROLLING TOBACCO BANGALORE</h1>
           <p style={{ color: "var(--dim)", fontSize: "14px", lineHeight: 1.7, maxWidth: "600px", marginBottom: "24px" }}>
-            Buy premium rolling tobacco in Bangalore with 30-minute delivery. We stock Amber Leaf, Golden Virginia, Natural American Spirit and Drum Bright Blue. All 100% original, delivered discreetly to your door. Order on WhatsApp, cash on delivery available across 120+ areas in Bangalore.
+            Buy premium rolling tobacco in Bangalore with 30-minute delivery. We stock Amber Leaf, Golden Virginia, Natural American Spirit and Drum Bright Blue. All 100% original, delivered discreetly to your door. Order on WhatsApp.
           </p>
           <a href={WHATSAPP.orderLink("rolling tobacco")} target="_blank" rel="noopener noreferrer"
             style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "#25D366", color: "#fff", padding: "12px 24px", borderRadius: "8px", fontWeight: 600, fontSize: "14px", textDecoration: "none" }}>

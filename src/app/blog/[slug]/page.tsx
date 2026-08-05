@@ -103,7 +103,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               Order Vapes in Bangalore — 30-45 Min Delivery
             </div>
             <p style={{ color: "var(--dim)", fontSize: "0.88rem", marginBottom: "20px" }}>
-              100% original · Cash on delivery · 120+ areas
+              100% original ·  · 120+ areas
             </p>
             <a
               href={WHATSAPP.url}

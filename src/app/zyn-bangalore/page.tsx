@@ -5,7 +5,7 @@ import { WHATSAPP } from "@/lib/settings";
 
 export const metadata: Metadata = {
   title: "ZYN Bangalore — Buy ZYN Nicotine Pouches | 30 Min Delivery | VapeBangalore.com",
-  description: "Buy ZYN nicotine pouches in Bangalore with 30 min delivery. ZYN Cool Mint and more. 100% original. Tobacco-free. Cash on delivery. Order on WhatsApp.",
+  description: "Buy ZYN nicotine pouches in Bangalore with 30 min delivery. ZYN Cool Mint and more. 100% original. Tobacco-free. Order on WhatsApp.",
   alternates: { canonical: "https://vapebangalore.com/zyn-bangalore" },
   keywords: ["zyn bangalore", "buy zyn bangalore", "zyn nicotine pouches bangalore", "zyn cool mint bangalore", "nicotine pouches bangalore"],
 };
@@ -20,7 +20,7 @@ export default function ZynBangalorePage() {
           <div style={{ fontSize: "11px", color: "var(--orange)", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "8px" }}>Nicotine Pouches</div>
           <h1 style={{ fontFamily: "var(--font-bebas)", fontSize: "clamp(2rem,6vw,3.5rem)", color: "var(--white)", marginBottom: "12px", letterSpacing: "0.02em" }}>ZYN BANGALORE</h1>
           <p style={{ color: "var(--dim)", fontSize: "14px", lineHeight: 1.7, maxWidth: "600px", marginBottom: "24px" }}>
-            Buy ZYN nicotine pouches in Bangalore with 30-minute delivery. ZYN is the world's leading tobacco-free nicotine pouch — no smoke, no vaping, just clean nicotine. We stock ZYN Cool Mint and deliver across 120+ areas in Bangalore. 100% original, discreet packaging, cash on delivery. Order on WhatsApp now.
+            Buy ZYN nicotine pouches in Bangalore with 30-minute delivery. ZYN is the world's leading tobacco-free nicotine pouch — no smoke, no vaping, just clean nicotine. We stock ZYN Cool Mint and deliver across 120+ areas in Bangalore. 100% original, discreet packaging. Order on WhatsApp now.
           </p>
           <a href={WHATSAPP.orderLink("ZYN nicotine pouches")} target="_blank" rel="noopener noreferrer"
             style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "#25D366", color: "#fff", padding: "12px 24px", borderRadius: "8px", fontWeight: 600, fontSize: "14px", textDecoration: "none" }}>

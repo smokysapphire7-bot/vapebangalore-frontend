@@ -140,7 +140,7 @@ export default async function ComparePage({ params }: { params: Promise<{ slug: 
               Order in Bangalore — 30-45 Min Delivery
             </h2>
             <p style={{ color: "var(--dim)", marginBottom: "24px", fontSize: "0.9rem" }}>
-              Both available now · 100% original · Cash on delivery
+              Both available now · 100% original · 
             </p>
             <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
               <a href={WHATSAPP.orderLink(a.name)} target="_blank" rel="noopener noreferrer" style={{

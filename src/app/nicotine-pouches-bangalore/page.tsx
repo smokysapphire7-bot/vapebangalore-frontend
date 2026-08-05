@@ -5,7 +5,7 @@ import { WHATSAPP } from "@/lib/settings";
 
 export const metadata: Metadata = {
   title: "Nicotine Pouches Bangalore — Buy ZYN, Velo Online | 30 Min Delivery | VapeBangalore.com",
-  description: "Buy nicotine pouches in Bangalore with 30 min delivery. ZYN Cool Mint, Velo Freezing Peppermint and more. Tobacco-free. 100% original. Cash on delivery.",
+  description: "Buy nicotine pouches in Bangalore with 30 min delivery. ZYN Cool Mint, Velo Freezing Peppermint and more. Tobacco-free. 100% original.",
   alternates: { canonical: "https://vapebangalore.com/nicotine-pouches-bangalore" },
   keywords: ["nicotine pouches bangalore", "buy nicotine pouches bangalore", "zyn bangalore", "velo bangalore", "tobacco free nicotine bangalore"],
 };
@@ -20,7 +20,7 @@ export default function NicotinePouchesBangalorePage() {
           <div style={{ fontSize: "11px", color: "var(--orange)", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "8px" }}>Tobacco-Free Nicotine</div>
           <h1 style={{ fontFamily: "var(--font-bebas)", fontSize: "clamp(2rem,6vw,3.5rem)", color: "var(--white)", marginBottom: "12px", letterSpacing: "0.02em" }}>NICOTINE POUCHES BANGALORE</h1>
           <p style={{ color: "var(--dim)", fontSize: "14px", lineHeight: 1.7, maxWidth: "600px", marginBottom: "24px" }}>
-            Nicotine pouches are the modern alternative to smoking and vaping — tobacco-free, smoke-free and discreet. We deliver ZYN and Velo nicotine pouches across 120+ areas in Bangalore in 30-45 minutes. No tobacco, no smoke, no smell. Just clean nicotine. Perfect for offices, flights and anywhere smoking is restricted. Order on WhatsApp — cash on delivery available.
+            Nicotine pouches are the modern alternative to smoking and vaping — tobacco-free, smoke-free and discreet. We deliver ZYN and Velo nicotine pouches across 120+ areas in Bangalore in 30-45 minutes. No tobacco, no smoke, no smell. Just clean nicotine. Perfect for offices, flights and anywhere smoking is restricted. Order on WhatsApp —
           </p>
           <a href={WHATSAPP.orderLink("nicotine pouches")} target="_blank" rel="noopener noreferrer"
             style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "#25D366", color: "#fff", padding: "12px 24px", borderRadius: "8px", fontWeight: 600, fontSize: "14px", textDecoration: "none" }}>

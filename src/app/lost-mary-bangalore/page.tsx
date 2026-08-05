@@ -5,7 +5,7 @@ import { WHATSAPP } from "@/lib/settings";
 
 export const metadata: Metadata = {
   title: "Lost Mary Bangalore — Buy Lost Mary Vapes | 30 Min Delivery | VapeBangalore.com",
-  description: "Buy Lost Mary vapes in Bangalore with 30 min delivery. Lost Mary MT35000 Turbo, MO10000 and more. 100% original. Cash on delivery. Order on WhatsApp.",
+  description: "Buy Lost Mary vapes in Bangalore with 30 min delivery. Lost Mary MT35000 Turbo, MO10000 and more. 100% original. Order on WhatsApp.",
   alternates: { canonical: "https://vapebangalore.com/lost-mary-bangalore" },
   keywords: ["lost mary bangalore", "buy lost mary bangalore", "lost mary mt35000 bangalore", "lost mary delivery bangalore"],
 };
@@ -20,7 +20,7 @@ export default function LostMaryBangalorePage() {
           <div style={{ fontSize: "11px", color: "var(--orange)", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "8px" }}>Brand Delivery</div>
           <h1 style={{ fontFamily: "var(--font-bebas)", fontSize: "clamp(2rem,6vw,3.5rem)", color: "var(--white)", marginBottom: "12px", letterSpacing: "0.02em" }}>LOST MARY BANGALORE</h1>
           <p style={{ color: "var(--dim)", fontSize: "14px", lineHeight: 1.7, maxWidth: "600px", marginBottom: "24px" }}>
-            Buy 100% original Lost Mary vapes in Bangalore with 30-minute delivery. We stock Lost Mary MT35000 Turbo and MO10000 — two of the best selling disposable vapes in Bangalore. Authentic products, fast delivery, cash on delivery available. Order on WhatsApp now.
+            Buy 100% original Lost Mary vapes in Bangalore with 30-minute delivery. We stock Lost Mary MT35000 Turbo and MO10000 — two of the best selling disposable vapes in Bangalore. Authentic products, fast delivery. Order on WhatsApp now.
           </p>
           <a href={WHATSAPP.orderLink("Lost Mary vape")} target="_blank" rel="noopener noreferrer"
             style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "#25D366", color: "#fff", padding: "12px 24px", borderRadius: "8px", fontWeight: 600, fontSize: "14px", textDecoration: "none" }}>

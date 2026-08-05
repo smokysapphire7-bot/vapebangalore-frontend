@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     default: "Vapes in Bangalore — Buy Elfbar, Lost Mary, ZYN | 30 Min Delivery | VapeBangalore.com",
     template: "%s | VapeBangalore.com",
   },
-  description: `#1 Vape Delivery in Bangalore. Buy Elfbar, Lost Mary, Caliburn, ZYN, Nasty, IGET & more. 30 min delivery across ${LOCATION_COUNT}+ areas. 100% original products. Cash on delivery. Order on WhatsApp now.`,
+  description: `#1 Vape Delivery in Bangalore. Buy Elfbar, Lost Mary, Caliburn, ZYN, Nasty, IGET & more. 30 min delivery across ${LOCATION_COUNT}+ areas. 100% original products. Order on WhatsApp now.`,
   keywords: [
     "vape bangalore",
     "vapes in bangalore",
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     "pod device bangalore",
     "vape online bangalore",
     "order vape bangalore",
-    "vape cash on delivery bangalore",
+    
     "vape 30 min delivery bangalore",
     "elfbar raya d1 bangalore",
     "lost mary mo10000 bangalore",
