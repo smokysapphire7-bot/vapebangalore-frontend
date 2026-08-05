@@ -62,22 +62,50 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* TRUST STRIP */}
-      <section style={{ background: "#0f0f0f", borderTop: "1px solid var(--b0)", borderBottom: "1px solid var(--b0)" }}>
-        <div style={{ display: "flex", gap: "8px", padding: "10px 20px", overflowX: "auto", scrollbarWidth: "none" }}>
-          {[
-            { icon: "⚡", text: "30-45 Min" },
-            { icon: "✅", text: "100% Original" },
-            { icon: "📦", text: "Discreet" },
-            { icon: "🗺️", text: `${LOCATION_COUNT}+ Areas` },
-            { icon: "💵", text: "Cash on Delivery" },
-            { icon: "🌙", text: "Late Night" },
-          ].map((t) => (
-            <div key={t.text} style={{ display: "flex", alignItems: "center", gap: "5px", background: "#161616", border: "1px solid rgba(255,255,255,0.06)", borderRadius: "100px", padding: "5px 12px", whiteSpace: "nowrap", flexShrink: 0 }}>
-              <span style={{ width: "4px", height: "4px", borderRadius: "50%", background: "var(--orange)", display: "inline-block", flexShrink: 0 }} />
-              <span style={{ fontSize: "9px", color: "rgba(255,255,255,0.4)" }}>{t.text}</span>
-            </div>
-          ))}
+      {/* TRUST STRIP — auto-scrolling marquee */}
+      <section style={{ background: "#0f0f0f", borderTop: "1px solid var(--b0)", borderBottom: "1px solid var(--b0)", overflow: "hidden" }}>
+        <style>{`
+          @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+          }
+          .trust-marquee {
+            display: flex;
+            gap: 12px;
+            padding: 10px 0;
+            width: max-content;
+            animation: marquee 20s linear infinite;
+          }
+          .trust-marquee:hover {
+            animation-play-state: paused;
+          }
+        `}</style>
+        <div style={{ overflow: "hidden" }}>
+          <div className="trust-marquee">
+            {[
+              "⚡ 30-45 Min Delivery",
+              "✅ 100% Original Products",
+              "📦 Discreet Packaging",
+              `🗺️ ${LOCATION_COUNT}+ Areas in Bangalore`,
+              "💵 Cash on Delivery",
+              "🌙 Late Night Available",
+              "🛵 Express Dispatch",
+              "🔒 Privacy Guaranteed",
+              "⚡ 30-45 Min Delivery",
+              "✅ 100% Original Products",
+              "📦 Discreet Packaging",
+              `🗺️ ${LOCATION_COUNT}+ Areas in Bangalore`,
+              "💵 Cash on Delivery",
+              "🌙 Late Night Available",
+              "🛵 Express Dispatch",
+              "🔒 Privacy Guaranteed",
+            ].map((text, i) => (
+              <div key={i} style={{ display: "flex", alignItems: "center", gap: "6px", background: "#161616", border: "1px solid rgba(255,255,255,0.06)", borderRadius: "100px", padding: "6px 14px", whiteSpace: "nowrap", flexShrink: 0 }}>
+                <span style={{ width: "4px", height: "4px", borderRadius: "50%", background: "var(--orange)", display: "inline-block" }} />
+                <span style={{ fontSize: "10px", color: "rgba(255,255,255,0.45)", fontWeight: 500 }}>{text}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
