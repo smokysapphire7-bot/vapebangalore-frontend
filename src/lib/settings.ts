@@ -27,17 +27,17 @@ export const WHATSAPP = {
     const greetings = ["Hi", "Hey", "Hello", "Hi there"];
     const names = ["VapeBangalore", "team", "there"];
     const confirmPhrases = [
-      "Please confirm availability and delivery time.",
-      "Can you confirm if this is available?",
-      "Let me know the availability and ETA.",
-      "Please check availability and confirm.",
-      "How soon can this be delivered?",
+      "Please confirm availability and delivery time in Bangalore.",
+      "Can you confirm if this is available in Bangalore?",
+      "Let me know the availability and ETA in Bangalore.",
+      "Please check availability and confirm delivery to Bangalore.",
+      "How soon can this be delivered in Bangalore?",
     ];
     const listPhrases = [
       "I want to place an order. Please share what\'s available.",
-      "Can I see your current product list?",
+      "Can I see your current product list? I'm in Bangalore.",
       "I\'d like to order something. What do you have available?",
-      "Please share your menu/product list.",
+      "Please share your menu. Ordering from Bangalore.",
     ];
     const r = (arr: string[]) => arr[Math.floor(Math.random() * arr.length)];
     const greeting = `${r(greetings)} ${r(names)}`;
