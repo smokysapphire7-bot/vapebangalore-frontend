@@ -359,13 +359,15 @@ export default async function ProductPage({ params }: Props) {
               {(productReviews[product.slug] || defaultReviews).map((review, i) => (
                 <div key={i} style={{ background: "var(--s1)", border: "1px solid rgba(200,16,46,0.15)", borderRadius: "10px", padding: "16px" }}
                   itemScope itemType="https://schema.org/Review">
+                  <meta itemProp="itemReviewed" content={product.name} />
+                  <meta itemProp="reviewRating" content={String(review.rating)} />
                   <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "8px" }}>
                     <div style={{ display: "flex", gap: "2px" }}>
                       {[1,2,3,4,5].map(s => (
                         <svg key={s} width="12" height="12" viewBox="0 0 24 24" fill={s <= review.rating ? "#C8102E" : "var(--b2)"}><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" /></svg>
                       ))}
                     </div>
-                    <span style={{ fontSize: "12px", fontWeight: 600, color: "var(--white)" }} itemProp="author">{review.author}</span>
+                    <span style={{ fontSize: "12px", fontWeight: 600, color: "var(--white)" }} itemProp="author" itemScope itemType="https://schema.org/Person"><span itemProp="name">{review.author}</span></span>
                     <span style={{ fontSize: "11px", color: "var(--dim)" }}>· {review.location}</span>
                     <span style={{ fontSize: "10px", color: "var(--dim)", marginLeft: "auto" }} itemProp="datePublished">{review.date}</span>
                   </div>
