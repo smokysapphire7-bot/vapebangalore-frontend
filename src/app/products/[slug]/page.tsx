@@ -27,6 +27,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: product.metaDescription,
       url: `${SITE.url}/products/${product.slug}`,
       type: "website",
+      images: [{ url: `${SITE.url}${product.image}`, width: 800, height: 800, alt: product.name }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: product.metaTitle,
+      description: product.metaDescription,
+      images: [`${SITE.url}${product.image}`],
     },
   };
 }
@@ -146,6 +153,7 @@ export default async function ProductPage({ params }: Props) {
   const productSchema = {
     "@context": "https://schema.org",
     "@type": "Product",
+        "image": `${SITE.url}${product.image}`,
     name: product.name,
     brand: { "@type": "Brand", name: product.brand },
     description: product.excerpt,
