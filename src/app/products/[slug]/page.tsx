@@ -159,10 +159,12 @@ export default async function ProductPage({ params }: Props) {
     description: product.excerpt,
     offers: {
       "@type": "Offer",
-      price: product.price,
+      price: String(product.price),
       priceCurrency: "INR",
-      availability: product.inStock ? "https://schema.org/InStock" : "https://schema.org/OutOfStock",
-      seller: { "@type": "Organization", name: "VapeBangalore" },
+      availability: "https://schema.org/InStock",
+      url: `https://vapebangalore.com/products/${product.slug}`,
+      seller: { "@type": "Organization", name: "VapeBangalore", url: "https://vapebangalore.com" },
+      priceValidUntil: "2027-12-31",
     },
     aggregateRating: {
       "@type": "AggregateRating",
