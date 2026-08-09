@@ -386,18 +386,12 @@ export default async function ProductPage({ params }: Props) {
         {related.length > 0 && (
           <section style={{ padding: "40px 0", background: "var(--bg)" }}>
             <div className="container">
-              <h2 style={{ fontFamily: "var(--font-display)", fontSize: "20px", fontWeight: 800, color: "var(--white)", letterSpacing: "-0.02em", marginBottom: "16px" }}>
-                More from {product.brand}
+              <h2 style={{ fontFamily: "var(--font-bebas)", fontSize: "26px", color: "var(--white)", letterSpacing: "0.02em", marginBottom: "16px" }}>
+                MORE FROM {product.brand.toUpperCase()}
               </h2>
               <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: "10px" }} className="related-grid">
                 {related.map((p) => (
-                  <Link key={p.slug} href={`/products/${p.slug}`} style={{ background: "var(--s1)", border: "1px solid var(--b0)", borderRadius: "10px", padding: "14px", textDecoration: "none", display: "block" }}>
-                    <div style={{ fontSize: "9px", fontWeight: 700, color: "var(--orange)", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "4px" }}>{p.brand}</div>
-                    <div style={{ fontSize: "13px", fontWeight: 600, color: "var(--white)", marginBottom: "4px", lineHeight: 1.3 }}>{p.name}</div>
-                    <div style={{ fontSize: "14px", fontWeight: 700, fontFamily: "var(--font-mono)", background: "linear-gradient(135deg, #FF5C00, #FF2D55)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
-                      &#8377;{p.price.toLocaleString()}
-                    </div>
-                  </Link>
+                  <ProductCard key={p.slug} product={p} />
                 ))}
               </div>
             </div>
