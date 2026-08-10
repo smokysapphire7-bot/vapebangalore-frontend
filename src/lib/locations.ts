@@ -291,5 +291,5 @@ export function getNearbyLocations(slug: string, count = 5): Location[] {
     .slice(0, count);
 }
 
-export const WHATSAPP_URL = "https://wa.me/919074445985?text=Hi%20VapeBangalore%2C%20I%20want%20to%20place%20an%20order.";
-export const TELEGRAM_URL = "https://wa.me/919074445985?text=Hi%20VapeBangalore%2C%20I%20want%20to%20place%20an%20order.";
+export const WHATSAPP_URL = "https://wa.me/916282878843?text=Hi%20VapeBangalore%2C%20I%20want%20to%20place%20an%20order.";
+export const TELEGRAM_URL = "https://wa.me/916282878843?text=Hi%20VapeBangalore%2C%20I%20want%20to%20place%20an%20order.";

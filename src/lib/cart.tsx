@@ -66,13 +66,13 @@ export function CartProvider({ children }: { children: ReactNode }) {
   const closeCart = useCallback(() => setIsOpen(false), []);
 
   const whatsappCartLink = useCallback(() => {
-    if (items.length === 0) return "https://wa.me/919074445985";
+    if (items.length === 0) return "https://wa.me/916282878843";
     const orderLines = items.map((i) =>
       `• ${i.product.name}${i.flavour ? ` (${i.flavour})` : ""} x${i.quantity} — ₹${(i.product.price * i.quantity).toLocaleString()}`
     ).join("\n");
     const total = items.reduce((sum, i) => sum + i.product.price * i.quantity, 0);
     const msg = `Hi VapeBangalore, I want to order:\n\n${orderLines}\n\nTotal: ₹${total.toLocaleString()}\n\nPlease confirm availability and delivery time.`;
-    return `https://wa.me/919074445985?text=${encodeURIComponent(msg)}`;
+    return `https://wa.me/916282878843?text=${encodeURIComponent(msg)}`;
   }, [items]);
 
   return (
