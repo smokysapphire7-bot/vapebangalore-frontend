@@ -620,8 +620,6 @@ export const products: Product[] = [
     slug: "drum-bright-blue-tobacco",
     name: "Drum Bright Blue Tobacco",
     brand: "Drum",
-  "Funky Republic",
-  "Rayya",
     category: "Tobacco",
     price: 1199,
     originalPrice: 1499,
