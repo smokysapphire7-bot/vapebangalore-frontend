@@ -994,6 +994,43 @@ export function getRelatedProducts(slug: string, limit = 4) {
     .slice(0, limit);
 }
 
+  {
+    slug: "funky-republic-fi3000",
+    name: "Funky Republic Fi3000",
+    brand: "Funky Republic",
+    category: "Disposable",
+    price: 1199,
+    puffCount: 3000,
+    nicotine: "50mg",
+    charging: "Type-C",
+    image: "/img-compressed/funky-republic-fi3000.png",
+    isBestseller: false,
+    isNew: true,
+    inStock: true,
+    flavours: ["Apple Watermelon", "Blueberry Ice", "Mango Ice", "Strawberry Banana", "Watermelon Ice", "Lychee Ice"],
+    excerpt: "Funky Republic Fi3000 disposable vape with 3000 puffs, adjustable airflow and Type-C fast charging. Available in Bangalore with 30-45 min delivery.",
+    metaTitle: "Funky Republic Fi3000 Bangalore — Buy Online | VapeBangalore.com",
+    metaDescription: "Buy Funky Republic Fi3000 in Bangalore. 3000 puffs, adjustable airflow, Type-C charging. 30-45 min delivery. 100% original. Rs 1,199.",
+  },
+  {
+    slug: "rayya-pryme",
+    name: "Rayya Pryme",
+    brand: "Rayya",
+    category: "Disposable",
+    price: 1299,
+    puffCount: 3000,
+    nicotine: "50mg",
+    charging: "Type-C",
+    image: "/img-compressed/rayya-pryme.png",
+    isBestseller: false,
+    isNew: true,
+    inStock: true,
+    flavours: ["Grape", "Blueberry Ice", "Mango Ice", "Strawberry Ice", "Watermelon Ice", "Lychee"],
+    excerpt: "Rayya Pryme rechargeable disposable vape with 3000 puffs and mesh coil technology. Available in Bangalore with 30-45 min delivery.",
+    metaTitle: "Rayya Pryme Bangalore — Buy Online | VapeBangalore.com",
+    metaDescription: "Buy Rayya Pryme in Bangalore. 3000 puffs, mesh coil, rechargeable disposable. 30-45 min delivery. 100% original. Rs 1,299.",
+  },
+
 // ── Legacy helpers (used by existing components) ─────────────────────────────
 export function getProductBySlug(slug: string) {
   return products.find((p) => p.slug === slug);
