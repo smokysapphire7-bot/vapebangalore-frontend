@@ -79,6 +79,8 @@ const productRatings: Record<string, [string, string]> = {
   "caliburn-g3-pro": ["4.8", "512"],
   "caliburn-gk2": ["4.6", "345"],
   "caliburn-xpod": ["4.5", "223"],
+  "funky-republic-fi3000": ["4.6", "89"],
+  "rayya-pryme": ["4.5", "67"],
 };
 
 
