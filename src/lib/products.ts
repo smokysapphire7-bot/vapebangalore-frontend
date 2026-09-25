@@ -1,5 +1,5 @@
 export type ProductCategory = "Disposable" | "Pod Device" | "Nicotine Pouches" | "E-Liquid" | "Tobacco";
-export type ProductBrand = "Elfbar" | "Lost Mary" | "Caliburn" | "ZYN" | "Nasty" | "IGET" | "Yuoto" | "Velo" | "Pod Salt" | "Amber Leaf" | "Golden Virginia" | "American Spirit" | "Drum";
+export type ProductBrand = "Elfbar" | "Lost Mary" | "Caliburn" | "ZYN" | "Nasty" | "IGET" | "Yuoto" | "Velo" | "Pod Salt" | "Amber Leaf" | "Golden Virginia" | "American Spirit" | "Drum" | "Funky Republic" | "Rayya";
 
 export interface Product {
   slug: string;
@@ -620,6 +620,8 @@ export const products: Product[] = [
     slug: "drum-bright-blue-tobacco",
     name: "Drum Bright Blue Tobacco",
     brand: "Drum",
+  "Funky Republic",
+  "Rayya",
     category: "Tobacco",
     price: 1199,
     originalPrice: 1499,
@@ -986,7 +988,14 @@ export const products: Product[] = [
     isBestseller: false,
     isNew: true,
     inStock: true,
-    flavours: ["Apple Watermelon", "Blueberry Ice", "Mango Ice", "Strawberry Banana", "Watermelon Ice", "Lychee Ice"],
+    flavours: [
+      { name: "Apple Watermelon", color: "#4ade80" },
+      { name: "Blueberry Ice", color: "#818cf8" },
+      { name: "Mango Ice", color: "#fb923c" },
+      { name: "Strawberry Banana", color: "#f472b6" },
+      { name: "Watermelon Ice", color: "#34d399" },
+      { name: "Lychee Ice", color: "#f9a8d4" },
+    ],
     excerpt: "Funky Republic Fi3000 disposable vape with 3000 puffs, adjustable airflow and Type-C fast charging.",
     metaTitle: "Funky Republic Fi3000 Bangalore — Buy Online | VapeBangalore.com",
     metaDescription: "Buy Funky Republic Fi3000 in Bangalore. 3000 puffs, adjustable airflow, Type-C charging. 30-45 min delivery. Rs 1,199.",
@@ -1004,7 +1013,14 @@ export const products: Product[] = [
     isBestseller: false,
     isNew: true,
     inStock: true,
-    flavours: ["Grape", "Blueberry Ice", "Mango Ice", "Strawberry Ice", "Watermelon Ice", "Lychee"],
+    flavours: [
+      { name: "Grape", color: "#a855f7" },
+      { name: "Blueberry Ice", color: "#818cf8" },
+      { name: "Mango Ice", color: "#fb923c" },
+      { name: "Strawberry Ice", color: "#f472b6" },
+      { name: "Watermelon Ice", color: "#34d399" },
+      { name: "Lychee", color: "#f9a8d4" },
+    ],
     excerpt: "Rayya Pryme rechargeable disposable vape with 3000 puffs and mesh coil technology.",
     metaTitle: "Rayya Pryme Bangalore — Buy Online | VapeBangalore.com",
     metaDescription: "Buy Rayya Pryme in Bangalore. 3000 puffs, mesh coil, rechargeable disposable. 30-45 min delivery. Rs 1,299.",
@@ -1042,4 +1058,6 @@ export const BRANDS: ProductBrand[] = [
   "Golden Virginia",
   "American Spirit",
   "Drum",
+  "Funky Republic",
+  "Rayya",
 ];
