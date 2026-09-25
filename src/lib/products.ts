@@ -1019,6 +1019,8 @@ export const products: Product[] = [
       { name: "Watermelon Ice", color: "#34d399" },
       { name: "Lychee", color: "#f9a8d4" },
     ],
+    longDescription: "The Rayya Pryme is a rechargeable disposable vape featuring mesh coil technology for superior flavour delivery. 3000 puffs with consistent performance from first to last. Available in Bangalore with 30-45 minute delivery.",
+    specs: { "Puff Count": "3,000", "Nicotine": "50mg Salt", "Coil": "Mesh", "Charging": "USB-C", "Type": "Rechargeable Disposable" },
     excerpt: "Rayya Pryme rechargeable disposable vape with 3000 puffs and mesh coil technology.",
     metaTitle: "Rayya Pryme Bangalore — Buy Online | VapeBangalore.com",
     metaDescription: "Buy Rayya Pryme in Bangalore. 3000 puffs, mesh coil, rechargeable disposable. 30-45 min delivery. Rs 1,299.",
@@ -1026,6 +1028,10 @@ export const products: Product[] = [
 ];
 
 // ── Legacy helpers (used by existing components) ─────────────────────────────
+export function getProductsByBrand(brand: string) {
+  return products.filter((p) => p.brand === brand);
+}
+
 export function getProductBySlug(slug: string) {
   return products.find((p) => p.slug === slug);
 }
