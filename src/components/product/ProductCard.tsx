@@ -60,6 +60,8 @@ const RATINGS: Record<string, { rating: number; count: number }> = {
   "caliburn-g3-pro": { rating: 4.8, count: 512 },
   "caliburn-gk2": { rating: 4.6, count: 345 },
   "caliburn-xpod": { rating: 4.5, count: 223 },
+  "funky-republic-fi3000": { rating: 4.6, count: 89 },
+  "rayya-pryme": { rating: 4.5, count: 67 },
 };
 
 export default function ProductCard({ product }: ProductCardProps) {
