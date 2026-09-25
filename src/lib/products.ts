@@ -973,27 +973,6 @@ export const products: Product[] = [
     metaDescription: "Buy Uwell Caliburn Xpod in Bangalore. Full colour display, G3 Pro technology. 30-45 min delivery. ₹6,500.",
     specs: { "Display": "Full Colour", "Tech": "G3 Pro", "Charging": "USB-C" },
   },
-];
-
-// ── Helpers ───────────────────────────────────────────────────────────────────
-export const PRODUCT_COUNT = products.length;
-
-export function getProductsByBrand(brand: string) {
-  return products.filter((p) => p.brand === brand);
-}
-
-export function getProductsByCategory(category: string) {
-  return products.filter((p) => p.category === category);
-}
-
-export function getRelatedProducts(slug: string, limit = 4) {
-  const product = products.find((p) => p.slug === slug);
-  if (!product) return products.slice(0, limit);
-  return products
-    .filter((p) => p.slug !== slug && (p.brand === product.brand || p.category === product.category))
-    .slice(0, limit);
-}
-
   {
     slug: "funky-republic-fi3000",
     name: "Funky Republic Fi3000",
@@ -1008,9 +987,9 @@ export function getRelatedProducts(slug: string, limit = 4) {
     isNew: true,
     inStock: true,
     flavours: ["Apple Watermelon", "Blueberry Ice", "Mango Ice", "Strawberry Banana", "Watermelon Ice", "Lychee Ice"],
-    excerpt: "Funky Republic Fi3000 disposable vape with 3000 puffs, adjustable airflow and Type-C fast charging. Available in Bangalore with 30-45 min delivery.",
+    excerpt: "Funky Republic Fi3000 disposable vape with 3000 puffs, adjustable airflow and Type-C fast charging.",
     metaTitle: "Funky Republic Fi3000 Bangalore — Buy Online | VapeBangalore.com",
-    metaDescription: "Buy Funky Republic Fi3000 in Bangalore. 3000 puffs, adjustable airflow, Type-C charging. 30-45 min delivery. 100% original. Rs 1,199.",
+    metaDescription: "Buy Funky Republic Fi3000 in Bangalore. 3000 puffs, adjustable airflow, Type-C charging. 30-45 min delivery. Rs 1,199.",
   },
   {
     slug: "rayya-pryme",
@@ -1026,10 +1005,11 @@ export function getRelatedProducts(slug: string, limit = 4) {
     isNew: true,
     inStock: true,
     flavours: ["Grape", "Blueberry Ice", "Mango Ice", "Strawberry Ice", "Watermelon Ice", "Lychee"],
-    excerpt: "Rayya Pryme rechargeable disposable vape with 3000 puffs and mesh coil technology. Available in Bangalore with 30-45 min delivery.",
+    excerpt: "Rayya Pryme rechargeable disposable vape with 3000 puffs and mesh coil technology.",
     metaTitle: "Rayya Pryme Bangalore — Buy Online | VapeBangalore.com",
-    metaDescription: "Buy Rayya Pryme in Bangalore. 3000 puffs, mesh coil, rechargeable disposable. 30-45 min delivery. 100% original. Rs 1,299.",
+    metaDescription: "Buy Rayya Pryme in Bangalore. 3000 puffs, mesh coil, rechargeable disposable. 30-45 min delivery. Rs 1,299.",
   },
+];
 
 // ── Legacy helpers (used by existing components) ─────────────────────────────
 export function getProductBySlug(slug: string) {
