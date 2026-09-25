@@ -1021,8 +1021,6 @@ export const products: Product[] = [
       { name: "Watermelon Ice", color: "#34d399" },
       { name: "Lychee", color: "#f9a8d4" },
     ],
-    longDescription: "The Rayya Pryme is a rechargeable disposable vape featuring mesh coil technology for superior flavour delivery. 3000 puffs with consistent performance from first to last. Available in Bangalore with 30-45 minute delivery.",
-    specs: { "Puff Count": "3,000", "Nicotine": "50mg Salt", "Coil": "Mesh", "Charging": "USB-C", "Type": "Rechargeable Disposable" },
     longDescription: "The Rayya Pryme is a rechargeable disposable vape featuring mesh coil technology for superior flavour. 3000 puffs with consistent performance from first to last.",
     specs: { "Puff Count": "3,000", "Nicotine": "50mg Salt", "Coil": "Mesh", "Charging": "USB-C" },
     excerpt: "Rayya Pryme rechargeable disposable vape with 3000 puffs and mesh coil technology.",
