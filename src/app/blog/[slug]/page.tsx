@@ -3,7 +3,7 @@ import Link from "next/link";
 import { getBestsellers } from "@/lib/products";
 import ProductCard from "@/components/product/ProductCard";
 import type { Metadata } from "next";
-import { blogPosts, getBlogPost } from "@/lib/blogs";
+import { blogPosts, getBlogPostBySlug } from "@/lib/blogs";
 import { WHATSAPP, SITE } from "@/lib/settings";
 
 export async function generateStaticParams() {
@@ -12,7 +12,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
-  const post = getBlogPost(slug);
+  const post = getBlogPostBySlug(slug);
   if (!post) return {};
   return {
     title: post.metaTitle,
@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const post = getBlogPost(slug);
+  const post = getBlogPostBySlug(slug);
   if (!post) notFound();
 
   const schema = {
@@ -87,7 +87,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           </div>
 
           <div style={{ display: "flex", gap: "8px", flexWrap: "wrap", marginTop: "40px", paddingTop: "24px", borderTop: "1px solid var(--b0)" }}>
-            {post.tags.map((tag) => (
+            {(post.tags || []).map((tag) => (
               <span key={tag} style={{
                 background: "var(--s1)", border: "1px solid var(--b0)",
                 borderRadius: "100px", padding: "3px 12px", fontSize: "11px", color: "var(--dim)",

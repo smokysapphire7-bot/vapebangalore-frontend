@@ -9,163 +9,105 @@ export interface Comparison {
   title: string;
   metaTitle: string;
   metaDescription: string;
-  products: [ComparisonProduct, ComparisonProduct];
+  product1: ComparisonProduct;
+  product2: ComparisonProduct;
   verdict: string;
-  verdictWinner: string;
-  intro: string;
+  publishedAt: string;
 }
 
 export const comparisons: Comparison[] = [
   {
-    slug: "elfbar-vs-lost-mary",
-    title: "Elfbar vs Lost Mary — Which is Better in Bangalore?",
-    metaTitle: "Elfbar vs Lost Mary Bangalore — Which Should You Buy? | VapeBangalore.com",
-    metaDescription: "Elfbar vs Lost Mary compared for Bangalore vapers. Price, flavours, puff count, battery. Which is the better buy? Full comparison + verdict.",
-    intro: "Both Elfbar and Lost Mary dominate Bangalore's vape market. They're made by the same parent company but feel very different. Here's the definitive comparison for Bangalore buyers.",
-    verdict: "Elfbar Raya D1 wins for first-time buyers — better price, easier to find, more familiar flavours. Lost Mary MO10000 wins for experienced vapers who want bolder flavour and higher puff count.",
-    verdictWinner: "elfbar-raya-d1",
-    products: [
-      {
-        slug: "elfbar-raya-d1",
-        name: "Elfbar Raya D1",
-        specs: {
-          "Puff Count": "7,000",
-          "Nicotine": "50mg",
-          "Battery": "650mAh",
-          "Capacity": "13ml",
-          "Charging": "USB-C",
-          "Price": "₹1,789",
-          "Best For": "First-time buyers",
-        },
-      },
-      {
-        slug: "lost-mary-mo10000",
-        name: "Lost Mary MO10000",
-        specs: {
-          "Puff Count": "10,000",
-          "Nicotine": "50mg",
-          "Battery": "800mAh",
-          "Capacity": "18ml",
-          "Charging": "USB-C",
-          "Price": "₹2,199",
-          "Best For": "Experienced vapers",
-        },
-      },
-    ],
+    slug: "elfbar-vs-lost-mary-bangalore",
+    title: "Elfbar vs Lost Mary Bangalore — Which is Better?",
+    metaTitle: "Elfbar vs Lost Mary Bangalore | Full Comparison | VapeBangalore.com",
+    metaDescription: "Elfbar vs Lost Mary in Bangalore — full comparison of flavour, puff count, price, and battery. Which should you buy? Honest review.",
+    publishedAt: "2025-05-01",
+    verdict: "Lost Mary wins on flavour quality. Elfbar wins on variety and price. Choose Lost Mary MT35000 for the best taste, Elfbar Raya D1 for everyday value.",
+    product1: {
+      slug: "elfbar-raya-d1",
+      name: "Elfbar Raya D1",
+      specs: { "Puff Count": "7,000", "Nicotine": "50mg", "Price": "₹1,789", "Charging": "USB-C", "Battery": "650mAh", "Flavours": "8+" },
+    },
+    product2: {
+      slug: "lost-mary-mo10000",
+      name: "Lost Mary MO10000",
+      specs: { "Puff Count": "10,000", "Nicotine": "50mg", "Price": "₹2,199", "Charging": "USB-C", "Battery": "850mAh", "Flavours": "5+" },
+    },
   },
   {
-    slug: "zyn-vs-velo",
-    title: "ZYN vs Velo Nicotine Pouches — Which is Better?",
-    metaTitle: "ZYN vs Velo Bangalore — Nicotine Pouch Comparison | VapeBangalore.com",
-    metaDescription: "ZYN vs Velo nicotine pouches compared for Bangalore buyers. Strength, flavours, price, experience. Which tobacco-free pouch should you choose?",
-    intro: "ZYN and Velo are the two biggest nicotine pouch brands available in Bangalore. Both are tobacco-free and smoke-free. Here's how they compare.",
-    verdict: "ZYN Cool Mint is the clear winner for most Bangalore buyers — more consistent strength, better flavour range, and more widely reviewed. Velo is a solid alternative if ZYN is out of stock.",
-    verdictWinner: "zyn-cool-mint",
-    products: [
-      {
-        slug: "zyn-cool-mint",
-        name: "ZYN Cool Mint",
-        specs: {
-          "Strength": "6mg / 9mg",
-          "Pouches per Can": "15",
-          "Tobacco": "Free",
-          "Flavours": "Cool Mint, Citrus, Spearmint",
-          "Origin": "Sweden",
-          "Price": "₹699",
-          "Best For": "First-time pouch users",
-        },
-      },
-      {
-        slug: "velo-freeze",
-        name: "Velo Freeze",
-        specs: {
-          "Strength": "4mg / 7mg / 10mg",
-          "Pouches per Can": "20",
-          "Tobacco": "Free",
-          "Flavours": "Freeze, Ice Cool, Tropic",
-          "Origin": "Sweden",
-          "Price": "₹649",
-          "Best For": "Higher strength users",
-        },
-      },
-    ],
+    slug: "disposable-vs-pod-device-bangalore",
+    title: "Disposable Vape vs Pod Device in Bangalore — Which to Buy?",
+    metaTitle: "Disposable vs Pod Device Bangalore | VapeBangalore.com",
+    metaDescription: "Disposable vape vs pod device in Bangalore — cost, convenience, flavour, and long-term value. Which is right for you?",
+    publishedAt: "2025-05-05",
+    verdict: "Disposables win for convenience and first-timers. Pod devices win for long-term cost and flavour customisation. If you vape daily, a Caliburn G4 pays for itself in 2-3 months.",
+    product1: {
+      slug: "elfbar-raya-d1",
+      name: "Elfbar Raya D1 (Disposable)",
+      specs: { "Type": "Disposable", "Puff Count": "7,000", "Price": "₹1,789", "Maintenance": "Zero", "Setup": "Open and vape", "Long-term cost": "High" },
+    },
+    product2: {
+      slug: "caliburn-g4",
+      name: "Caliburn G4 (Pod Device)",
+      specs: { "Type": "Reusable", "Puff Count": "Unlimited", "Price": "₹6,899 + pods", "Maintenance": "Replace pods", "Setup": "Fill pod", "Long-term cost": "Low" },
+    },
   },
   {
-    slug: "disposable-vs-pod-device",
-    title: "Disposable Vape vs Pod Device — What Should You Buy?",
-    metaTitle: "Disposable vs Pod Device Bangalore — Which is Better? | VapeBangalore.com",
-    metaDescription: "Disposable vape vs pod device compared for Bangalore buyers. Cost, convenience, flavour, long-term value. Which should you choose?",
-    intro: "The most common question from new Bangalore vapers — should you start with a disposable or go straight to a pod device? Here's the honest breakdown.",
-    verdict: "Start with a disposable (Elfbar Raya D1) to find your flavour preference. Once you know what you like, switch to Caliburn G4 — it costs less per puff and gives better flavour long-term.",
-    verdictWinner: "caliburn-g4",
-    products: [
-      {
-        slug: "elfbar-raya-d1",
-        name: "Disposable (Elfbar Raya D1)",
-        specs: {
-          "Upfront Cost": "₹1,789",
-          "Cost Per Puff": "~₹0.26",
-          "Maintenance": "None — throw away",
-          "Flavour Options": "Pre-filled",
-          "Battery": "Built-in, non-removable",
-          "Best For": "Beginners, travel",
-          "Lifespan": "7,000 puffs then done",
-        },
-      },
-      {
-        slug: "caliburn-g4",
-        name: "Pod Device (Caliburn G4)",
-        specs: {
-          "Upfront Cost": "₹2,499",
-          "Cost Per Puff": "~₹0.10",
-          "Maintenance": "Replace pods, charge daily",
-          "Flavour Options": "Any nic salt e-liquid",
-          "Battery": "Rechargeable, 750mAh",
-          "Best For": "Regular vapers",
-          "Lifespan": "12+ months",
-        },
-      },
-    ],
+    slug: "zyn-vs-velo-bangalore",
+    title: "ZYN vs Velo Nicotine Pouches in Bangalore",
+    metaTitle: "ZYN vs Velo Bangalore | Nicotine Pouches Comparison | VapeBangalore.com",
+    metaDescription: "ZYN vs Velo nicotine pouches in Bangalore — flavour, strength, price, and which is better for you. Full honest comparison.",
+    publishedAt: "2025-05-10",
+    verdict: "ZYN wins for flavour intensity and faster nicotine release. Velo wins for softer experience and more pouches per can. Start with ZYN Cool Mint 3mg if you're new.",
+    product1: {
+      slug: "zyn-cool-mint",
+      name: "ZYN Cool Mint",
+      specs: { "Strength": "3mg / 6mg", "Pouches per can": "15", "Price": "₹999", "Flavour": "Cool Mint", "Release": "Fast", "Brand origin": "USA" },
+    },
+    product2: {
+      slug: "velo-freezing-peppermint",
+      name: "Velo Freezing Peppermint",
+      specs: { "Strength": "4mg / 6mg", "Pouches per can": "20", "Price": "₹999", "Flavour": "Peppermint", "Release": "Gradual", "Brand origin": "UK" },
+    },
   },
   {
-    slug: "elfbar-raya-d1-vs-d3",
-    title: "Elfbar Raya D1 vs D3 — What's the Difference?",
-    metaTitle: "Elfbar Raya D1 vs D3 Bangalore — Full Comparison | VapeBangalore.com",
-    metaDescription: "Elfbar Raya D1 vs D3 — puff count, battery, flavours, price compared for Bangalore buyers. Which Raya should you buy?",
-    intro: "The Elfbar Raya D1 and D3 are both bestsellers in Bangalore but serve different vapers. Here's exactly what's different and which to buy.",
-    verdict: "Raya D1 for casual vapers — lower price, enough puffs for 1-2 weeks. Raya D3 for heavy vapers — more puffs, bigger battery, worth the extra ₹400.",
-    verdictWinner: "elfbar-raya-d3",
-    products: [
-      {
-        slug: "elfbar-raya-d1",
-        name: "Elfbar Raya D1",
-        specs: {
-          "Puff Count": "7,000",
-          "Battery": "650mAh",
-          "Capacity": "13ml",
-          "Nicotine": "50mg",
-          "Price": "₹1,789",
-          "Best For": "Casual vapers",
-        },
-      },
-      {
-        slug: "elfbar-raya-d3",
-        name: "Elfbar Raya D3",
-        specs: {
-          "Puff Count": "12,000",
-          "Battery": "850mAh",
-          "Capacity": "20ml",
-          "Nicotine": "50mg",
-          "Price": "₹2,199",
-          "Best For": "Heavy vapers",
-        },
-      },
-    ],
+    slug: "elfbar-raya-d1-vs-raya-d3-bangalore",
+    title: "Elfbar Raya D1 vs Raya D3 Bangalore — Which to Buy?",
+    metaTitle: "Elfbar Raya D1 vs D3 Bangalore | VapeBangalore.com",
+    metaDescription: "Elfbar Raya D1 vs Raya D3 in Bangalore — puff count, price, battery. Which Elfbar Raya should you buy?",
+    publishedAt: "2025-05-15",
+    verdict: "Raya D1 for everyday carry and value. Raya D3 if you want more puffs and don't mind paying extra. Both are excellent — D1 is Bangalore's bestseller for good reason.",
+    product1: {
+      slug: "elfbar-raya-d1",
+      name: "Elfbar Raya D1",
+      specs: { "Puff Count": "7,000", "Price": "₹1,789", "Battery": "650mAh", "E-liquid": "13ml", "Best for": "Daily carry" },
+    },
+    product2: {
+      slug: "elfbar-raya-d3",
+      name: "Elfbar Raya D3",
+      specs: { "Puff Count": "12,000", "Price": "₹2,499", "Battery": "850mAh", "E-liquid": "20ml", "Best for": "Heavy vapers" },
+    },
+  },
+  {
+    slug: "caliburn-g4-vs-g4-pro-bangalore",
+    title: "Caliburn G4 vs G4 Pro in Bangalore — Which Pod Device?",
+    metaTitle: "Caliburn G4 vs G4 Pro Bangalore | VapeBangalore.com",
+    metaDescription: "Caliburn G4 vs G4 Pro in Bangalore — specs, price difference, and which is worth buying. Full comparison.",
+    publishedAt: "2025-05-20",
+    verdict: "G4 for most vapers — better value, same core experience. G4 Pro for those who want OLED display and slightly more power. The ₹300 difference rarely justifies the Pro unless you specifically want the display.",
+    product1: {
+      slug: "caliburn-g4",
+      name: "Caliburn G4",
+      specs: { "Battery": "950mAh", "Output": "26W", "Display": "None", "Price": "₹6,899", "Pod capacity": "3ml" },
+    },
+    product2: {
+      slug: "caliburn-g4-pro",
+      name: "Caliburn G4 Pro",
+      specs: { "Battery": "1050mAh", "Output": "30W", "Display": "OLED", "Price": "₹7,199", "Pod capacity": "3ml" },
+    },
   },
 ];
 
-export const COMPARISON_COUNT = comparisons.length;
-
-export function getComparison(slug: string): Comparison | undefined {
+export function getComparisonBySlug(slug: string): Comparison | undefined {
   return comparisons.find((c) => c.slug === slug);
 }

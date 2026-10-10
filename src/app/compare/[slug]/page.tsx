@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { comparisons, getComparison } from "@/lib/comparisons";
+import { comparisons, getComparisonBySlug } from "@/lib/comparisons";
 import { WHATSAPP } from "@/lib/settings";
 
 export async function generateStaticParams() {
@@ -9,7 +9,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
-  const comparison = getComparison(slug);
+  const comparison = getComparisonBySlug(slug);
   if (!comparison) return {};
   return {
     title: comparison.metaTitle,
@@ -20,10 +20,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 export default async function ComparePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const comparison = getComparison(slug);
+  const comparison = getComparisonBySlug(slug);
   if (!comparison) notFound();
 
-  const [a, b] = comparison.products;
+  const a = comparison.product1;
+  const b = comparison.product2;
   const allSpecs = Array.from(new Set([...Object.keys(a.specs), ...Object.keys(b.specs)]));
 
   const faqSchema = {
@@ -69,7 +70,7 @@ export default async function ComparePage({ params }: { params: Promise<{ slug: 
               {comparison.title}
             </h1>
             <p style={{ color: "var(--text)", fontSize: "1rem", maxWidth: "640px", lineHeight: 1.7 }}>
-              {comparison.intro}
+              {comparison.verdict}
             </p>
           </div>
 
