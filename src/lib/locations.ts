@@ -260,6 +260,7 @@ export const locations: Location[] = [
   { slug: "toit-brewery-area", name: "Toit Brewery Area", category: "landmark", geoLat: 12.9784, geoLng: 77.6408, sublocations: ["Indiranagar 100 Feet Road", "CMH Road", "12th Main", "Domlur"], localNote: "Vape delivery near Toit Brewery Indiranagar Bangalore — craft beer and pub hub." },
   { slug: "koramangala-pub-zone", name: "Koramangala Pub Zone", category: "landmark", geoLat: 12.9352, geoLng: 77.6245, sublocations: ["Koramangala 5th Block", "7th Block", "80 Feet Road", "Sony Signal"], localNote: "Vape delivery near Koramangala pub zone Bangalore — top nightlife area." },
 
+  { slug: "varthur", name: "Varthur", sublocations: ["Varthur Main Road", "Varthur Lake Road", "Whitefield adjacent", "Panathur Road", "Sai Layout"], localNote: "Varthur is a fast-growing residential area on the eastern edge of Bangalore. We deliver vapes across Varthur Main Road, Sai Layout and surrounding areas in 30-45 minutes. Popular with tech professionals commuting to Whitefield and ITPL." },
 ];
 
 // ─── HELPERS ──────────────────────────────────────────
