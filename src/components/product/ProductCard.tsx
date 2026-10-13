@@ -73,6 +73,7 @@ export default function ProductCard({ product }: ProductCardProps) {
   const ratingData = RATINGS[product.slug];
   const { addItem } = useCart();
   const waLink = WHATSAPP.orderLink(product.name);
+  const availLink = WHATSAPP.availabilityLink(product.name);
 
   const specLine = [
     product.puffCount ? `${product.puffCount.toLocaleString()} puffs` : null,
@@ -152,7 +153,7 @@ export default function ProductCard({ product }: ProductCardProps) {
               {added ? <><span>✓</span> Added to Cart!</> : <><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>Add to Cart</>}
             </button>
           )}
-          <a href={waLink} target="_blank" rel="noopener noreferrer" style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "6px", background: product.inStock ? "#25D366" : "rgba(255,255,255,0.05)", color: product.inStock ? "#fff" : "rgba(255,255,255,0.5)", border: product.inStock ? "none" : "1px solid rgba(255,255,255,0.08)", padding: "9px 12px", borderRadius: "8px", fontSize: "12px", fontWeight: 500, textDecoration: "none", minHeight: "38px", fontFamily: "var(--font-sans)" }}>
+          <a href={product.inStock ? waLink : availLink} target="_blank" rel="noopener noreferrer" style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "6px", background: product.inStock ? "#25D366" : "rgba(255,255,255,0.05)", color: product.inStock ? "#fff" : "rgba(255,255,255,0.5)", border: product.inStock ? "none" : "1px solid rgba(255,255,255,0.08)", padding: "9px 12px", borderRadius: "8px", fontSize: "12px", fontWeight: 500, textDecoration: "none", minHeight: "38px", fontFamily: "var(--font-sans)" }}>
             {product.inStock ? "⚡ Quick Order" : "💬 Check Availability"}
           </a>
         </div>

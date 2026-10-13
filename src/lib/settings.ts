@@ -55,6 +55,12 @@ export const WHATSAPP = {
 export const DELIVERY = {
   time: "30-45 min",
   promise: "30-45 minute delivery",
+  availabilityLink: (productName: string) => {
+    const msg = encodeURIComponent(
+      `Hi, I am checking availability for ${productName} in Bangalore. Is it back in stock? When can I expect it?`
+    );
+    return `https://wa.me/916282878843?text=${msg}`;
+  },
   lateNight: "Late night delivery available",
 };
 
