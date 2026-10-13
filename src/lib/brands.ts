@@ -101,6 +101,29 @@ export const brands: Brand[] = [
     metaTitle: "Velo Nicotine Pouches in Bangalore — Freezing Peppermint | VapeBangalore.com",
     metaDescription: "Buy Velo nicotine pouches in Bangalore with 30-45 min delivery. Velo Freezing Peppermint and more. Smoke-free nicotine. Order on WhatsApp.",
   },
+  {
+    slug: "tesiyi-bangalore",
+    name: "Tesiyi",
+    tagline: "50,000 puffs. Built different.",
+    origin: "China",
+    story: "Tesiyi is a high-capacity disposable vape brand making waves in Bangalore with the Model AK 50K — 50,000 puffs of consistent, powerful delivery. Built for heavy vapers who want maximum capacity without constant reordering.",
+    heroProduct: "tesiyi-ak-50k",
+    color: "#8B5CF6",
+    metaTitle: "Tesiyi Vapes in Bangalore — AK 50K 50000 Puffs | VapeBangalore.com",
+    metaDescription: "Buy Tesiyi vapes in Bangalore with 30-45 min delivery. Tesiyi Model AK 50K — 50,000 puffs. 100% original. Order on WhatsApp.",
+  },
+  {
+    slug: "vopk-bangalore",
+    name: "VopK",
+    tagline: "Cool flavours. Hot delivery.",
+    origin: "China",
+    story: "VopK is a rising vape brand known for intense cooling flavours and high puff counts. The Cool Bar with 20,000 puffs is their flagship product in Bangalore — delivering crisp, consistent flavour that keeps vapers coming back.",
+    heroProduct: "vopk-cool-bar",
+    color: "#06B6D4",
+    metaTitle: "VopK Vapes in Bangalore — Cool Bar 20000 Puffs | VapeBangalore.com",
+    metaDescription: "Buy VopK vapes in Bangalore with 30-45 min delivery. VopK Cool Bar — 20,000 puffs. 100% original. Order on WhatsApp.",
+  },
+
 ];
 
 export function getBrandBySlug(slug: string): Brand | undefined {

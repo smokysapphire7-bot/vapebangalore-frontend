@@ -1,5 +1,5 @@
 export type ProductCategory = "Disposable" | "Pod Device" | "Nicotine Pouches" | "E-Liquid" | "Tobacco";
-export type ProductBrand = "Elfbar" | "Lost Mary" | "Caliburn" | "ZYN" | "Nasty" | "IGET" | "Yuoto" | "Velo" | "Pod Salt" | "Amber Leaf" | "Golden Virginia" | "American Spirit" | "Drum" | "Funky Republic" | "Rayya";
+export type ProductBrand = "Elfbar" | "Lost Mary" | "Caliburn" | "ZYN" | "Nasty" | "IGET" | "Yuoto" | "Velo" | "Pod Salt" | "Amber Leaf" | "Golden Virginia" | "American Spirit" | "Drum" | "Funky Republic" | "Rayya" | "Tesiyi" | "VopK";
 
 export interface Product {
   slug: string;
@@ -1066,4 +1066,7 @@ export const BRANDS: ProductBrand[] = [
   "Drum",
   "Funky Republic",
   "Rayya",
+  "Tesiyi",
+  "VopK",
 ];
+// ── Legacy helpers (used by existing components) ─────────────────────────────
