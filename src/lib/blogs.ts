@@ -21,7 +21,7 @@ export const blogPosts: BlogPost[] = [
     readTime: 4,
     category: "Bangalore Guide",
     excerpt: "Getting vapes delivered in Bangalore used to mean a long wait or a trip to a shop. Not anymore. Here is how fast vape delivery works in Bangalore.",
-    content: "<h2>Vape Delivery in Bangalore — How It Works</h2>
+    content: `<h2>Vape Delivery in Bangalore — How It Works</h2>
 <p>Getting vapes delivered in Bangalore used to mean a long wait or a trip to a physical shop. VapeBangalore.com has changed that completely. We deliver vapes, nicotine pouches and rolling tobacco to 120+ areas across Bangalore in 30-45 minutes.</p>
 
 <h2>How to Order Vapes in Bangalore</h2>
@@ -45,7 +45,7 @@ export const blogPosts: BlogPost[] = [
 <p>All deliveries are made in plain unmarked bags with no product branding visible from outside. Our riders are professional and discreet. Your privacy is completely protected on every order.</p>
 
 <h2>How to Place Your First Order</h2>
-<p>Open WhatsApp and message us. Tell us the product you want — for example Elfbar Raya D1 or ZYN Cool Mint. Share your delivery address or drop a location pin. We confirm and dispatch immediately. Pay when the rider arrives.</p>",
+<p>Open WhatsApp and message us. Tell us the product you want — for example Elfbar Raya D1 or ZYN Cool Mint. Share your delivery address or drop a location pin. We confirm and dispatch immediately. Pay when the rider arrives.</p>`,
   },
   {
     slug: "best-disposable-vapes-bangalore-2025",
@@ -56,7 +56,7 @@ export const blogPosts: BlogPost[] = [
     readTime: 6,
     category: "Product Guide",
     excerpt: "The disposable vape market in Bangalore has exploded. Here are the best options available right now — ranked by value, flavour quality, and puff count.",
-    content: "<h2>Best Disposable Vapes in Bangalore 2025 and 2026</h2>
+    content: `<h2>Best Disposable Vapes in Bangalore 2025 and 2026</h2>
 <p>The disposable vape market in Bangalore has grown significantly. This guide covers the best disposable vapes available right now with honest assessments based on thousands of deliveries and real customer feedback.</p>
 
 <h2>What Makes a Great Disposable Vape?</h2>
@@ -84,7 +84,7 @@ export const blogPosts: BlogPost[] = [
 <p>600 puffs, no settings, draw activated. The perfect first vape for beginners or as a backup device. At Rs 999 it represents the lowest possible commitment to try vaping.</p>
 
 <h2>How to Order in Bangalore</h2>
-<p>All products available with 30-45 minute delivery across 120+ areas in Bangalore. Order on WhatsApp, pay when the rider arrives. All products 100% original and verified.</p>",
+<p>All products available with 30-45 minute delivery across 120+ areas in Bangalore. Order on WhatsApp, pay when the rider arrives. All products 100% original and verified.</p>`,
   },
   {
     slug: "vape-shop-bangalore",
@@ -95,7 +95,7 @@ export const blogPosts: BlogPost[] = [
     readTime: 5,
     category: "Bangalore Guide",
     excerpt: "Looking for a vape shop in Bangalore? Skip the traffic and get your vapes delivered in 30-45 minutes across 100+ areas.",
-    content: "<h2>Looking for a Vape Shop in Bangalore?</h2>
+    content: `<h2>Looking for a Vape Shop in Bangalore?</h2>
 <p>Physical vape shops exist in parts of Bangalore but they come with significant limitations. VapeBangalore.com solves every problem with home delivery in 30-45 minutes across 120+ areas.</p>
 
 <h2>Problems with Physical Vape Shops in Bangalore</h2>
@@ -115,7 +115,7 @@ export const blogPosts: BlogPost[] = [
 <p>Open WhatsApp and message us with your product and address. We confirm and dispatch within minutes. Pay when the rider arrives. Available daily across all of Bangalore.</p>
 
 <h2>Areas We Cover</h2>
-<p>We cover over 120 areas including Koramangala, Indiranagar, HSR Layout, BTM Layout, Whitefield, Marathahalli, Electronic City, Hebbal, Yelahanka, JP Nagar, Jayanagar, Malleswaram, Rajajinagar and many more.</p>",
+<p>We cover over 120 areas including Koramangala, Indiranagar, HSR Layout, BTM Layout, Whitefield, Marathahalli, Electronic City, Hebbal, Yelahanka, JP Nagar, Jayanagar, Malleswaram, Rajajinagar and many more.</p>`,
   },
   {
     slug: "zyn-nicotine-pouches-bangalore",
@@ -126,7 +126,7 @@ export const blogPosts: BlogPost[] = [
     readTime: 5,
     category: "Product Guide",
     excerpt: "ZYN nicotine pouches are the fastest growing nicotine product in Bangalore. Smoke-free, spit-free, and completely discreet.",
-    content: "<h2>ZYN Nicotine Pouches in Bangalore — Complete Guide</h2>
+    content: `<h2>ZYN Nicotine Pouches in Bangalore — Complete Guide</h2>
 <p>ZYN nicotine pouches have become one of the most popular nicotine products in Bangalore. Tobacco-free, smoke-free and completely discreet, ZYN offers a different kind of nicotine experience. This guide covers everything you need to know.</p>
 
 <h2>What is ZYN?</h2>
@@ -147,7 +147,7 @@ export const blogPosts: BlogPost[] = [
 <p>ZYN Cool Mint is available from VapeBangalore.com with 30-45 minute delivery across 120+ areas in Bangalore. Order on WhatsApp and pay when the rider arrives. All products are 100% original and sourced from authorised distributors.</p>
 
 <h2>How Much Does ZYN Cost in Bangalore?</h2>
-<p>ZYN Cool Mint is priced at Rs 999 per tin containing 20 pouches. Each pouch lasts 20-30 minutes. That works out to Rs 50 per pouch or approximately Rs 1.67 per minute of nicotine delivery — extremely cost effective compared to cigarettes or vapes for regular use.</p>",
+<p>ZYN Cool Mint is priced at Rs 999 per tin containing 20 pouches. Each pouch lasts 20-30 minutes. That works out to Rs 50 per pouch or approximately Rs 1.67 per minute of nicotine delivery — extremely cost effective compared to cigarettes or vapes for regular use.</p>`,
   },
   {
     slug: "elfbar-raya-d1-bangalore",
@@ -158,7 +158,7 @@ export const blogPosts: BlogPost[] = [
     readTime: 5,
     category: "Product Guide",
     excerpt: "The Elfbar Raya D1 is Bangalore best-selling disposable vape. 7,000 puffs, USB-C charging, and a wide range of flavours.",
-    content: "<h2>Elfbar Raya D1 in Bangalore — Everything You Need to Know</h2>
+    content: `<h2>Elfbar Raya D1 in Bangalore — Everything You Need to Know</h2>
 <p>The Elfbar Raya D1 is our single most ordered product in Bangalore. After thousands of deliveries, here is everything you need to know about the Raya D1 — what makes it special, how long it lasts and where to buy it in Bangalore.</p>
 
 <h2>What is the Elfbar Raya D1?</h2>
@@ -181,7 +181,7 @@ export const blogPosts: BlogPost[] = [
 <p>The Elfbar Raya D1 is available at Rs 2,699 from VapeBangalore.com with 30-45 minute delivery across Bangalore. This is the current retail price including delivery. No hidden charges, no negotiation required.</p>
 
 <h2>How to Order Elfbar Raya D1 in Bangalore</h2>
-<p>Open WhatsApp and message us with your preferred flavour and delivery address. We confirm availability and dispatch immediately. Pay when the rider arrives at your door. Available daily across 120+ areas in Bangalore.</p>",
+<p>Open WhatsApp and message us with your preferred flavour and delivery address. We confirm availability and dispatch immediately. Pay when the rider arrives at your door. Available daily across 120+ areas in Bangalore.</p>`,
   },
 ];
 
