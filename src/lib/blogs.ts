@@ -134,7 +134,8 @@ export const blogPosts: BlogPost[] = [
 <h2>Customer Reviews</h2>
 <p>Thousands of customers across Bangalore have ordered from us. Our reviews page features verified customer feedback from Koramangala, Indiranagar, HSR Layout, Whitefield, Electronic City and more. Read what real Bangalore customers say about our products and delivery speed.</p>
 <p>Order today and experience the difference between a genuine delivery service and a physical shop. WhatsApp us now for 30-45 minute delivery anywhere in Bangalore.</p>
-<p>Whether you are in Koramangala, Whitefield, Electronic City or anywhere else in Bangalore — we deliver to your door in 30-45 minutes. Our service is available daily and we handle late night requests regularly. Message us on WhatsApp and experience the fastest, most reliable vape delivery in Bangalore.</p>`,
+<p>Whether you are in Koramangala, Whitefield, Electronic City or anywhere else in Bangalore — we deliver to your door in 30-45 minutes. Our service is available daily and we handle late night requests regularly. Message us on WhatsApp and experience the fastest, most reliable vape delivery in Bangalore.</p>
+<p>VapeBangalore.com is Bangalore's most trusted vape delivery service. Over 40 products, 120+ delivery areas, 30-45 minute delivery and 100% original products guaranteed on every single order.</p>`,
   },
   {
     slug: "zyn-nicotine-pouches-bangalore",
