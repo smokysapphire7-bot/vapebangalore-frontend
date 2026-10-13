@@ -96,7 +96,8 @@ export const blogPosts: BlogPost[] = [
 <p>Counterfeit disposable vapes are a genuine problem in Bangalore. Fake Elfbar and Lost Mary devices are common at physical shops and through unverified sellers. Signs of a fake: unusually low price, no QR code on packaging, poor build quality, weak flavour from the first puff.</p>
 <p>Every product from VapeBangalore.com is 100% original. We provide a QR code verification guarantee on every order. All our products pass manufacturer authenticity checks.</p>
 <h2>Disposable Vape Price Guide — Bangalore 2025</h2>
-<p>Elfbar 600: Rs 999. Funky Republic Fi3000: Rs 1,199. Rayya Pryme: Rs 1,299. Lost Mary MO10000: Rs 1,999. VpoK Cool Bar: Rs 2,699. Elfbar Raya D1: Rs 2,699. Elfbar MoonNight 40K: Rs 2,999. Lost Mary MT35000 Turbo: Rs 3,099. Tesiyi AK 50K: Rs 3,999. All prices include delivery anywhere in Bangalore.</p>`,
+<p>Elfbar 600: Rs 999. Funky Republic Fi3000: Rs 1,199. Rayya Pryme: Rs 1,299. Lost Mary MO10000: Rs 1,999. VpoK Cool Bar: Rs 2,699. Elfbar Raya D1: Rs 2,699. Elfbar MoonNight 40K: Rs 2,999. Lost Mary MT35000 Turbo: Rs 3,099. Tesiyi AK 50K: Rs 3,999. All prices include delivery anywhere in Bangalore.</p>
+<p>All products are available for 30-45 minute delivery across Bangalore. We stock every product listed above consistently. Order on WhatsApp today — pay when the rider arrives at your door. Available daily including late nights across all major Bangalore areas.</p>`,
   },
   {
     slug: "vape-shop-bangalore",
@@ -132,7 +133,8 @@ export const blogPosts: BlogPost[] = [
 <p>We have built our reputation on three commitments. First, every product is 100% original — we back this with a full replacement guarantee if any product fails authenticity verification. Second, we deliver in 30-45 minutes every time — if we cannot reach you in time we will tell you before you order. Third, our prices are fixed — what you see on our site is exactly what you pay, no surprises.</p>
 <h2>Customer Reviews</h2>
 <p>Thousands of customers across Bangalore have ordered from us. Our reviews page features verified customer feedback from Koramangala, Indiranagar, HSR Layout, Whitefield, Electronic City and more. Read what real Bangalore customers say about our products and delivery speed.</p>
-<p>Order today and experience the difference between a genuine delivery service and a physical shop. WhatsApp us now for 30-45 minute delivery anywhere in Bangalore.</p>`,
+<p>Order today and experience the difference between a genuine delivery service and a physical shop. WhatsApp us now for 30-45 minute delivery anywhere in Bangalore.</p>
+<p>Whether you are in Koramangala, Whitefield, Electronic City or anywhere else in Bangalore — we deliver to your door in 30-45 minutes. Our service is available daily and we handle late night requests regularly. Message us on WhatsApp and experience the fastest, most reliable vape delivery in Bangalore.</p>`,
   },
   {
     slug: "zyn-nicotine-pouches-bangalore",
@@ -169,7 +171,8 @@ export const blogPosts: BlogPost[] = [
 <p>Many Bangalore customers are switching from cigarettes to ZYN as a cleaner nicotine alternative. ZYN delivers nicotine without tobacco combustion, no tar, no carbon monoxide and no smoke damage to lungs. The nicotine experience is different — more localised and gradual — but effective for managing cravings.</p>
 <p>For those who want to reduce or eliminate smoking without giving up nicotine entirely, ZYN is an effective tool. Many customers use ZYN during work hours and vape or smoke in the evenings — significantly reducing total cigarette consumption.</p>
 <h2>Ordering ZYN in Bangalore</h2>
-<p>ZYN Cool Mint and Velo Freezing Peppermint are both available at Rs 999 per tin. Each tin contains 20 pouches. Order on WhatsApp for 30-45 minute delivery across all of Bangalore. We stock both brands consistently — no waiting for restocks.</p>`,
+<p>ZYN Cool Mint and Velo Freezing Peppermint are both available at Rs 999 per tin. Each tin contains 20 pouches. Order on WhatsApp for 30-45 minute delivery across all of Bangalore. We stock both brands consistently — no waiting for restocks.</p>
+<p>Whether you are a first-time pouch user or switching from cigarettes, ZYN Cool Mint is the best starting point available in Bangalore. At Rs 999 for 20 pouches with 30-45 minute delivery, there has never been an easier way to try tobacco-free nicotine. Order on WhatsApp today.</p>`,
   },
   {
     slug: "elfbar-raya-d1-bangalore",
@@ -208,7 +211,8 @@ export const blogPosts: BlogPost[] = [
 <p>How does the Raya D1 compare to its main competitors? Against the Lost Mary MT35000 Turbo — the MT35000 wins on puff count at 35,000 vs 13,000, but costs Rs 400 more. Against the Elfbar MoonNight 40K — the MoonNight has higher puff count at 40,000 but the Raya D1 has better flavour consistency in our experience. Against the Tesiyi AK 50K — the AK 50K wins on puff count and value for very heavy users.</p>
 <p>For most customers in Bangalore, the Raya D1 hits the perfect balance of puff count, price, display features and flavour quality. It remains our top recommendation for first-time buyers and daily vapers alike.</p>
 <h2>Order Elfbar Raya D1 in Bangalore Now</h2>
-<p>Available at Rs 2,699 with 30-45 minute delivery across 120+ areas in Bangalore. Order on WhatsApp, pay when the rider arrives. 100% original with QR verification. Available daily including late nights.</p>`,
+<p>Available at Rs 2,699 with 30-45 minute delivery across 120+ areas in Bangalore. Order on WhatsApp, pay when the rider arrives. 100% original with QR verification. Available daily including late nights.</p>
+<p>The Elfbar Raya D1 is the most popular vape in Bangalore for good reason. Exceptional flavour, accurate puff count, useful display and excellent value at Rs 2,699. Whether you are a first-time vaper or an experienced daily user, the Raya D1 delivers a consistently excellent experience every time.</p>`,
   },
 ];
 
