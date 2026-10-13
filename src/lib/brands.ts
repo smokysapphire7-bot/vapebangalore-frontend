@@ -114,7 +114,7 @@ export const brands: Brand[] = [
   },
   {
     slug: "vopk-bangalore",
-    name: "VopK",
+    name: "VpoK",
     tagline: "Cool flavours. Hot delivery.",
     origin: "China",
     story: "VopK is a rising vape brand known for intense cooling flavours and high puff counts. The Cool Bar with 20,000 puffs is their flagship product in Bangalore — delivering crisp, consistent flavour that keeps vapers coming back.",
