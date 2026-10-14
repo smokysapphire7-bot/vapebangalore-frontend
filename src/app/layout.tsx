@@ -223,7 +223,7 @@ const faqSchema = {
       name: "What payment methods are accepted?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Delivery charges are paid to the rider on arrival — cash or UPI. No prepayment required.",
+        text: "Order on WhatsApp to confirm delivery details.",
       },
     },
   ],

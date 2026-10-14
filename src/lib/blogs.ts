@@ -25,8 +25,8 @@ export const blogPosts: BlogPost[] = [
 <p>Getting vapes delivered in Bangalore used to mean a long wait or a trip to a physical shop. VapeBangalore.com has changed that completely. We deliver vapes, nicotine pouches and rolling tobacco to 120+ areas across Bangalore in 30-45 minutes.</p>
 
 <h2>How to Order Vapes in Bangalore</h2>
-<p>Ordering is designed to be as simple as possible. Open WhatsApp on your phone and message us with the product you want and your delivery address. We confirm availability, tell you the total price and dispatch immediately. Our rider reaches you in 30-45 minutes. Pay cash or UPI when the rider arrives at your door.</p>
-<p>No app download required. No account registration needed. No prepayment. Just WhatsApp and pay on delivery.</p>
+<p>Ordering is designed to be as simple as possible. Open WhatsApp on your phone and message us with the product you want and your delivery address. We confirm availability, tell you the total price and dispatch immediately. Our rider reaches you in 30-45 minutes. Our rider reaches you in 30-45 minutes.</p>
+<p>No app download required. No account registration needed. No prepayment. Just WhatsApp us to place your order.</p>
 
 <h2>What We Deliver</h2>
 <p>We stock over 40 products from all major brands. Disposable vapes including Elfbar Raya D1, Lost Mary MT35000 Turbo, Elfbar MoonNight 40K, Nasty Bolt WTF 50K, Tesiyi AK 50K, VpoK Cool Bar, Funky Republic Fi3000, IGET Astro B18000, Yuoto Beyonder and more.</p>
@@ -52,7 +52,7 @@ export const blogPosts: BlogPost[] = [
 <h2>Frequently Asked Questions</h2>
 <p><strong>What is the minimum order?</strong> There is no minimum order. You can order a single product.</p>
 <p><strong>Do you deliver late at night?</strong> Yes. We cover late night delivery in most areas. Message us on WhatsApp to check availability for your area and time.</p>
-<p><strong>Can I pay by UPI?</strong> Yes. We accept cash and UPI on delivery.</p>`,
+<p><strong>Can I pay by UPI?</strong> Message us on WhatsApp to confirm payment options.</p>`,
   },
   {
     slug: "best-disposable-vapes-bangalore-2025",
@@ -91,13 +91,13 @@ export const blogPosts: BlogPost[] = [
 <p>600 puffs, no settings, draw activated. The perfect first vape for beginners or as a backup device. At Rs 999 it represents the lowest possible commitment to try vaping.</p>
 
 <h2>How to Order in Bangalore</h2>
-<p>All products available with 30-45 minute delivery across 120+ areas in Bangalore. Order on WhatsApp, pay when the rider arrives. All products 100% original and verified.</p>
+<p>All products available with 30-45 minute delivery across 120+ areas in Bangalore. Order on WhatsApp. All products 100% original and verified.</p>
 <h2>How to Avoid Fake Disposable Vapes in Bangalore</h2>
 <p>Counterfeit disposable vapes are a genuine problem in Bangalore. Fake Elfbar and Lost Mary devices are common at physical shops and through unverified sellers. Signs of a fake: unusually low price, no QR code on packaging, poor build quality, weak flavour from the first puff.</p>
 <p>Every product from VapeBangalore.com is 100% original. We provide a QR code verification guarantee on every order. All our products pass manufacturer authenticity checks.</p>
 <h2>Disposable Vape Price Guide — Bangalore 2025</h2>
 <p>Elfbar 600: Rs 999. Funky Republic Fi3000: Rs 1,199. Rayya Pryme: Rs 1,299. Lost Mary MO10000: Rs 1,999. VpoK Cool Bar: Rs 2,699. Elfbar Raya D1: Rs 2,699. Elfbar MoonNight 40K: Rs 2,999. Lost Mary MT35000 Turbo: Rs 3,099. Tesiyi AK 50K: Rs 3,999. All prices include delivery anywhere in Bangalore.</p>
-<p>All products are available for 30-45 minute delivery across Bangalore. We stock every product listed above consistently. Order on WhatsApp today — pay when the rider arrives at your door. Available daily including late nights across all major Bangalore areas.</p>`,
+<p>All products are available for 30-45 minute delivery across Bangalore. We stock every product listed above consistently. Order on WhatsApp today. Available daily including late nights across all major Bangalore areas.</p>`,
   },
   {
     slug: "vape-shop-bangalore",
@@ -164,7 +164,7 @@ export const blogPosts: BlogPost[] = [
 <p>ZYN Cool Mint delivers a fresh, clean mint flavour with smooth nicotine release. Best for new pouch users and all-day use. Velo Freezing Peppermint delivers a significantly more intense cooling sensation. Best for experienced users who want maximum intensity. Both are available at Rs 999 per tin of 20 pouches.</p>
 
 <h2>Where to Buy ZYN in Bangalore</h2>
-<p>ZYN Cool Mint is available from VapeBangalore.com with 30-45 minute delivery across 120+ areas in Bangalore. Order on WhatsApp and pay when the rider arrives. All products are 100% original and sourced from authorised distributors.</p>
+<p>ZYN Cool Mint is available from VapeBangalore.com with 30-45 minute delivery across 120+ areas in Bangalore. Order on WhatsApp. All products are 100% original and sourced from authorised distributors.</p>
 
 <h2>How Much Does ZYN Cost in Bangalore?</h2>
 <p>ZYN Cool Mint is priced at Rs 999 per tin containing 20 pouches. Each pouch lasts 20-30 minutes. That works out to Rs 50 per pouch or approximately Rs 1.67 per minute of nicotine delivery — extremely cost effective compared to cigarettes or vapes for regular use.</p>
@@ -212,7 +212,7 @@ export const blogPosts: BlogPost[] = [
 <p>How does the Raya D1 compare to its main competitors? Against the Lost Mary MT35000 Turbo — the MT35000 wins on puff count at 35,000 vs 13,000, but costs Rs 400 more. Against the Elfbar MoonNight 40K — the MoonNight has higher puff count at 40,000 but the Raya D1 has better flavour consistency in our experience. Against the Tesiyi AK 50K — the AK 50K wins on puff count and value for very heavy users.</p>
 <p>For most customers in Bangalore, the Raya D1 hits the perfect balance of puff count, price, display features and flavour quality. It remains our top recommendation for first-time buyers and daily vapers alike.</p>
 <h2>Order Elfbar Raya D1 in Bangalore Now</h2>
-<p>Available at Rs 2,699 with 30-45 minute delivery across 120+ areas in Bangalore. Order on WhatsApp, pay when the rider arrives. 100% original with QR verification. Available daily including late nights.</p>
+<p>Available at Rs 2,699 with 30-45 minute delivery across 120+ areas in Bangalore. Order on WhatsApp. 100% original with QR verification. Available daily including late nights.</p>
 <p>The Elfbar Raya D1 is the most popular vape in Bangalore for good reason. Exceptional flavour, accurate puff count, useful display and excellent value at Rs 2,699. Whether you are a first-time vaper or an experienced daily user, the Raya D1 delivers a consistently excellent experience every time.</p>`,
   },
 ];
