@@ -48,7 +48,7 @@ export const locations: Location[] = [
     category: "tech",
     geoLat: 12.9698, geoLng: 77.7499,
     sublocations: ["ITPL", "Brookefield", "AECS Layout", "Kundalahalli", "Hope Farm", "Kadugodi", "Varthur", "Mahadevapura", "Hoodi"],
-    localNote: "Whitefield is Bangalore's IT hub and we deliver vapes across the entire corridor in 30-45 minutes. ITPL, Brookefield, AECS Layout, Hope Farm Junction, Kadugodi, Mahadevapura, Hoodi and Varthur — all covered. Popular with tech professionals, our top sellers in Whitefield are Elfbar Raya D1, Caliburn G4 Pro pod system, ZYN Cool Mint nicotine pouches and Lost Mary MT35000 Turbo. Order on WhatsApp, share your apartment gate or office address. No prepayment required — cash or UPI on delivery.",
+    localNote: "Whitefield is Bangalore's IT hub and we deliver vapes across the entire corridor in 30-45 minutes. ITPL, Brookefield, AECS Layout, Hope Farm Junction, Kadugodi, Mahadevapura, Hoodi and Varthur — all covered. Popular with tech professionals, our top sellers in Whitefield are Elfbar Raya D1, Caliburn G4 Pro pod system, ZYN Cool Mint nicotine pouches and Lost Mary MT35000 Turbo. Order on WhatsApp, share your apartment gate or office address. Order on WhatsApp for fast, discreet delivery.",
   },
   {
     slug: "electronic-city",
