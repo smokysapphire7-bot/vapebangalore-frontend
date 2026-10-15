@@ -4,7 +4,7 @@ import { LOCATION_COUNT } from "@/lib/locations";
 import { products } from "@/lib/products";
 import ProductGrid from "@/components/home/ProductGrid";
 import FloatingColumn from "@/components/home/FloatingColumn";
-import HeroCarousel from "@/components/home/HeroCarousel";
+import FlashSale from "@/components/home/FlashSale";
 
 export const metadata: Metadata = {
   title: "Vapes in Bangalore — Buy Elfbar, Lost Mary, ZYN | 30 Min Delivery | VapeBangalore.com",
@@ -30,7 +30,14 @@ export default function HomePage() {
 
           <div style={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between", gap: "8px" }}>
             <div style={{ flex: 1, minWidth: 0 }}>
-              <HeroCarousel />
+              <h1 style={{ fontFamily: "var(--font-bebas)", lineHeight: 0.88, letterSpacing: "0.02em", marginBottom: "12px" }}>
+                <span style={{ fontSize: "clamp(56px,14vw,80px)", color: "var(--white)", display: "block" }}>VAPES</span>
+                <span style={{ fontSize: "clamp(56px,14vw,80px)", color: "rgba(255,255,255,0.18)", display: "block" }}>IN</span>
+                <span style={{ fontSize: "clamp(56px,14vw,80px)", color: "var(--orange)", display: "block" }}>BANGALORE.</span>
+              </h1>
+              <p style={{ fontSize: "11px", color: "rgba(255,255,255,0.38)", lineHeight: 1.65 }}>
+                Elfbar, Lost Mary, ZYN &amp; more.<br />100% original.
+              </p>
             </div>
 
             <div style={{ width: "100px", flexShrink: 0, height: "260px", overflow: "hidden", position: "relative" }}>
@@ -55,6 +62,11 @@ export default function HomePage() {
 
         </div>
       </section>
+
+      {/* FLASH SALE */}
+      <div className="container" style={{ paddingTop: "16px" }}>
+        <FlashSale />
+      </div>
 
       {/* TRUST STRIP — auto-scrolling marquee */}
       <section style={{ background: "#0f0f0f", borderTop: "1px solid var(--b0)", borderBottom: "1px solid var(--b0)", overflow: "hidden" }}>
