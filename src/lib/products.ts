@@ -35,7 +35,7 @@ export const products: Product[] = [
     name: "Elfbar Raya D1",
     brand: "Elfbar",
     category: "Disposable",
-    price: 2599,
+    price: 2699,
     originalPrice: 2199,
     puffCount: 13000,
     nicotine: "20mg",
