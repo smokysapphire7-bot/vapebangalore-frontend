@@ -64,6 +64,8 @@ const RATINGS: Record<string, { rating: number; count: number }> = {
   "vpok-cool-bar": { rating: 4.5, count: 43 },
   "funky-republic-fi3000": { rating: 4.6, count: 89 },
   "rayya-pryme": { rating: 4.5, count: 67 },
+  "iget-goz-b40000": { rating: 4.7, count: 112 },
+  "marbo-25000": { rating: 4.6, count: 78 },
 };
 
 export default function ProductCard({ product }: ProductCardProps) {

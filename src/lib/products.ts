@@ -1,5 +1,5 @@
 export type ProductCategory = "Disposable" | "Pod Device" | "Nicotine Pouches" | "E-Liquid" | "Tobacco";
-export type ProductBrand = "Elfbar" | "Lost Mary" | "Caliburn" | "ZYN" | "Nasty" | "IGET" | "Yuoto" | "Velo" | "Pod Salt" | "Amber Leaf" | "Golden Virginia" | "American Spirit" | "Drum" | "Funky Republic" | "Rayya" | "Tesiyi" | "VpoK";
+export type ProductBrand = "Elfbar" | "Lost Mary" | "Caliburn" | "ZYN" | "Nasty" | "IGET" | "Yuoto" | "Velo" | "Pod Salt" | "Amber Leaf" | "Golden Virginia" | "American Spirit" | "Drum" | "Funky Republic" | "Rayya" | "Tesiyi" | "VpoK" | "IGET" | "Marbo";
 
 export interface Product {
   slug: string;
@@ -1083,6 +1083,57 @@ export const products: Product[] = [
   },
 ];
 
+  {
+    slug: "iget-goz-b40000",
+    name: "IGET GOZ B40000",
+    brand: "IGET",
+    category: "Disposable",
+    price: 3799,
+    puffCount: 40000,
+    nicotine: "50mg",
+    charging: "Type-C",
+    image: "/img-compressed/iget-goz-b40000.jpg",
+    isBestseller: false,
+    isNew: true,
+    inStock: true,
+    flavours: [
+      { name: "Watermelon Ice", color: "#34d399" },
+      { name: "Blueberry Ice", color: "#818cf8" },
+      { name: "Mango Ice", color: "#fb923c" },
+      { name: "Strawberry Ice", color: "#f472b6" },
+    ],
+    longDescription: "The IGET GOZ B40000 delivers 40,000 puffs with dual mesh coil technology, adjustable airflow, real-time battery display and Type-C fast charging.",
+    specs: { "Puff Count": "40,000", "Battery": "650mAh", "Nicotine": "50mg Salt", "Charging": "USB-C", "Coil": "Dual Mesh" },
+    excerpt: "IGET GOZ B40000 disposable vape with 40,000 puffs, dual mesh coil and real-time battery display. Available in Bangalore with 30-45 min delivery.",
+    metaTitle: "IGET GOZ B40000 Bangalore — Buy Online | VapeBangalore.com",
+    metaDescription: "Buy IGET GOZ B40000 in Bangalore. 40,000 puffs, dual mesh coil, Type-C charging. 30-45 min delivery. Rs 3,799.",
+  },
+  {
+    slug: "marbo-25000",
+    name: "Marbo 25000",
+    brand: "Marbo",
+    category: "Disposable",
+    price: 2699,
+    puffCount: 25000,
+    nicotine: "30mg",
+    charging: "Type-C",
+    image: "/img-compressed/marbo-25000.jpg",
+    isBestseller: false,
+    isNew: true,
+    inStock: true,
+    flavours: [
+      { name: "Watermelon Ice", color: "#34d399" },
+      { name: "Blueberry Ice", color: "#818cf8" },
+      { name: "Mango Ice", color: "#fb923c" },
+      { name: "Strawberry Ice", color: "#f472b6" },
+    ],
+    longDescription: "The Marbo 25000 delivers 25,000 puffs with a smart screen showing battery and e-liquid levels. 20ml capacity, 600mAh rechargeable battery.",
+    specs: { "Puff Count": "25,000", "Battery": "600mAh", "Nicotine": "30mg Salt", "Capacity": "20ml", "Charging": "USB-C" },
+    excerpt: "Marbo 25000 disposable vape with 25,000 puffs and smart screen display. Available in Bangalore with 30-45 min delivery.",
+    metaTitle: "Marbo 25000 Bangalore — Buy Online | VapeBangalore.com",
+    metaDescription: "Buy Marbo 25000 in Bangalore. 25,000 puffs, smart screen, rechargeable. 30-45 min delivery. Rs 2,699.",
+  },
+
 // ── Legacy helpers (used by existing components) ─────────────────────────────
 export function getProductsByBrand(brand: string) {
   return products.filter((p) => p.brand === brand);
@@ -1125,4 +1176,55 @@ export const BRANDS: ProductBrand[] = [
   "Tesiyi",
   "VpoK",
 ];
+  {
+    slug: "iget-goz-b40000",
+    name: "IGET GOZ B40000",
+    brand: "IGET",
+    category: "Disposable",
+    price: 3799,
+    puffCount: 40000,
+    nicotine: "50mg",
+    charging: "Type-C",
+    image: "/img-compressed/iget-goz-b40000.jpg",
+    isBestseller: false,
+    isNew: true,
+    inStock: true,
+    flavours: [
+      { name: "Watermelon Ice", color: "#34d399" },
+      { name: "Blueberry Ice", color: "#818cf8" },
+      { name: "Mango Ice", color: "#fb923c" },
+      { name: "Strawberry Ice", color: "#f472b6" },
+    ],
+    longDescription: "The IGET GOZ B40000 delivers 40,000 puffs with dual mesh coil technology, adjustable airflow, real-time battery display and Type-C fast charging.",
+    specs: { "Puff Count": "40,000", "Battery": "650mAh", "Nicotine": "50mg Salt", "Charging": "USB-C", "Coil": "Dual Mesh" },
+    excerpt: "IGET GOZ B40000 disposable vape with 40,000 puffs, dual mesh coil and real-time battery display. Available in Bangalore with 30-45 min delivery.",
+    metaTitle: "IGET GOZ B40000 Bangalore — Buy Online | VapeBangalore.com",
+    metaDescription: "Buy IGET GOZ B40000 in Bangalore. 40,000 puffs, dual mesh coil, Type-C charging. 30-45 min delivery. Rs 3,799.",
+  },
+  {
+    slug: "marbo-25000",
+    name: "Marbo 25000",
+    brand: "Marbo",
+    category: "Disposable",
+    price: 2699,
+    puffCount: 25000,
+    nicotine: "30mg",
+    charging: "Type-C",
+    image: "/img-compressed/marbo-25000.jpg",
+    isBestseller: false,
+    isNew: true,
+    inStock: true,
+    flavours: [
+      { name: "Watermelon Ice", color: "#34d399" },
+      { name: "Blueberry Ice", color: "#818cf8" },
+      { name: "Mango Ice", color: "#fb923c" },
+      { name: "Strawberry Ice", color: "#f472b6" },
+    ],
+    longDescription: "The Marbo 25000 delivers 25,000 puffs with a smart screen showing battery and e-liquid levels. 20ml capacity, 600mAh rechargeable battery.",
+    specs: { "Puff Count": "25,000", "Battery": "600mAh", "Nicotine": "30mg Salt", "Capacity": "20ml", "Charging": "USB-C" },
+    excerpt: "Marbo 25000 disposable vape with 25,000 puffs and smart screen display. Available in Bangalore with 30-45 min delivery.",
+    metaTitle: "Marbo 25000 Bangalore — Buy Online | VapeBangalore.com",
+    metaDescription: "Buy Marbo 25000 in Bangalore. 25,000 puffs, smart screen, rechargeable. 30-45 min delivery. Rs 2,699.",
+  },
+
 // ── Legacy helpers (used by existing components) ─────────────────────────────
