@@ -1081,8 +1081,6 @@ export const products: Product[] = [
     metaDescription: "Buy Uwell Caliburn Xpod in Bangalore. Full colour display, G3 Pro technology. 30-45 min delivery. ₹6,500.",
     specs: { "Display": "Full Colour", "Tech": "G3 Pro", "Charging": "USB-C" },
   },
-];
-
   {
     slug: "iget-goz-b40000",
     name: "IGET GOZ B40000",
@@ -1134,6 +1132,7 @@ export const products: Product[] = [
     metaDescription: "Buy Marbo 25000 in Bangalore. 25,000 puffs, smart screen, rechargeable. 30-45 min delivery. Rs 2,699.",
   },
 
+];
 // ── Legacy helpers (used by existing components) ─────────────────────────────
 export function getProductsByBrand(brand: string) {
   return products.filter((p) => p.brand === brand);
