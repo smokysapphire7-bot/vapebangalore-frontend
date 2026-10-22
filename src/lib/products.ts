@@ -1,5 +1,5 @@
 export type ProductCategory = "Disposable" | "Pod Device" | "Nicotine Pouches" | "E-Liquid" | "Tobacco";
-export type ProductBrand = "Elfbar" | "Lost Mary" | "Caliburn" | "ZYN" | "Nasty" | "IGET" | "Yuoto" | "Velo" | "Pod Salt" | "Amber Leaf" | "Golden Virginia" | "American Spirit" | "Drum" | "Funky Republic" | "Rayya" | "Tesiyi" | "VpoK";
+export type ProductBrand = "Elfbar" | "Lost Mary" | "Caliburn" | "ZYN" | "Nasty" | "IGET" | "Yuoto" | "Velo" | "Pod Salt" | "Amber Leaf" | "Golden Virginia" | "American Spirit" | "Drum" | "Funky Republic" | "Rayya" | "Tesiyi" | "VpoK" | "Marbo";
 
 export interface Product {
   slug: string;
