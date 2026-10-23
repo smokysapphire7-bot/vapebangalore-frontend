@@ -395,7 +395,7 @@ export const products: Product[] = [
     name: "Elfbar BC 10000",
     brand: "Elfbar",
     category: "Disposable",
-    price: 1999,
+    price: 2499,
     originalPrice: 2499,
     puffCount: 10000,
     nicotine: "20mg",
