@@ -4,6 +4,7 @@ import { LOCATION_COUNT } from "@/lib/locations";
 import { products } from "@/lib/products";
 import ProductGrid from "@/components/home/ProductGrid";
 import FloatingColumn from "@/components/home/FloatingColumn";
+import Halloween from "@/components/home/Halloween";
 
 export const metadata: Metadata = {
   title: "Vapes in Bangalore — Buy Elfbar, Lost Mary, ZYN | 30 Min Delivery | VapeBangalore.com",
@@ -61,6 +62,11 @@ export default function HomePage() {
 
         </div>
       </section>
+
+      {/* HALLOWEEN */}
+      <div className="container" style={{ paddingTop: "16px" }}>
+        <Halloween />
+      </div>
 
       {/* TRUST STRIP — auto-scrolling marquee */}
       <section style={{ background: "#0f0f0f", borderTop: "1px solid var(--b0)", borderBottom: "1px solid var(--b0)", overflow: "hidden" }}>
