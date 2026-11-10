@@ -64,10 +64,10 @@ export const products: Product[] = [
   },
   {
     slug: "iget-goz-b40000",
-    name: "IGET GOZ B40000",
+    name: "IGET Soul 40,000",
     brand: "IGET",
     category: "Disposable",
-    price: 2799,
+    price: 3899,
     puffCount: 40000,
     nicotine: "50mg",
     charging: "Type-C",
