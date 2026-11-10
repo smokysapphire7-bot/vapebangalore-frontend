@@ -713,7 +713,7 @@ export const products: Product[] = [
     name: "ZYN Cool Mint",
     brand: "ZYN",
     category: "Nicotine Pouches",
-    price: 1299,299,
+    price: 1299,
     originalPrice: 1249,
     nicotine: "6mg",
     inStock: true,
