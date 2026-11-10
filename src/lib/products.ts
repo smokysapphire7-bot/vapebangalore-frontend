@@ -228,7 +228,7 @@ export const products: Product[] = [
     name: "Tesiyi AK 50K",
     brand: "Tesiyi",
     category: "Disposable",
-    price: 1299,
+    price: 3999,
     puffCount: 50000,
     nicotine: "50mg",
     charging: "Type-C",
