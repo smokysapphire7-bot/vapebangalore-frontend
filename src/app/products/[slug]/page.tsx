@@ -143,6 +143,51 @@ const defaultReviews = [
   { author: "Arjun S", location: "Bangalore", rating: 4, text: "Good product, quick delivery. Happy with the purchase from VapeBangalore.", date: "2026-07-15" },
 ];
 
+
+const getLongTailFAQs = (product: any) => {
+  const { name, brand, category, specs } = product;
+  const puffs = product.puffCount || specs?.Puffs || "high puff count";
+  const nicotine = product.nicotine || specs?.Nicotine || "standard";
+  const charging = specs?.Charging || "Type-C";
+
+  if (category === "Disposable") {
+    return [
+      { q: `How many puffs does the ${name} actually last in real-world use?`, a: `While the ${name} is rated for up to ${puffs} puffs, real-world usage depends on draw length. For average users in Bangalore, it typically lasts 1 to 2 weeks of regular use, offering exceptional value.` },
+      { q: `Is the ${name} rechargeable, and what type of charging does it use?`, a: `Yes, the ${name} features a built-in rechargeable battery with ${charging} fast charging, ensuring you can top up the battery and enjoy the e-liquid until the very last puff.` },
+      { q: `What is the nicotine strength of the ${name}?`, a: `The ${name} contains ${nicotine} nicotine salt, providing a smooth, satisfying throat hit without the harshness of traditional freebase nicotine, ideal for both beginners and experienced vapers.` },
+      { q: `How can I verify if my ${name} is 100% authentic?`, a: `Every genuine ${brand} device comes with a scratch-off QR code on the packaging. Simply scan it with your smartphone to verify its authenticity on the official ${brand} website. We only source directly from authorized distributors.` }
+    ];
+  } else if (category === "Pod Device") {
+    return [
+      { q: `Is the ${name} suitable for vaping beginners?`, a: `Absolutely. The ${name} is designed with draw-activation (or simple button operation) and a leak-resistant pod system, making it incredibly user-friendly for those transitioning from smoking or new to vaping in Bangalore.` },
+      { q: `What type of e-liquid works best with the ${name}?`, a: `The ${name} is optimized for Nicotine Salt e-liquids (typically 20mg or 35mg). We highly recommend pairing it with ${brand} or Elfliq Nic Salts for the best flavour reproduction and throat hit.` },
+      { q: `How long does the battery last on a single charge?`, a: `The ${name} features a robust battery. For average users, it easily lasts a full day of moderate vaping before needing a quick ${charging} recharge.` },
+      { q: `Are replacement pods/coils available for the ${name} in Bangalore?`, a: `Yes, we stock genuine replacement pods and coils for the ${name}. You can easily add them to your WhatsApp order to ensure your device stays in perfect condition.` }
+    ];
+  } else if (category === "Nicotine Pouches") {
+    return [
+      { q: `How do I use ${name} correctly for the best experience?`, a: `Simply place a pouch between your gum and upper lip. The ${name} will release a steady, discreet stream of nicotine and flavour for up to 30-45 minutes without any smoke, vapour, or spitting.` },
+      { q: `How long does a can of ${name} typically last?`, a: `A standard can of ${name} contains 20 pouches. Depending on your usage, a single can usually lasts a regular user about 2 to 3 days, making it a highly cost-effective alternative to smoking.` },
+      { q: `Does ${name} contain tobacco leaf?`, a: `No, ${name} is a tobacco-free nicotine pouch. It contains pharmaceutical-grade nicotine, plant-based fibers, flavourings, and sweeteners, offering a clean, discreet experience with no tobacco leaf or smoke.` },
+      { q: `Can I carry ${name} to the office or on a flight?`, a: `Yes! Since ${name} produces no vapour, smoke, or smell, it is completely discreet and perfectly suitable for use in offices, meetings, restaurants, and during flights.` }
+    ];
+  } else if (category === "Tobacco") {
+    return [
+      { q: `How should I store my ${name} to keep it fresh?`, a: `To maintain optimal moisture and flavour, store your ${name} in a cool, dry place away from direct sunlight. Keeping it in an airtight container or its original sealed pouch will prevent it from drying out.` },
+      { q: `Is ${name} suitable for hand-rolling?`, a: `Yes, ${name} is specifically cut and blended to provide the perfect texture and burn rate for hand-rolling. It offers a smooth, consistent smoke that rolling enthusiasts in Bangalore prefer.` },
+      { q: `Do you offer rolling papers and accessories with ${name}?`, a: `While we specialize in premium tobacco, we recommend pairing it with high-quality rolling papers and filters. WhatsApp us, and we can often include basic accessories in your delivery.` },
+      { q: `How can I be sure this tobacco is genuine?`, a: `All our tobacco products, including ${name}, are sourced directly from authorized Indian distributors. The packaging features tax stamps and authenticity markers to guarantee you receive the real product.` }
+    ];
+  } else {
+    return [
+      { q: `What devices are compatible with ${name}?`, a: `The ${name} is highly versatile and works excellently with most standard pod systems and sub-ohm tanks. Check the bottle for specific device recommendations.` },
+      { q: `How should I store my ${name} to maintain flavour?`, a: `For the best flavour longevity, store your ${name} in a cool, dark place away from direct sunlight. Ensure the cap is tightly sealed to prevent oxidation.` },
+      { q: `Is ${name} safe and 100% authentic?`, a: `Yes, we only stock 100% authentic products sourced from authorized distributors. Every item has batch tracking and authenticity verification.` },
+      { q: `How fast is delivery for ${name} in Bangalore?`, a: `We deliver ${name} across all major Bangalore areas (Koramangala, HSR, Whitefield, etc.) in 30-45 minutes via secure, discreet packaging.` }
+    ];
+  }
+};
+
 export default async function ProductPage({ params }: Props) {
   const { slug } = await params;
   const product = getProductBySlug(slug);
@@ -186,31 +231,16 @@ export default async function ProductPage({ params }: Props) {
     ],
   };
 
+  const dynamicFAQs = getLongTailFAQs(product);
+
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: `Is ${product.name} original?`,
-        acceptedAnswer: { "@type": "Answer", text: `Yes. All ${product.name} units are sourced directly from authorised distributors. Every product has an authentication QR code you can scan to verify authenticity on the brand's official website.` },
-      },
-      {
-        "@type": "Question",
-        name: `How long does delivery take for ${product.name} in Bangalore?`,
-        acceptedAnswer: { "@type": "Answer", text: `We deliver ${product.name} across Bangalore in 30-45 minutes. WhatsApp us your order and address and we dispatch immediately.` },
-      },
-      {
-        "@type": "Question",
-        name: `What flavours are available for ${product.name}?`,
-        acceptedAnswer: { "@type": "Answer", text: product.flavours.length > 0 ? `Available flavours: ${product.flavours.map((f) => f.name).join(", ")}.` : `Please WhatsApp us for current flavour availability.` },
-      },
-      {
-        "@type": "Question",
-        name: `How much does ${product.name} cost in Bangalore?`,
-        acceptedAnswer: { "@type": "Answer", text: `${product.name} is available for ₹${product.price.toLocaleString()} with 30-45 minute delivery across Bangalore.` },
-      },
-    ],
+    mainEntity: dynamicFAQs.map(faq => ({
+      "@type": "Question",
+      name: faq.q,
+      acceptedAnswer: { "@type": "Answer", text: faq.a }
+    }))
   };
 
   return (
@@ -326,19 +356,29 @@ export default async function ProductPage({ params }: Props) {
           </div>
         </section>
 
-        {/* FAQ */}
+        {/* LONG-TAIL CONTENT: WHY CHOOSE */}
+        <section style={{ padding: "40px 0", background: "var(--bg)", borderTop: "1px solid var(--b0)" }}>
+          <div className="container">
+            <h2 style={{ fontFamily: "var(--font-display)", fontSize: "22px", fontWeight: 800, color: "var(--white)", letterSpacing: "-0.02em", marginBottom: "16px" }}>
+              Why Choose {product.name} in Bangalore?
+            </h2>
+            <p style={{ fontSize: "14px", color: "var(--dim)", lineHeight: 1.8, marginBottom: "16px" }}>
+              Looking for the best <strong>{product.category}</strong> in Bangalore? The <strong>{product.name}</strong> by <strong>{product.brand}</strong> is a top choice for vapers across Koramangala, HSR Layout, Whitefield, and Indiranagar. 
+              {product.puffCount && ` Offering up to ${product.puffCount} puffs,`} 
+              {product.nicotine && ` with ${product.nicotine} nicotine strength,`} 
+              it delivers exceptional flavour and reliability. With VapeBangalore's 30-45 minute discreet delivery, you get 100% authentic {product.brand} products right to your door, complete with QR-code verification.
+            </p>
+          </div>
+        </section>
+
+        {/* DYNAMIC FAQ */}
         <section style={{ padding: "40px 0", background: "var(--s1)", borderTop: "1px solid var(--b0)", borderBottom: "1px solid var(--b0)" }}>
           <div className="container">
             <h2 style={{ fontFamily: "var(--font-display)", fontSize: "22px", fontWeight: 800, color: "var(--white)", letterSpacing: "-0.02em", marginBottom: "20px" }}>
-              Frequently Asked Questions
+              Frequently Asked Questions About {product.name}
             </h2>
             <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-              {[
-                { q: `Is ${product.name} original?`, a: `Yes. All ${product.name} units are sourced directly from authorised distributors. Every product has an authentication QR code you can scan to verify.` },
-                { q: `How long does delivery take?`, a: `We deliver ${product.name} across Bangalore in 30-45 minutes. WhatsApp us your order and address and we dispatch immediately.` },
-                { q: `What flavours are available?`, a: product.flavours.length > 0 ? `Available: ${product.flavours.map((f) => f.name).join(", ")}.` : "WhatsApp us for current flavour availability." },
-                { q: `How much does it cost?`, a: `₹${product.price.toLocaleString()} with 30-45 minute delivery. Delivery charges paid to rider on arrival.` },
-              ].map((faq, i) => (
+              {dynamicFAQs.map((faq, i) => (
                 <div key={i} style={{ background: "var(--s2)", border: "1px solid var(--b0)", borderRadius: "8px", padding: "14px 18px" }}>
                   <p style={{ fontSize: "13px", fontWeight: 600, color: "var(--white)", marginBottom: "6px" }}>{faq.q}</p>
                   <p style={{ fontSize: "12px", color: "var(--dim)", lineHeight: 1.7 }}>{faq.a}</p>
