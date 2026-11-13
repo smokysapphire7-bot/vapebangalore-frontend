@@ -303,3 +303,11 @@ export const locations: Location[] = [
 export function getLocationBySlug(slug: string) {
   return locations.find((loc) => loc.slug === slug);
 }
+
+export const LOCATION_COUNT = locations.length;
+
+export function getNearbyLocations(currentSlug: string, limit: number = 6) {
+  const others = locations.filter((loc) => loc.slug !== currentSlug);
+  // Simple shuffle to get random nearby locations, or just take the first 'limit'
+  return others.slice(0, limit);
+}
