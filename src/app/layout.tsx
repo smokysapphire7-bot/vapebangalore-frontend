@@ -1,7 +1,5 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Syne, JetBrains_Mono, Bebas_Neue } from "next/font/google";
-// Fonts loaded with display:swap for performance
-// Fonts loaded with display:swap for performance
 import "./globals.css";
 import { SITE } from "@/lib/settings";
 import { LOCATION_COUNT } from "@/lib/locations";
@@ -10,242 +8,72 @@ import CartDrawer from "@/components/layout/CartDrawer";
 import Footer from "@/components/layout/Footer";
 import { CartProvider } from "@/lib/cart";
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-sans",
-  display: "swap",
-});
+const inter = Inter({ subsets: ["latin"], variable: "--font-sans", display: "swap" });
+const syne = Syne({ subsets: ["latin"], variable: "--font-display", display: "swap", weight: ["400", "500", "600", "700", "800"] });
+const bebasNeue = Bebas_Neue({ subsets: ["latin"], variable: "--font-bebas", display: "swap", weight: ["400"] });
+const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono", display: "swap", weight: ["300", "400", "500"] });
 
-const syne = Syne({
-  subsets: ["latin"],
-  variable: "--font-display",
-  display: "swap",
-  weight: ["400", "500", "600", "700", "800"],
-});
-
-const bebasNeue = Bebas_Neue({
-  subsets: ["latin"],
-  variable: "--font-bebas",
-  display: "swap",
-  weight: ["400"],
-});
-
-const jetbrainsMono = JetBrains_Mono({
-  subsets: ["latin"],
-  variable: "--font-mono",
-  display: "swap",
-  weight: ["300", "400", "500"],
-});
+export const viewport: Viewport = {
+  themeColor: "#FF5C00",
+  width: "device-width",
+  initialScale: 1,
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: "Vapes in Bangalore — Buy Elfbar, Lost Mary, ZYN | 30 Min Delivery | VapeBangalore.com",
-    template: "%s | VapeBangalore.com",
+    default: "Vape Delivery Bangalore — 30 Min | VapeBangalore.com",
+    template: "%s | VapeBangalore",
   },
-  description: `#1 Vape Delivery in Bangalore. Buy Elfbar, Lost Mary, Caliburn, ZYN, Nasty, IGET & more. 30 min delivery across ${LOCATION_COUNT}+ areas. 100% original products. Order on WhatsApp now.`,
-  keywords: [
-    "vape bangalore",
-    "vapes in bangalore",
-    "vape delivery bangalore",
-    "buy vape bangalore",
-    "vape in bangalore",
-    "vape shop bangalore",
-    "vape store bangalore",
-    "buy vape online bangalore",
-    "vape delivery near me bangalore",
-    "vape home delivery bangalore",
-    "elfbar bangalore",
-    "lost mary bangalore",
-    "caliburn bangalore",
-    "zyn bangalore",
-    "nicotine pouches bangalore",
-    "disposable vape bangalore",
-    "pod device bangalore",
-    "vape online bangalore",
-    "order vape bangalore",
-    
-    "vape 30 min delivery bangalore",
-    "elfbar raya d1 bangalore",
-    "lost mary mo10000 bangalore",
-    "zyn cool mint bangalore",
-    "nicotine pouches bangalore",
-    "rolling tobacco bangalore",
-    "american spirit bangalore",
-    "vape koramangala",
-    "vape indiranagar",
-    "vape hsr layout",
-    "vape whitefield",
-    "vape btm layout",
-    "vape delivery near me",
-    "buy vape near me bangalore",
-    "vape shop near me bangalore",
-  ],
-  authors: [{ name: "VapeBangalore" }],
-  creator: "VapeBangalore",
-  publisher: "VapeBangalore",
-  alternates: {
-    canonical: "https://vapebangalore.com",
-    languages: {
-      "en-IN": "https://vapebangalore.com",
-    },
-  },
-  other: {
-    "geo.region": "IN-KA",
-    "geo.placename": "Bangalore",
-    "geo.position": "12.9716;77.5946",
-    "ICBM": "12.9716, 77.5946",
-  },
-  // duplicate alternates below for Next.js canonical: SITE.url },
+  description: "Bangalore's #1 Vape Delivery Service. Get original disposable vapes, pod devices, and nicotine pouches delivered in 30-45 mins to BTM, HSR, Koramangala, Whitefield & 100+ areas. 100% Authentic. Order on WhatsApp now!",
+  keywords: ["vape delivery bangalore", "vapebangalore", "buy vape online bangalore", "vape home delivery bangalore", "disposable vape delivery bangalore", "elfbar bangalore", "lost mary bangalore", "caliburn bangalore", "zyn bangalore", "nicotine pouches bangalore", "vape shop near me bangalore"],
+  alternates: { canonical: SITE.url },
   openGraph: {
-    type: "website",
-    locale: "en_IN",
+    title: "Vape Delivery Bangalore — 30 Min | VapeBangalore.com",
+    description: "Bangalore's #1 Vape Delivery Service. 100% Authentic vapes delivered in 30-45 mins to 100+ areas.",
     url: SITE.url,
-    siteName: "VapeBangalore.com",
-    title: "Buy Vapes in Bangalore — 30-45 Min Delivery | VapeBangalore.com",
-    description: `Fast, discreet vape delivery across Bangalore. ${LOCATION_COUNT}+ areas. Elfbar, Lost Mary, Caliburn, ZYN & more. 30 min delivery. Order on WhatsApp now.`,
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "VapeBangalore — Fast Vape Delivery in Bangalore" }],
+    siteName: "VapeBangalore",
+    locale: "en_IN",
+    type: "website",
+    images: [{ url: `${SITE.url}/og-image.jpg`, width: 1200, height: 630, alt: "Vape Delivery Bangalore" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Buy Vapes in Bangalore — 30-45 Min Delivery",
-    description: `Vapes in Bangalore in 30 min. Elfbar, Lost Mary, ZYN & more. 100% original. Order on WhatsApp.`,
-    images: ["/og-image.png"],
+    title: "Vape Delivery Bangalore — 30 Min",
+    description: "Bangalore's #1 Vape Delivery Service. 100% Authentic vapes delivered in 30-45 mins.",
   },
   robots: {
     index: true,
     follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
+    googleBot: { index: true, follow: true, "max-video-preview": -1, "max-image-preview": "large", "max-snippet": -1 },
   },
-  icons: {
-    icon: [
-      { url: "/favicon-48.png", sizes: "48x48", type: "image/png" },
-      { url: "/favicon-192.png", sizes: "192x192", type: "image/png" },
-      { url: "/favicon.svg", type: "image/svg+xml" },
-    ],
-    shortcut: "/favicon-48.png",
-    apple: "/apple-touch-icon.png",
-  },
-  manifest: "/manifest.json",
-};
-
-export const viewport: Viewport = {
-  themeColor: "#C8102E",
-  width: "device-width",
-  initialScale: 1,
-  maximumScale: 5,
-};
-
-const localBusinessSchema = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": SITE.url,
-  name: SITE.name,
-  url: SITE.url,
-  telephone: SITE.phone,
-  description: SITE.description,
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: "Bangalore",
-    addressRegion: "Karnataka",
-    addressCountry: "IN",
-  },
-  geo: {
-    "@type": "GeoCoordinates",
-    latitude: SITE.geo.lat,
-    longitude: SITE.geo.lng,
-  },
-  areaServed: { "@type": "City", name: "Bangalore" },
-  openingHours: SITE.openingHours,
-  priceRange: SITE.priceRange,
-  sameAs: ["https://t.me/vapebangalore"],
-};
-
-const websiteSchema = {
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  name: "VapeBangalore.com",
-  url: SITE.url,
-  potentialAction: {
-    "@type": "SearchAction",
-    target: {
-      "@type": "EntryPoint",
-      urlTemplate: `${SITE.url}/products?q={search_term_string}`,
-    },
-    "query-input": "required name=search_term_string",
-  },
-};
-
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "How fast is vape delivery in Bangalore?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "We deliver vapes across Bangalore in 30-45 minutes. Most orders in Koramangala, Indiranagar, HSR Layout, Whitefield and BTM Layout arrive within 30 minutes.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Are the vapes 100% original?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. All products are sourced directly from authorised distributors. Every product has an authentication QR code you can scan to verify on the brand official website.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Which areas do you deliver vapes to in Bangalore?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: `We deliver across ${LOCATION_COUNT}+ areas in Bangalore including Koramangala, Indiranagar, HSR Layout, Whitefield, BTM Layout, Marathahalli, Electronic City, Jayanagar, Hebbal, Yelahanka and more.`,
-      },
-    },
-    {
-      "@type": "Question",
-      name: "How do I order vapes in Bangalore?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Order on WhatsApp. Browse products on our website, select your product, then tap Quick Order or Order on WhatsApp. No login or app download required.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What payment methods are accepted?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Order on WhatsApp to confirm delivery details.",
-      },
-    },
-  ],
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "VapeBangalore",
+    "image": `${SITE.url}/og-image.jpg`,
+    "url": SITE.url,
+    "telephone": SITE.phone,
+    "priceRange": "₹₹",
+    "address": { "@type": "PostalAddress", "addressLocality": "Bangalore", "addressRegion": "Karnataka", "addressCountry": "IN" },
+    "areaServed": { "@type": "City", "name": "Bangalore" },
+    "sameAs": ["https://wa.me/916282878843"]
+  };
+
   return (
-    <html lang="en" className={`${inter.variable} ${syne.variable} ${jetbrainsMono.variable} ${bebasNeue.variable}`}>
+    <html lang="en" className={`${inter.variable} ${syne.variable} ${bebasNeue.variable} ${jetbrainsMono.variable}`}>
       <head>
-        <meta name="geo.region" content="IN-KA" />
-        <meta name="geo.placename" content="Bangalore" />
-        <meta name="geo.position" content={`${SITE.geo.lat};${SITE.geo.lng}`} />
-        <meta name="ICBM" content={`${SITE.geo.lat}, ${SITE.geo.lng}`} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       </head>
-      <body suppressHydrationWarning>
+      <body className="antialiased bg-[var(--bg)] text-[var(--text)]">
         <CartProvider>
           <Navigation />
+          <main className="min-h-screen">{children}</main>
+          <Footer />
           <CartDrawer />
-          <div style={{ paddingTop: "60px" }}>{children}<Footer /></div>
         </CartProvider>
       </body>
     </html>

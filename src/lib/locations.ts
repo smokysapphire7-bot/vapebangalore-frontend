@@ -1,9 +1,12 @@
+export const SHOP_URL = "https://vapebangalore.com";
+
 export interface Location {
-  slug: string;
   name: string;
+  slug: string;
   sublocations: string[];
+  landmarks?: string[];
+  metaDescription?: string;
   localNote: string;
-  category: "residential" | "tech" | "landmark" | "hospital" | "mall" | "hotel" | "college" | "road" | "metro";
   geoLat?: number;
   geoLng?: number;
 }
@@ -261,36 +264,42 @@ export const locations: Location[] = [
   { slug: "koramangala-pub-zone", name: "Koramangala Pub Zone", category: "landmark", geoLat: 12.9352, geoLng: 77.6245, sublocations: ["Koramangala 5th Block", "7th Block", "80 Feet Road", "Sony Signal"], localNote: "Vape delivery near Koramangala pub zone — 5th Block, 7th Block and 80 Feet Road area. One of Bangalore's top nightlife destinations. We deliver Elfbar, Lost Mary, ZYN and Caliburn to the Koramangala pub zone in 30-45 minutes. Late night delivery available. Order on WhatsApp." },
 
   { slug: "varthur", name: "Varthur", category: "residential", geoLat: 12.9354, geoLng: 77.7527, sublocations: ["Varthur Main Road", "Varthur Lake Road", "Whitefield adjacent", "Panathur Road", "Sai Layout"], localNote: "Varthur is a fast-growing residential area in East Bangalore near Whitefield. We deliver vapes across Varthur Main Road, Sai Layout and surrounding areas in 30-45 minutes. Popular with tech professionals. We deliver vapes to Varthur and surrounding areas in 30-45 minutes. Order on WhatsApp with your address or drop a pin. Discreet packaging." },
+
+  {
+    name: "Kempegowda International Airport (BLR) & Devanahalli",
+    slug: "bangalore-airport-vape-delivery",
+    sublocations: ["KIA Terminal 1", "KIA Terminal 2", "Devanahalli", "Hotel Aloft", "Novotel", "Courtyard by Marriott"],
+    landmarks: ["BLR Airport", "Devanahalli Fort", "Aloft Bangalore Airport"],
+    metaDescription: "Transiting through Bangalore Airport? Get 100% original vapes & ZYN delivered to your airport hotel (Aloft, Novotel) or Devanahalli stay in 30-45 mins.",
+    localNote: "Transiting through Kempegowda International Airport (BLR) or staying in Devanahalli? We provide fast, discreet vape and nicotine pouch delivery to airport hotels like Aloft, Novotel, and Courtyard by Marriott in 30-45 minutes. 100% original Elfbar, Caliburn, and ZYN. Seamless WhatsApp ordering, perfect for layovers or early flights."
+  },
+  {
+    name: "Luxury Hotels: The Leela, Taj, JW Marriott & ITC",
+    slug: "luxury-hotel-vape-delivery-bangalore",
+    sublocations: ["The Leela Palace", "Taj West End", "JW Marriott", "ITC Gardenia", "Ritz-Carlton", "Four Seasons", "Shangri-La"],
+    landmarks: ["The Leela Palace", "Taj West End", "JW Marriott Hotel", "ITC Gardenia"],
+    metaDescription: "Discreet, premium vape delivery to luxury hotels in Bangalore. 100% original Elfbar, ZYN & Caliburn delivered to your lobby or room in 30-45 mins.",
+    localNote: "Staying at a premium hotel in Bangalore? We specialize in discreet, professional vape delivery to luxury hotels including The Leela Palace, Taj West End, JW Marriott, ITC Gardenia, and Ritz-Carlton. 100% original, sealed products delivered directly to your lobby or room in 30-45 minutes. Foreigner-friendly, seamless WhatsApp ordering with no hidden charges."
+  },
+  {
+    name: "Major Tech Hubs: Manyata, Embassy, RMZ & Whitefield",
+    slug: "tech-park-vape-delivery-bangalore",
+    sublocations: ["Manyata Tech Park", "Embassy GolfLinks", "RMZ Ecospace", "Salarpuria Sattva", "Global Village", "ITPL"],
+    landmarks: ["Manyata Tech Park", "Embassy GolfLinks Business Park", "RMZ Ecospace", "Salarpuria Sattva Knowledge City"],
+    metaDescription: "Late-night vape delivery to Bangalore tech parks. Discreet delivery to Manyata, Embassy, RMZ, and ITPL office gates in 30-45 mins. 100% original.",
+    localNote: "Working late at Manyata Tech Park, Embassy GolfLinks, RMZ Ecospace, or ITPL? We offer discreet, rapid vape delivery right to your office gate or nearby PG/apartment. Stock up on original Elfbar disposables, Caliburn pod systems, and ZYN nicotine pouches. No app needed, just WhatsApp us your location for 30-45 minute dispatch."
+  },
+  {
+    name: "Premium Pubs, Bars & Nightlife: Indiranagar, Koramangala & UB City",
+    slug: "pub-bar-vape-delivery-bangalore",
+    sublocations: ["Indiranagar (Toit, Bob's, Geist)", "Koramangala (Social, Byg Brewski)", "UB City", "MG Road", "Lavelle Road"],
+    landmarks: ["Toit Indiranagar", "Byg Brewski Koramangala", "UB City Mall", "Hard Rock Cafe"],
+    metaDescription: "Pre-gaming or winding down? Fast, discreet vape & ZYN delivery to top pubs and bars in Indiranagar, Koramangala, and UB City in 30-45 mins.",
+    localNote: "Pre-gaming or winding down at Bangalore's best pubs and bars? Whether you are at Toit in Indiranagar, Byg Brewski in Koramangala, or near UB City, we deliver premium, 100% original vapes and nicotine pouches discreetly to your location in 30-45 minutes. Avoid the hassle, order on WhatsApp, and enjoy your night."
+  }
+
 ];
 
-// ─── HELPERS ──────────────────────────────────────────
-export const LOCATION_COUNT = locations.length;
-
-export function getLocationBySlug(slug: string): Location | undefined {
-  return locations.find((l) => l.slug === slug);
+export function getLocationBySlug(slug: string) {
+  return locations.find((loc) => loc.slug === slug);
 }
-
-export function getLocationsByCategory(category: Location["category"]): Location[] {
-  return locations.filter((l) => l.category === category);
-}
-
-export function getNearbyLocations(slug: string, count = 5): Location[] {
-  const current = getLocationBySlug(slug);
-  if (!current || !current.geoLat || !current.geoLng) {
-    return locations.filter((l) => l.slug !== slug).slice(0, count);
-  }
-  return locations
-    .filter((l) => l.slug !== slug && l.geoLat && l.geoLng)
-    .map((l) => ({
-      ...l,
-      distance: Math.sqrt(
-        Math.pow((l.geoLat! - current.geoLat!) * 111, 2) +
-        Math.pow((l.geoLng! - current.geoLng!) * 111 * Math.cos(current.geoLat! * Math.PI / 180), 2)
-      ),
-    }))
-    .sort((a: any, b: any) => a.distance - b.distance)
-    .slice(0, count);
-}
-
-export const WHATSAPP_URL = "https://wa.me/916282878843?text=Hi%20VapeBangalore%2C%20I%20want%20to%20place%20an%20order.";
-export const TELEGRAM_URL = "https://wa.me/916282878843?text=Hi%20VapeBangalore%2C%20I%20want%20to%20place%20an%20order.";
