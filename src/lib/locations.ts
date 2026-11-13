@@ -4,11 +4,12 @@ export interface Location {
   name: string;
   slug: string;
   sublocations: string[];
-  landmarks?: string[];
-  metaDescription?: string;
   localNote: string;
+  category?: string;
   geoLat?: number;
   geoLng?: number;
+  landmarks?: string[];
+  metaDescription?: string;
 }
 
 export const locations: Location[] = [
