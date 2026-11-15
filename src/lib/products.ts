@@ -1142,40 +1142,7 @@ export function getProductBySlug(slug: string) {
 
 export function getBestsellers(limit = 4) {
   return products.filter((p) => p.isBestseller && p.inStock).slice(0, limit);
-}
-
-export const CATEGORIES: ProductCategory[] = [
-  "Disposable",
-  "Pod Device",
-  "Nicotine Pouches",
-  "E-Liquid",
-  "Tobacco",
-];
-
-export const BRANDS: ProductBrand[] = [
-  "Elfbar",
-  "Lost Mary",
-  "Caliburn",
-  "ZYN",
-  "Nasty",
-  "IGET",
-  "Yuoto",
-  "Velo",
-  "Pod Salt",
-  "Amber Leaf",
-  "Golden Virginia",
-  "American Spirit",
-  "Drum",
-  "Funky Republic",
-  "Rayya",
-  "Tesiyi",
-  "VpoK",
-  "Marbo",
-  "Crown Bar"
-];
-
-
-
+},
   {
     slug: "iget-move-50k",
     name: "IGET Move 50K",
@@ -1229,6 +1196,35 @@ export const BRANDS: ProductBrand[] = [
     specs: { "Puffs": "50,000", "Nicotine": "Low (2%)", "Charging": "Type-C", "Battery": "650mAh" }
   }
 
+
+export const CATEGORIES: ProductCategory[] = [
+  "Disposable",
+  "Pod Device",
+  "Nicotine Pouches",
+  "E-Liquid",
+  "Tobacco",
+];
+
+export const BRANDS: ProductBrand[] = [
+  "Elfbar",
+  "Lost Mary",
+  "Caliburn",
+  "ZYN",
+  "Nasty",
+  "IGET",
+  "Yuoto",
+  "Velo",
+  "Pod Salt",
+  "Amber Leaf",
+  "Golden Virginia",
+  "American Spirit",
+  "Drum",
+  "Funky Republic",
+  "Rayya",
+  "Tesiyi",
+  "VpoK",
+  "Marbo",
+  "Crown Bar"
 ];
 
 
