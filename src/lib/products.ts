@@ -1183,6 +1183,38 @@ export const products: Product[] = [
   }
 ];
 
+
+export const CATEGORIES: ProductCategory[] = [
+  "Disposable",
+  "Pod Device",
+  "Nicotine Pouches",
+  "E-Liquid",
+  "Tobacco",
+];
+
+export const BRANDS: ProductBrand[] = [
+  "Elfbar",
+  "Lost Mary",
+  "Caliburn",
+  "ZYN",
+  "Nasty",
+  "IGET",
+  "Yuoto",
+  "Velo",
+  "Pod Salt",
+  "Amber Leaf",
+  "Golden Virginia",
+  "American Spirit",
+  "Drum",
+  "Funky Republic",
+  "Rayya",
+  "Tesiyi",
+  "VpoK",
+  "Marbo",
+  "Crown Bar"
+];
+
+
 // ── Legacy helpers (used by existing components) ─────────────────────────────
 export function getProductsByBrand(brand: string) {
   return products.filter((p) => p.brand === brand);
