@@ -1141,8 +1141,8 @@ export const products: Product[] = [
     charging: "Type-C",
     capacity: "15ml",
     flavours: [
-      { name: "Blue Razz Ice", color: "#3b82f6" },
-      { name: "Watermelon Ice", color: "#10b981" }
+      { name: "Mr Blue", color: "#3b82f6" },
+      { name: "Blueberry", color: "#8b5cf6" }
     ],
     image: "/img-compressed/iget-move-50k.jpg",
     inStock: true,
@@ -1153,7 +1153,7 @@ export const products: Product[] = [
     longDescription: "The IGET Move 50K sets the gold standard for premium vapes in Bangalore. Featuring innovative dual-flavour technology, it allows you to switch between two distinct flavour profiles. Formulated with lower nicotine strength, it offers a smoother, milder throat hit. Perfect for doctors, engineers, and business professionals in premium areas (Koramangala, HSR, Whitefield) looking to reduce nicotine intake or enjoy a refined experience.",
     metaTitle: "IGET Move 50K - Premium Dual Flavour Low Nicotine Vape | VapeBangalore",
     metaDescription: "Buy IGET Move 50K in Bangalore. Premium dual-flavour, low nicotine disposable vape ideal for professionals in Koramangala, HSR & Whitefield.",
-    specs: { "Puffs": "50,000", "Nicotine": "Low (2%)", "Charging": "Type-C", "Battery": "850mAh" }
+    specs: { "Puffs": "50,000", "Nicotine": "Low (2%)", "Charging": "Type-C", "Battery": "850mAh", "Display": "100% Digital", "Flavour": "2-in-1 Rotary" }
   },
   {
     slug: "crown-bar-50k",
@@ -1167,8 +1167,8 @@ export const products: Product[] = [
     charging: "Type-C",
     capacity: "15ml",
     flavours: [
-      { name: "Strawberry Kiwi", color: "#ec4899" },
-      { name: "Cool Mint", color: "#06b6d4" }
+      { name: "Black Ice", color: "#06b6d4" },
+      { name: "Cool Mint", color: "#10b981" }
     ],
     image: "/img-compressed/crown-bar-50k.jpg",
     inStock: true,
