@@ -1167,11 +1167,9 @@ export const BRANDS: ProductBrand[] = [
   "American Spirit",
   "Drum",
   "Funky Republic",
-  "Rayya",
-  "Tesiyi",
-  "VpoK",
-  "Tesiyi",
-  "VpoK",
+export type ProductBrand = "Elfbar" | "Lost Mary" | "Caliburn" | "ZYN" | "Nasty" | "IGET" | "Yuoto" | "Velo" | "Pod Salt" | "Amber Leaf" | "Golden Virginia" | "American Spirit" | "Drum" | "Funky Republic" | "Rayya" | "Tesiyi" | "VpoK" | "Marbo" | "Crown Bar";
+
+export const products: Product[] = [
 
   {
     slug: "iget-move-50k",
