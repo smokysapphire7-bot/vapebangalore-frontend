@@ -1129,20 +1129,6 @@ export const products: Product[] = [
     metaDescription: "Buy Uwell Caliburn Xpod in Bangalore. Full colour display, G3 Pro technology. 30-45 min delivery. ₹6,500.",
     specs: { "Display": "Full Colour", "Tech": "G3 Pro", "Charging": "USB-C" },
   },
-];
-
-// ── Legacy helpers (used by existing components) ─────────────────────────────
-export function getProductsByBrand(brand: string) {
-  return products.filter((p) => p.brand === brand);
-}
-
-export function getProductBySlug(slug: string) {
-  return products.find((p) => p.slug === slug);
-}
-
-export function getBestsellers(limit = 4) {
-  return products.filter((p) => p.isBestseller && p.inStock).slice(0, limit);
-},
   {
     slug: "iget-move-50k",
     name: "IGET Move 50K",
@@ -1195,37 +1181,17 @@ export function getBestsellers(limit = 4) {
     metaDescription: "Buy Crown Bar 50K in Bangalore. The ultimate low-nicotine, beginner-friendly disposable vape for those looking to reduce intake or quit.",
     specs: { "Puffs": "50,000", "Nicotine": "Low (2%)", "Charging": "Type-C", "Battery": "650mAh" }
   }
-
-
-export const CATEGORIES: ProductCategory[] = [
-  "Disposable",
-  "Pod Device",
-  "Nicotine Pouches",
-  "E-Liquid",
-  "Tobacco",
 ];
-
-export const BRANDS: ProductBrand[] = [
-  "Elfbar",
-  "Lost Mary",
-  "Caliburn",
-  "ZYN",
-  "Nasty",
-  "IGET",
-  "Yuoto",
-  "Velo",
-  "Pod Salt",
-  "Amber Leaf",
-  "Golden Virginia",
-  "American Spirit",
-  "Drum",
-  "Funky Republic",
-  "Rayya",
-  "Tesiyi",
-  "VpoK",
-  "Marbo",
-  "Crown Bar"
-];
-
 
 // ── Legacy helpers (used by existing components) ─────────────────────────────
+export function getProductsByBrand(brand: string) {
+  return products.filter((p) => p.brand === brand);
+}
+
+export function getProductBySlug(slug: string) {
+  return products.find((p) => p.slug === slug);
+}
+
+export function getBestsellers(limit = 4) {
+  return products.filter((p) => p.isBestseller && p.inStock).slice(0, limit);
+}
