@@ -1228,4 +1228,5 @@ export const BRANDS: ProductBrand[] = [
 
 ];
 
+
 // ── Legacy helpers (used by existing components) ─────────────────────────────
