@@ -1144,7 +1144,7 @@ export const products: Product[] = [
       { name: "Mr Blue", color: "#3b82f6" },
       { name: "Blueberry", color: "#8b5cf6" }
     ],
-    image: "/img-compressed/iget-move-50k.jpg",
+    image: "/img-compressed/iget-move-50k.webp",
     inStock: true,
     isNew: true,
     badge: "PREMIUM DUAL FLAVOUR",
