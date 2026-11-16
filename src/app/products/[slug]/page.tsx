@@ -17,6 +17,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const product = getProductBySlug(slug);
+  const dynamicFAQs = getLongTailFAQs(product);
   if (!product) return {};
   return {
     title: product.metaTitle,
@@ -188,9 +189,41 @@ const getLongTailFAQs = (product: any) => {
   }
 };
 
+
+const getLongTailFAQs = (product: any) => {
+  const { name, brand, category } = product;
+  const puffs = product.puffs || product.puffCount || "high puff count";
+  const nicotine = product.nicotine || "standard";
+  const charging = product.charging || "Type-C";
+
+  if (category === "Disposable" || category === "Vape") {
+    return [
+      { q: \`How many puffs does the \${name} actually last in real-world use in Bangalore?\`, a: \`While the \${name} is rated for up to \${puffs} puffs, real-world usage depends on draw length. For average users in Bangalore, it typically lasts 1 to 2 weeks of regular use, offering exceptional value.\` },
+      { q: \`Is the \${name} rechargeable, and what type of charging does it use?\`, a: \`Yes, the \${name} features a built-in rechargeable battery with \${charging} fast charging, ensuring you can top up the battery and enjoy the e-liquid until the very last puff.\` },
+      { q: \`What is the nicotine strength of the \${name}?\`, a: \`The \${name} contains \${nicotine} nicotine, providing a smooth, satisfying throat hit. We strictly source 100% authentic products with batch tracking.\` },
+      { q: \`How can I verify if my \${name} is 100% authentic in Bangalore?\`, a: \`Every genuine \${brand} device comes with a scratch-off QR code on the packaging. Simply scan it with your smartphone to verify its authenticity on the official \${brand} website. We only source directly from authorized distributors.\` }
+    ];
+  } else if (category === "Nicotine Pouches") {
+    return [
+      { q: \`How do I use \${name} correctly for the best experience?\`, a: \`Simply place a pouch between your gum and upper lip. The \${name} will release a steady, discreet stream of nicotine and flavour for up to 30-45 minutes without any smoke, vapour, or spitting.\` },
+      { q: \`How long does a can of \${name} typically last?\`, a: \`A standard can of \${name} contains 20 pouches. Depending on your usage, a single can usually lasts a regular user about 2 to 3 days, making it a highly cost-effective alternative.\` },
+      { q: \`Does \${name} contain tobacco leaf?\`, a: \`No, \${name} is a tobacco-free nicotine pouch. It contains pharmaceutical-grade nicotine, plant-based fibers, flavourings, and sweeteners, offering a clean, discreet experience.\` },
+      { q: \`Can I carry \${name} to the office or on a flight in Bangalore?\`, a: \`Yes! Since \${name} produces no vapour, smoke, or smell, it is completely discreet and perfectly suitable for use in offices, meetings, and during flights.\` }
+    ];
+  } else {
+    return [
+      { q: \`What devices are compatible with \${name}?\`, a: \`The \${name} is highly versatile and works excellently with most standard pod systems. Check the packaging for specific device recommendations.\` },
+      { q: \`How should I store my \${name} to maintain flavour in Bangalore's climate?\`, a: \`For the best flavour longevity, store your \${name} in a cool, dark place away from direct sunlight. Ensure the cap is tightly sealed to prevent oxidation.\` },
+      { q: \`Is \${name} safe and 100% authentic?\`, a: \`Yes, we only stock 100% authentic products sourced from authorized distributors. Every item has batch tracking and authenticity verification.\` },
+      { q: \`How fast is delivery for \${name} in Bangalore?\`, a: \`We deliver \${name} across all major Bangalore areas (Koramangala, HSR, Whitefield, Indiranagar, etc.) in 30-45 minutes via secure, discreet packaging.\` }
+    ];
+  }
+};
+
 export default async function ProductPage({ params }: Props) {
   const { slug } = await params;
   const product = getProductBySlug(slug);
+  const dynamicFAQs = getLongTailFAQs(product);
   if (!product) notFound();
 
   const related = getProductsByBrand(product.brand).filter((p) => p.slug !== product.slug).slice(0, 4);
@@ -236,10 +269,10 @@ export default async function ProductPage({ params }: Props) {
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: dynamicFAQs.map(faq => ({
+    "mainEntity": dynamicFAQs.map(faq => ({
       "@type": "Question",
-      name: faq.q,
-      acceptedAnswer: { "@type": "Answer", text: faq.a }
+      "name": faq.q,
+      "acceptedAnswer": { "@type": "Answer", "text": faq.a }
     }))
   };
 
@@ -458,6 +491,40 @@ export default async function ProductPage({ params }: Props) {
             .related-grid { grid-template-columns: repeat(4, 1fr) !important; }
           }
         `}</style>
+      
+      {/* DYNAMIC LONG-TAIL FAQ SECTION */}
+      <section style={{ padding: "40px 0", background: "var(--bg-2, #f8fafc)", borderTop: "1px solid var(--border, #e2e8f0)" }}>
+        <div style={{ maxWidth: "800px", margin: "0 auto", padding: "0 16px" }}>
+          <h2 style={{ fontSize: "1.5rem", fontWeight: 800, color: "var(--text, #0f172a)", marginBottom: "20px" }}>
+            Frequently Asked Questions About {product.name}
+          </h2>
+          <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+            {dynamicFAQs.map((faq, i) => (
+              <div key={i} style={{ background: "var(--bg, #ffffff)", border: "1px solid var(--border, #e2e8f0)", borderRadius: "8px", padding: "16px" }}>
+                <p style={{ fontSize: "0.95rem", fontWeight: 600, color: "var(--text, #0f172a)", marginBottom: "8px" }}>{faq.q}</p>
+                <p style={{ fontSize: "0.9rem", color: "var(--muted, #64748b)", lineHeight: 1.6 }}>{faq.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    
+      {/* DYNAMIC LONG-TAIL FAQ SECTION */}
+      <section className="py-10 bg-slate-50 border-t border-slate-200">
+        <div className="max-w-3xl mx-auto px-4">
+          <h2 className="text-2xl font-bold text-slate-900 mb-6">
+            Frequently Asked Questions About {product.name}
+          </h2>
+          <div className="space-y-4">
+            {dynamicFAQs.map((faq, i) => (
+              <div key={i} className="bg-white border border-slate-200 rounded-lg p-5">
+                <p className="text-base font-semibold text-slate-900 mb-2">{faq.q}</p>
+                <p className="text-sm text-slate-600 leading-relaxed">{faq.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
       </main>
     </>
   );
