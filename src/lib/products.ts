@@ -85,6 +85,7 @@ export const products: Product[] = [
 ];
 
 
+export const CATEGORIES: ProductCategory[] = [
   "Disposable",
   "Pod Device",
   "Nicotine Pouches",
