@@ -1,32 +1,3 @@
-export type ProductCategory = "Disposable" | "Pod Device" | "Nicotine Pouches" | "E-Liquid" | "Tobacco";
-export type ProductBrand = "Elfbar" | "Lost Mary" | "Caliburn" | "ZYN" | "Nasty" | "IGET" | "Yuoto" | "Velo" | "Pod Salt" | "Amber Leaf" | "Golden Virginia" | "American Spirit" | "Drum" | "Funky Republic" | "Rayya" | "Tesiyi" | "VpoK" | "Marbo" | "Crown Bar";
-
-export interface Product {
-  slug: string;
-  name: string;
-  brand: ProductBrand;
-  category: ProductCategory;
-  price: number;
-  originalPrice?: number;
-  puffCount?: number;
-  nicotine?: string;
-  battery?: string;
-  charging?: string;
-  capacity?: string;
-  flavours: { name: string; color: string }[];
-  image: string;
-  inStock: boolean;
-  isBestseller?: boolean;
-  isNew?: boolean;
-  badge?: string;
-  gradient?: string;
-  longDescription: string;
-  metaTitle: string;
-  metaDescription: string;
-  excerpt: string;
-  specs: Record<string, string>;
-}
-
 export const products: Product[] = [
 {
     slug: "iget-move-50k",
@@ -55,7 +26,7 @@ export const products: Product[] = [
     metaDescription: "Buy IGET Move 50K in Bangalore. Premium dual-flavour, low nicotine disposable vape ideal for professionals in Koramangala, HSR & Whitefield.",
     specs: { "Puffs": "50,000", "Nicotine": "Low (2%)", "Charging": "Type-C", "Battery": "850mAh", "Display": "100% Digital", "Flavour": "2-in-1 Rotary" }
   },
-  {
+{
     slug: "crown-bar-50k",
     name: "Crown Bar 50K",
     brand: "Crown Bar",
@@ -81,43 +52,8 @@ export const products: Product[] = [
     metaTitle: "Crown Bar 50K - Low Nicotine Beginner Friendly Vape | VapeBangalore",
     metaDescription: "Buy Crown Bar 50K in Bangalore. The ultimate low-nicotine, beginner-friendly disposable vape for those looking to reduce intake or quit.",
     specs: { "Puffs": "50,000", "Nicotine": "Low (2%)", "Charging": "Type-C", "Battery": "650mAh" }
-  }
-];
-
-
-export const CATEGORIES: ProductCategory[] = [
-  "Disposable",
-  "Pod Device",
-  "Nicotine Pouches",
-  "E-Liquid",
-  "Tobacco",
-];
-
-export const BRANDS: ProductBrand[] = [
-  "Elfbar",
-  "Lost Mary",
-  "Caliburn",
-  "ZYN",
-  "Nasty",
-  "IGET",
-  "Yuoto",
-  "Velo",
-  "Pod Salt",
-  "Amber Leaf",
-  "Golden Virginia",
-  "American Spirit",
-  "Drum",
-  "Funky Republic",
-  "Rayya",
-  "Tesiyi",
-  "VpoK",
-  "Marbo",
-  "Crown Bar"
-];
-
-
-  // ── ELFBAR ───────────────────────────────────────────────────────────────────
-  {
+  },
+{
     slug: "elfbar-raya-d1",
     name: "Elfbar Raya D1",
     brand: "Elfbar",
@@ -149,7 +85,7 @@ export const BRANDS: ProductBrand[] = [
     metaDescription: "Buy Elfbar Raya D1 in Bangalore. 13,000 puffs, mesh coil, 7 flavours. 30-45 min delivery across 120+ areas. ₹1,789.",
     specs: { "Puff Count": "13,000", "Battery": "650mAh", "Capacity": "13ml", "Nicotine": "20mg Salt", "Charging": "USB-C", "Coil": "Mesh" },
   },
-  {
+{
     slug: "iget-goz-b40000",
     name: "IGET Soul 40,000",
     brand: "IGET",
@@ -173,7 +109,7 @@ export const BRANDS: ProductBrand[] = [
     metaTitle: "IGET GOZ B40000 Bangalore — Buy Online | VapeBangalore.com",
     metaDescription: "Buy IGET GOZ B40000 in Bangalore. 40,000 puffs, dual mesh coil. 30-45 min delivery. Rs 3,799.",
   },
-  {
+{
     slug: "marbo-25000",
     name: "Marbo 25000",
     brand: "Marbo",
@@ -197,7 +133,7 @@ export const BRANDS: ProductBrand[] = [
     metaTitle: "Marbo 25000 Bangalore — Buy Online | VapeBangalore.com",
     metaDescription: "Buy Marbo 25000 in Bangalore. 25,000 puffs, smart screen. 30-45 min delivery. Rs 2,799.",
   },
-  {
+{
     slug: "elfbar-bc-10000",
     name: "Elfbar BC 10000",
     brand: "Elfbar",
@@ -225,7 +161,7 @@ export const BRANDS: ProductBrand[] = [
     metaDescription: "Buy Elfbar BC 10000 in Bangalore. 10,000 puffs, transparent design, mesh coil. 30-45 min delivery. ₹1,999.",
     specs: { "Puff Count": "10,000", "Body": "Transparent", "Coil": "Mesh", "Nicotine": "20mg Salt", "Charging": "USB-C" },
   },
-  {
+{
     slug: "elfbar-raya-sobo",
     name: "Elfbar Raya SOBO",
     brand: "Elfbar",
@@ -255,7 +191,7 @@ export const BRANDS: ProductBrand[] = [
     metaDescription: "Buy Elfbar Raya SOBO in Bangalore. 40,000 puffs, interactive display, 5-day battery. 30-45 min delivery. ₹3,199.",
     specs: { "Puff Count": "40,000", "Battery": "1100mAh", "Battery Life": "Up to 5 days", "Coil": "Dual Mesh", "Display": "Interactive Game" },
   },
-  {
+{
     slug: "elfbar-d3-pro",
     name: "Elfbar D3 Pro",
     brand: "Elfbar",
@@ -283,7 +219,7 @@ export const BRANDS: ProductBrand[] = [
     metaDescription: "Buy Elfbar D3 Pro in Bangalore. 30,000 puffs, turbo mode, adjustable airflow. 30-45 min delivery. ₹2,999.",
     specs: { "Puff Count": "30,000", "Coil": "Dual Mesh", "Mode": "Turbo", "Airflow": "Adjustable", "Nicotine": "20mg Salt", "Charging": "USB-C" },
   },
-  {
+{
     slug: "rayya-pryme",
     name: "Rayya Pryme",
     brand: "Rayya",
@@ -310,7 +246,7 @@ export const BRANDS: ProductBrand[] = [
     metaTitle: "Rayya Pryme Bangalore — Buy Online | VapeBangalore.com",
     metaDescription: "Buy Rayya Pryme in Bangalore. 3000 puffs, mesh coil, rechargeable disposable. 30-45 min delivery. Rs 1,299.",
   },
-  {
+{
     slug: "tesiyi-ak-50k",
     name: "Tesiyi AK 50K",
     brand: "Tesiyi",
@@ -337,7 +273,7 @@ export const BRANDS: ProductBrand[] = [
     metaTitle: "Tesiyi AK 50K Bangalore — Buy Online | VapeBangalore.com",
     metaDescription: "Buy Tesiyi AK 50K in Bangalore. 50,000 puffs, Type-C charging. 30-45 min delivery. 100% original. Rs 3,999.",
   },
-  {
+{
     slug: "vpok-cool-bar",
     name: "VpoK Cool Bar",
     brand: "VpoK",
@@ -364,7 +300,7 @@ export const BRANDS: ProductBrand[] = [
     metaTitle: "VpoK Cool Bar Bangalore — Buy Online | VapeBangalore.com",
     metaDescription: "Buy VpoK Cool Bar in Bangalore. 20,000 puffs, Type-C charging. 30-45 min delivery. 100% original. Rs 2,699.",
   },
-  {
+{
     slug: "funky-republic-fi3000",
     name: "Funky Republic Fi3000",
     brand: "Funky Republic",
@@ -391,7 +327,7 @@ export const BRANDS: ProductBrand[] = [
     metaTitle: "Funky Republic Fi3000 Bangalore — Buy Online | VapeBangalore.com",
     metaDescription: "Buy Funky Republic Fi3000 in Bangalore. 3000 puffs, adjustable airflow, Type-C charging. 30-45 min delivery. Rs 1,199.",
   },
-  {
+{
     slug: "elfbar-600",
     name: "Elfbar 600",
     brand: "Elfbar",
@@ -419,7 +355,7 @@ export const BRANDS: ProductBrand[] = [
     metaDescription: "Buy Elfbar 600 disposable vape in Bangalore at ₹999. Perfect beginner vape, 600 puffs, 7 flavours. 30-45 min delivery across 120+ areas.",
     specs: { "Puff Count": "600", "Capacity": "2ml", "Nicotine": "20mg Salt", "Activation": "Draw Activated" },
   },
-  {
+{
     slug: "elfbar-moonnight-40k",
     name: "Elfbar MoonNight 40K",
     brand: "Elfbar",
@@ -448,7 +384,7 @@ export const BRANDS: ProductBrand[] = [
     metaDescription: "Buy Elfbar MoonNight 40K in Bangalore. 40,000 puffs, animated moon display, dual mesh. 30-45 min delivery. ₹2,999.",
     specs: { "Puff Count": "40,000", "Coil": "Dual Mesh", "Nicotine": "20mg Salt", "Charging": "USB-C", "Display": "Animated Moon" },
   },
-  {
+{
     slug: "elfbar-raya-d3",
     name: "Elfbar Raya D3",
     brand: "Elfbar",
@@ -477,7 +413,7 @@ export const BRANDS: ProductBrand[] = [
     metaDescription: "Buy Elfbar Raya D3 in Bangalore. 25,000 puffs, smart display, triple mesh coil. 30-45 min delivery. ₹2,799.",
     specs: { "Puff Count": "25,000", "Coil": "Triple Mesh", "Display": "Smart LED", "Power Modes": "3", "Nicotine": "20mg Salt", "Charging": "USB-C" },
   },
-  {
+{
     slug: "elfbar-ice-king",
     name: "Elfbar Ice King",
     brand: "Elfbar",
@@ -505,7 +441,7 @@ export const BRANDS: ProductBrand[] = [
     metaDescription: "Buy Elfbar Ice King in Bangalore. 30,000 puffs, 5-level coolness, watermelon ice. Best menthol vape. 30-45 min delivery. ₹2,999.",
     specs: { "Puff Count": "30,000", "Battery": "850mAh", "Coolness Levels": "5", "Nicotine": "20mg Salt", "Charging": "USB-C" },
   },
-  {
+{
     slug: "elfbar-trio",
     name: "Elfbar Trio",
     brand: "Elfbar",
@@ -533,9 +469,7 @@ export const BRANDS: ProductBrand[] = [
     metaDescription: "Buy Elfbar Trio in Bangalore. 30,000 puffs, smart display, unique dual design. 30-45 min delivery. ₹3,099.",
     specs: { "Puff Count": "30,000", "Display": "Smart", "Coil": "Dual Mesh", "Nicotine": "20mg Salt", "Charging": "USB-C" },
   },
-
-  // ── ELFLIQ ───────────────────────────────────────────────────────────────────
-  {
+{
     slug: "elfliq-nic-salts",
     name: "Elfliq Nic Salts",
     brand: "Elfbar",
@@ -561,9 +495,7 @@ export const BRANDS: ProductBrand[] = [
     metaDescription: "Buy Elfliq Nic Salts in Bangalore. Official Elfbar refill liquid, 30mg nicotine salt. Taro Ice Cream & more. 30-45 min delivery. ₹1,799.",
     specs: { "Nicotine": "30mg/ml Salt", "Volume": "10ml", "For": "Pod Systems", "Series": "Ice King" },
   },
-
-  // ── LOST MARY ────────────────────────────────────────────────────────────────
-  {
+{
     slug: "lost-mary-mt35000-turbo",
     name: "Lost Mary MT35000 Turbo",
     brand: "Lost Mary",
@@ -592,7 +524,7 @@ export const BRANDS: ProductBrand[] = [
     metaDescription: "Buy Lost Mary MT35000 Turbo in Bangalore. 35,000 puffs, turbo mode, smart display. 30-45 min delivery. ₹2,799.",
     specs: { "Puff Count": "35,000", "Mode": "Turbo", "Display": "Smart", "Coil": "Mesh", "Nicotine": "20mg Salt" },
   },
-  {
+{
     slug: "lost-mary-mo10000",
     name: "Lost Mary MO10000",
     brand: "Lost Mary",
@@ -620,9 +552,7 @@ export const BRANDS: ProductBrand[] = [
     metaDescription: "Buy Lost Mary MO10000 in Bangalore. 10,000 puffs, mesh coil, 18mg nicotine. 30-45 min delivery. ₹1,999.",
     specs: { "Puff Count": "10,000", "Coil": "Mesh", "Nicotine": "18mg Salt", "Charging": "USB-C" },
   },
-
-  // ── NASTY ────────────────────────────────────────────────────────────────────
-  {
+{
     slug: "nasty-bolt-wtf-50k",
     name: "Nasty Bolt WTF 50K",
     brand: "Nasty",
@@ -650,9 +580,7 @@ export const BRANDS: ProductBrand[] = [
     metaDescription: "Buy Nasty Bolt WTF in Bangalore. 50,000 puffs, 26ml, dual screen, airflow control. Most powerful vape. ₹3,499.",
     specs: { "Puff Count": "50,000", "Capacity": "26ml", "Fast Charge": "<25 min", "Battery": "1000mAh", "Coil": "Double Mesh" },
   },
-
-  // ── IGET ─────────────────────────────────────────────────────────────────────
-  {
+{
     slug: "iget-astro-b18000",
     name: "IGET Astro B18000",
     brand: "IGET",
@@ -680,9 +608,7 @@ export const BRANDS: ProductBrand[] = [
     metaDescription: "Buy IGET Astro B18000 in Bangalore. 18,000 puffs, 13 flavours, dual mesh coil. 30-45 min delivery. ₹2,399.",
     specs: { "Puff Count": "18,000", "Flavours": "13", "Coil": "Dual Mesh", "Nicotine": "20mg Salt", "Charging": "USB-C" },
   },
-
-  // ── YUOTO ────────────────────────────────────────────────────────────────────
-  {
+{
     slug: "yuoto-beyonder",
     name: "Yuoto Beyonder",
     brand: "Yuoto",
@@ -709,7 +635,7 @@ export const BRANDS: ProductBrand[] = [
     metaDescription: "Buy Yuoto Beyonder in Bangalore. 7,000 puffs, watermelon ice, compact design. 30-45 min delivery. ₹1,999.",
     specs: { "Puff Count": "7,000", "Nicotine": "20mg Salt", "Charging": "USB-C", "Activation": "Draw Activated" },
   },
-  {
+{
     slug: "yuoto-thanos",
     name: "Yuoto Thanos",
     brand: "Yuoto",
@@ -736,9 +662,7 @@ export const BRANDS: ProductBrand[] = [
     metaDescription: "Buy Yuoto Thanos in Bangalore. 5,000 puffs, mint ice, compact design. 30-45 min delivery. ₹1,799.",
     specs: { "Puff Count": "5,000", "Nicotine": "20mg Salt", "Charging": "USB-C", "Activation": "Draw Activated" },
   },
-
-  // ── POD SALT ─────────────────────────────────────────────────────────────────
-  {
+{
     slug: "pod-salt-hit-the-spot",
     name: "Pod Salt Hit The Spot",
     brand: "Pod Salt",
@@ -767,7 +691,7 @@ export const BRANDS: ProductBrand[] = [
     metaDescription: "Buy Pod Salt Hit The Spot in Bangalore. 35,000 puffs, battery display, fruity flavours. 30-45 min delivery. ₹1,799.",
     specs: { "Puff Count": "35,000", "Display": "Battery", "Nicotine": "20mg Salt", "Charging": "USB-C" },
   },
-  {
+{
     slug: "pod-salt-core-nic-salt",
     name: "Pod Salt Core Nic Salt",
     brand: "Pod Salt",
@@ -793,9 +717,7 @@ export const BRANDS: ProductBrand[] = [
     metaDescription: "Buy Pod Salt Core nicotine salt e-liquid in Bangalore. Lemon & Lime Ice, 20mg nicotine salt. 30-45 min delivery. ₹1,599.",
     specs: { "Nicotine": "20mg/ml Salt", "Volume": "10ml", "For": "Pod Systems" },
   },
-
-  // ── ZYN ──────────────────────────────────────────────────────────────────────
-  {
+{
     slug: "zyn-cool-mint",
     name: "ZYN Cool Mint",
     brand: "ZYN",
@@ -816,9 +738,7 @@ export const BRANDS: ProductBrand[] = [
     metaDescription: "Buy ZYN Cool Mint nicotine pouches in Bangalore. Smoke-free, vapour-free. 16 pouches, 6mg nicotine. 30-45 min delivery. ₹1299.",
     specs: { "Pouches": "16 per tin", "Nicotine": "6mg", "Tobacco": "Free", "Smoke": "Free", "Vapour": "Free" },
   },
-
-  // ── VELO ─────────────────────────────────────────────────────────────────────
-  {
+{
     slug: "velo-freezing-peppermint",
     name: "Velo Freezing Peppermint",
     brand: "Velo",
@@ -839,9 +759,7 @@ export const BRANDS: ProductBrand[] = [
     metaDescription: "Buy Velo Freezing Peppermint nicotine pouches in Bangalore. Smoke-free, intense peppermint. 30-45 min delivery. ₹999.",
     specs: { "Nicotine": "7mg", "Tobacco": "Free", "Smoke": "Free", "Flavour": "Freezing Peppermint" },
   },
-
-  // ── TOBACCO ──────────────────────────────────────────────────────────────────
-  {
+{
     slug: "amber-leaf-tobacco",
     name: "Amber Leaf Rolling Tobacco",
     brand: "Amber Leaf",
@@ -859,7 +777,7 @@ export const BRANDS: ProductBrand[] = [
     metaDescription: "Buy Amber Leaf rolling tobacco in Bangalore. 50g finest Virginia original blend. Discreet delivery. ₹999.",
     specs: { "Weight": "50g", "Type": "Virginia Tobacco", "Blend": "Original" },
   },
-  {
+{
     slug: "drum-bright-blue-tobacco",
     name: "Drum Bright Blue Tobacco",
     brand: "Drum",
@@ -877,7 +795,7 @@ export const BRANDS: ProductBrand[] = [
     metaDescription: "Buy Drum Bright Blue rolling tobacco in Bangalore. 50g premium quality. Discreet delivery. ₹1,199.",
     specs: { "Weight": "50g", "Type": "Rolling Tobacco", "Blend": "Bright Blue" },
   },
-  {
+{
     slug: "golden-virginia-tobacco",
     name: "Golden Virginia Tobacco",
     brand: "Golden Virginia",
@@ -895,7 +813,7 @@ export const BRANDS: ProductBrand[] = [
     metaDescription: "Buy Golden Virginia rolling tobacco in Bangalore. 50g original since 1877. Discreet delivery. ₹1,199.",
     specs: { "Weight": "50g", "Type": "Virginia Tobacco", "Since": "1877" },
   },
-  {
+{
     slug: "natural-american-spirit-tobacco",
     name: "Natural American Spirit",
     brand: "American Spirit",
@@ -913,9 +831,7 @@ export const BRANDS: ProductBrand[] = [
     metaDescription: "Buy Natural American Spirit tobacco in Bangalore. 100% additive-free whole leaf tobacco. Discreet delivery. ₹1,199.",
     specs: { "Weight": "50g", "Additives": "None", "Type": "Whole Leaf Tobacco" },
   },
-
-  // ── CALIBURN POD DEVICES ─────────────────────────────────────────────────────
-  {
+{
     slug: "caliburn-koko-gk3",
     name: "Caliburn KOKO GK3",
     brand: "Caliburn",
@@ -935,7 +851,7 @@ export const BRANDS: ProductBrand[] = [
     metaDescription: "Buy Caliburn KOKO GK3 pod device in Bangalore. 690mAh, 2ml pod, draw activated. 30-45 min delivery. ₹6,299.",
     specs: { "Battery": "690mAh", "Pod": "2ml Refillable", "Activation": "Draw", "Charging": "USB-C", "Tech": "Pro-FOCS" },
   },
-  {
+{
     slug: "caliburn-g3-lite",
     name: "Caliburn G3 Lite",
     brand: "Caliburn",
@@ -955,7 +871,7 @@ export const BRANDS: ProductBrand[] = [
     metaDescription: "Buy Caliburn G3 Lite pod device in Bangalore. 750mAh, 2.5ml pod, lightweight. Best budget pod device. ₹4,599.",
     specs: { "Battery": "750mAh", "Pod": "2.5ml", "Coil": "1.2Ω Mesh", "Charging": "USB-C" },
   },
-  {
+{
     slug: "caliburn-g3-lite-koko",
     name: "Caliburn G3 Lite KOKO",
     brand: "Caliburn",
@@ -975,7 +891,7 @@ export const BRANDS: ProductBrand[] = [
     metaDescription: "Buy Caliburn G3 Lite KOKO pod device in Bangalore. 750mAh, KOKO design, G3 coil. 30-45 min delivery. ₹5,999.",
     specs: { "Battery": "750mAh", "Pod": "2.5ml", "Form": "KOKO Compact", "Charging": "USB-C" },
   },
-  {
+{
     slug: "caliburn-g3-pro-koko",
     name: "Caliburn G3 Pro KOKO",
     brand: "Caliburn",
@@ -995,7 +911,7 @@ export const BRANDS: ProductBrand[] = [
     metaDescription: "Buy Caliburn G3 Pro KOKO in Bangalore. 35W, full colour screen, 900mAh, KOKO design. 30-45 min delivery. ₹6,999.",
     specs: { "Battery": "900mAh", "Output": "35W", "Display": "Full Colour TFT", "Form": "KOKO", "Pod": "2ml" },
   },
-  {
+{
     slug: "caliburn-g4",
     name: "Caliburn G4",
     brand: "Caliburn",
@@ -1015,7 +931,7 @@ export const BRANDS: ProductBrand[] = [
     metaDescription: "Buy Caliburn G4 pod device in Bangalore. 35W, animated display, 1000mAh, pearl finish. 30-45 min delivery. ₹7,499.",
     specs: { "Battery": "1000mAh", "Output": "35W", "Display": "Animated TFT", "Coils": "0.4Ω & 0.6Ω", "Finish": "Pearl" },
   },
-  {
+{
     slug: "caliburn-g4-mini",
     name: "Caliburn G4 Mini",
     brand: "Caliburn",
@@ -1035,7 +951,7 @@ export const BRANDS: ProductBrand[] = [
     metaDescription: "Buy Caliburn G4 Mini pod device in Bangalore. 750mAh, slim design, colour LED. 30-45 min delivery. ₹5,499.",
     specs: { "Battery": "750mAh", "Design": "Slim Pen", "Indicator": "Colour LED", "Pod": "2ml" },
   },
-  {
+{
     slug: "caliburn-g4-pro",
     name: "Caliburn G4 Pro",
     brand: "Caliburn",
@@ -1055,7 +971,7 @@ export const BRANDS: ProductBrand[] = [
     metaDescription: "Buy Caliburn G4 Pro in Bangalore. 35W, full animated screen, 1200mAh. Most premium pod device. ₹7,199.",
     specs: { "Battery": "1200mAh", "Output": "35W", "Display": "Full Animated TFT", "Wallpapers": "Custom", "Coils": "0.4Ω & 0.6Ω" },
   },
-  {
+{
     slug: "caliburn-g4-pro-koko",
     name: "Caliburn G4 Pro KOKO",
     brand: "Caliburn",
@@ -1075,7 +991,7 @@ export const BRANDS: ProductBrand[] = [
     metaDescription: "Buy Caliburn G4 Pro KOKO in Bangalore. 35W, full-panel screen, 1200mAh, KOKO design. Premium pod device. ₹7,599.",
     specs: { "Battery": "1200mAh", "Output": "35W", "Display": "Full-Panel Animated", "Form": "KOKO", "Wallpapers": "Custom" },
   },
-  {
+{
     slug: "caliburn-g5-lite",
     name: "Caliburn G5 Lite",
     brand: "Caliburn",
@@ -1096,7 +1012,7 @@ export const BRANDS: ProductBrand[] = [
     metaDescription: "Buy Caliburn G5 Lite pod device in Bangalore. 800mAh, G5 coil, wave design. Latest gen pod device. ₹5,699.",
     specs: { "Battery": "800mAh", "Pod": "2.5ml", "Coil": "G5 Mesh", "Design": "Wave Pattern", "Charging": "USB-C" },
   },
-  {
+{
     slug: "caliburn-g5-lite-se",
     name: "Caliburn G5 Lite SE",
     brand: "Caliburn",
@@ -1116,7 +1032,7 @@ export const BRANDS: ProductBrand[] = [
     metaDescription: "Buy Caliburn G5 Lite SE in Bangalore. Special edition, leather texture, 800mAh. 30-45 min delivery. ₹5,999.",
     specs: { "Battery": "800mAh", "Body": "Leather Texture", "Coil": "G5 SE", "Edition": "Special" },
   },
-  {
+{
     slug: "caliburn-g5-lite-koko",
     name: "Caliburn G5 Lite KOKO",
     brand: "Caliburn",
@@ -1137,7 +1053,7 @@ export const BRANDS: ProductBrand[] = [
     metaDescription: "Buy Caliburn G5 Lite KOKO in Bangalore. Latest G5 coil, 900mAh, KOKO design. 30-45 min delivery. ₹6,999.",
     specs: { "Battery": "900mAh", "Pod": "2ml", "Coil": "G5 Mesh", "Form": "KOKO Compact", "Design": "Wave Pattern" },
   },
-  {
+{
     slug: "caliburn-a2",
     name: "Caliburn A2",
     brand: "Caliburn",
@@ -1157,7 +1073,7 @@ export const BRANDS: ProductBrand[] = [
     metaDescription: "Buy Uwell Caliburn A2 pod system in Bangalore. 520mAh battery, 15W output, Pro-FOCS technology. 30-45 min delivery. ₹5,899.",
     specs: { "Battery": "520mAh", "Output": "15W", "Tech": "Pro-FOCS", "Fill": "Top Fill", "Charging": "USB-C" },
   },
-  {
+{
     slug: "caliburn-g3-pro",
     name: "Caliburn G3 Pro",
     brand: "Caliburn",
@@ -1177,7 +1093,7 @@ export const BRANDS: ProductBrand[] = [
     metaDescription: "Buy Uwell Caliburn G3 Pro in Bangalore. OLED display, 35W output, Pro-FOCS 3.0. 30-45 min delivery. ₹7,999.",
     specs: { "Battery": "1000mAh", "Output": "5-35W", "Display": "OLED", "Tech": "Pro-FOCS 3.0", "Charging": "USB-C" },
   },
-  {
+{
     slug: "caliburn-gk2",
     name: "Caliburn GK2",
     brand: "Caliburn",
@@ -1197,7 +1113,7 @@ export const BRANDS: ProductBrand[] = [
     metaDescription: "Buy Uwell Caliburn GK2 in Bangalore. Bold KOKO design, 690mAh battery, 18W output. 30-45 min delivery. ₹5,800.",
     specs: { "Battery": "690mAh", "Output": "18W", "Design": "KOKO Cyberpunk", "Activation": "Draw", "Charging": "USB-C" },
   },
-  {
+{
     slug: "caliburn-xpod",
     name: "Caliburn Xpod",
     brand: "Caliburn",
@@ -1218,6 +1134,35 @@ export const BRANDS: ProductBrand[] = [
   }
 ];
 
+export const CATEGORIES: ProductCategory[] = [
+  "Disposable",
+  "Pod Device",
+  "Nicotine Pouches",
+  "E-Liquid",
+  "Tobacco",
+];
+
+export const BRANDS: ProductBrand[] = [
+  "Elfbar",
+  "Lost Mary",
+  "Caliburn",
+  "ZYN",
+  "Nasty",
+  "IGET",
+  "Yuoto",
+  "Velo",
+  "Pod Salt",
+  "Amber Leaf",
+  "Golden Virginia",
+  "American Spirit",
+  "Drum",
+  "Funky Republic",
+  "Rayya",
+  "Tesiyi",
+  "VpoK",
+  "Marbo",
+  "Crown Bar"
+];
 
 // ── Legacy helpers (used by existing components) ─────────────────────────────
 export function getProductsByBrand(brand: string) {
@@ -1231,4 +1176,3 @@ export function getProductBySlug(slug: string) {
 export function getBestsellers(limit = 4) {
   return products.filter((p) => p.isBestseller && p.inStock).slice(0, limit);
 }
-];
