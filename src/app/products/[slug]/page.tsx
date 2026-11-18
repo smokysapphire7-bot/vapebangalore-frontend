@@ -145,50 +145,6 @@ const defaultReviews = [
 ];
 
 
-const getLongTailFAQs = (product: any) => {
-  const { name, brand, category, specs } = product;
-  const puffs = product.puffCount || specs?.Puffs || "high puff count";
-  const nicotine = product.nicotine || specs?.Nicotine || "standard";
-  const charging = specs?.Charging || "Type-C";
-
-  if (category === "Disposable") {
-    return [
-      { q: `How many puffs does the ${name} actually last in real-world use?`, a: `While the ${name} is rated for up to ${puffs} puffs, real-world usage depends on draw length. For average users in Bangalore, it typically lasts 1 to 2 weeks of regular use, offering exceptional value.` },
-      { q: `Is the ${name} rechargeable, and what type of charging does it use?`, a: `Yes, the ${name} features a built-in rechargeable battery with ${charging} fast charging, ensuring you can top up the battery and enjoy the e-liquid until the very last puff.` },
-      { q: `What is the nicotine strength of the ${name}?`, a: `The ${name} contains ${nicotine} nicotine salt, providing a smooth, satisfying throat hit without the harshness of traditional freebase nicotine, ideal for both beginners and experienced vapers.` },
-      { q: `How can I verify if my ${name} is 100% authentic?`, a: `Every genuine ${brand} device comes with a scratch-off QR code on the packaging. Simply scan it with your smartphone to verify its authenticity on the official ${brand} website. We only source directly from authorized distributors.` }
-    ];
-  } else if (category === "Pod Device") {
-    return [
-      { q: `Is the ${name} suitable for vaping beginners?`, a: `Absolutely. The ${name} is designed with draw-activation (or simple button operation) and a leak-resistant pod system, making it incredibly user-friendly for those transitioning from smoking or new to vaping in Bangalore.` },
-      { q: `What type of e-liquid works best with the ${name}?`, a: `The ${name} is optimized for Nicotine Salt e-liquids (typically 20mg or 35mg). We highly recommend pairing it with ${brand} or Elfliq Nic Salts for the best flavour reproduction and throat hit.` },
-      { q: `How long does the battery last on a single charge?`, a: `The ${name} features a robust battery. For average users, it easily lasts a full day of moderate vaping before needing a quick ${charging} recharge.` },
-      { q: `Are replacement pods/coils available for the ${name} in Bangalore?`, a: `Yes, we stock genuine replacement pods and coils for the ${name}. You can easily add them to your WhatsApp order to ensure your device stays in perfect condition.` }
-    ];
-  } else if (category === "Nicotine Pouches") {
-    return [
-      { q: `How do I use ${name} correctly for the best experience?`, a: `Simply place a pouch between your gum and upper lip. The ${name} will release a steady, discreet stream of nicotine and flavour for up to 30-45 minutes without any smoke, vapour, or spitting.` },
-      { q: `How long does a can of ${name} typically last?`, a: `A standard can of ${name} contains 20 pouches. Depending on your usage, a single can usually lasts a regular user about 2 to 3 days, making it a highly cost-effective alternative to smoking.` },
-      { q: `Does ${name} contain tobacco leaf?`, a: `No, ${name} is a tobacco-free nicotine pouch. It contains pharmaceutical-grade nicotine, plant-based fibers, flavourings, and sweeteners, offering a clean, discreet experience with no tobacco leaf or smoke.` },
-      { q: `Can I carry ${name} to the office or on a flight?`, a: `Yes! Since ${name} produces no vapour, smoke, or smell, it is completely discreet and perfectly suitable for use in offices, meetings, restaurants, and during flights.` }
-    ];
-  } else if (category === "Tobacco") {
-    return [
-      { q: `How should I store my ${name} to keep it fresh?`, a: `To maintain optimal moisture and flavour, store your ${name} in a cool, dry place away from direct sunlight. Keeping it in an airtight container or its original sealed pouch will prevent it from drying out.` },
-      { q: `Is ${name} suitable for hand-rolling?`, a: `Yes, ${name} is specifically cut and blended to provide the perfect texture and burn rate for hand-rolling. It offers a smooth, consistent smoke that rolling enthusiasts in Bangalore prefer.` },
-      { q: `Do you offer rolling papers and accessories with ${name}?`, a: `While we specialize in premium tobacco, we recommend pairing it with high-quality rolling papers and filters. WhatsApp us, and we can often include basic accessories in your delivery.` },
-      { q: `How can I be sure this tobacco is genuine?`, a: `All our tobacco products, including ${name}, are sourced directly from authorized Indian distributors. The packaging features tax stamps and authenticity markers to guarantee you receive the real product.` }
-    ];
-  } else {
-    return [
-      { q: `What devices are compatible with ${name}?`, a: `The ${name} is highly versatile and works excellently with most standard pod systems and sub-ohm tanks. Check the bottle for specific device recommendations.` },
-      { q: `How should I store my ${name} to maintain flavour?`, a: `For the best flavour longevity, store your ${name} in a cool, dark place away from direct sunlight. Ensure the cap is tightly sealed to prevent oxidation.` },
-      { q: `Is ${name} safe and 100% authentic?`, a: `Yes, we only stock 100% authentic products sourced from authorized distributors. Every item has batch tracking and authenticity verification.` },
-      { q: `How fast is delivery for ${name} in Bangalore?`, a: `We deliver ${name} across all major Bangalore areas (Koramangala, HSR, Whitefield, etc.) in 30-45 minutes via secure, discreet packaging.` }
-    ];
-  }
-};
-
 
 const getLongTailFAQs = (product: any) => {
   const { name, brand, category } = product;
@@ -198,24 +154,24 @@ const getLongTailFAQs = (product: any) => {
 
   if (category === "Disposable" || category === "Vape") {
     return [
-      { q: \`How many puffs does the \${name} actually last in real-world use in Bangalore?\`, a: \`While the \${name} is rated for up to \${puffs} puffs, real-world usage depends on draw length. For average users in Bangalore, it typically lasts 1 to 2 weeks of regular use, offering exceptional value.\` },
-      { q: \`Is the \${name} rechargeable, and what type of charging does it use?\`, a: \`Yes, the \${name} features a built-in rechargeable battery with \${charging} fast charging, ensuring you can top up the battery and enjoy the e-liquid until the very last puff.\` },
-      { q: \`What is the nicotine strength of the \${name}?\`, a: \`The \${name} contains \${nicotine} nicotine, providing a smooth, satisfying throat hit. We strictly source 100% authentic products with batch tracking.\` },
-      { q: \`How can I verify if my \${name} is 100% authentic in Bangalore?\`, a: \`Every genuine \${brand} device comes with a scratch-off QR code on the packaging. Simply scan it with your smartphone to verify its authenticity on the official \${brand} website. We only source directly from authorized distributors.\` }
+      { q: `How many puffs does the ${name} actually last in real-world use in Bangalore?`, a: `While the ${name} is rated for up to ${puffs} puffs, real-world usage depends on draw length. For average users in Bangalore, it typically lasts 1 to 2 weeks of regular use, offering exceptional value.` },
+      { q: `Is the ${name} rechargeable, and what type of charging does it use?`, a: `Yes, the ${name} features a built-in rechargeable battery with ${charging} fast charging, ensuring you can top up the battery and enjoy the e-liquid until the very last puff.` },
+      { q: `What is the nicotine strength of the ${name}?`, a: `The ${name} contains ${nicotine} nicotine, providing a smooth, satisfying throat hit. We strictly source 100% authentic products with batch tracking.` },
+      { q: `How can I verify if my ${name} is 100% authentic in Bangalore?`, a: `Every genuine ${brand} device comes with a scratch-off QR code on the packaging. Simply scan it with your smartphone to verify its authenticity on the official ${brand} website. We only source directly from authorized distributors.` }
     ];
   } else if (category === "Nicotine Pouches") {
     return [
-      { q: \`How do I use \${name} correctly for the best experience?\`, a: \`Simply place a pouch between your gum and upper lip. The \${name} will release a steady, discreet stream of nicotine and flavour for up to 30-45 minutes without any smoke, vapour, or spitting.\` },
-      { q: \`How long does a can of \${name} typically last?\`, a: \`A standard can of \${name} contains 20 pouches. Depending on your usage, a single can usually lasts a regular user about 2 to 3 days, making it a highly cost-effective alternative.\` },
-      { q: \`Does \${name} contain tobacco leaf?\`, a: \`No, \${name} is a tobacco-free nicotine pouch. It contains pharmaceutical-grade nicotine, plant-based fibers, flavourings, and sweeteners, offering a clean, discreet experience.\` },
-      { q: \`Can I carry \${name} to the office or on a flight in Bangalore?\`, a: \`Yes! Since \${name} produces no vapour, smoke, or smell, it is completely discreet and perfectly suitable for use in offices, meetings, and during flights.\` }
+      { q: `How do I use ${name} correctly for the best experience?`, a: `Simply place a pouch between your gum and upper lip. The ${name} will release a steady, discreet stream of nicotine and flavour for up to 30-45 minutes without any smoke, vapour, or spitting.` },
+      { q: `How long does a can of ${name} typically last?`, a: `A standard can of ${name} contains 20 pouches. Depending on your usage, a single can usually lasts a regular user about 2 to 3 days, making it a highly cost-effective alternative.` },
+      { q: `Does ${name} contain tobacco leaf?`, a: `No, ${name} is a tobacco-free nicotine pouch. It contains pharmaceutical-grade nicotine, plant-based fibers, flavourings, and sweeteners, offering a clean, discreet experience.` },
+      { q: `Can I carry ${name} to the office or on a flight in Bangalore?`, a: `Yes! Since ${name} produces no vapour, smoke, or smell, it is completely discreet and perfectly suitable for use in offices, meetings, and during flights.` }
     ];
   } else {
     return [
-      { q: \`What devices are compatible with \${name}?\`, a: \`The \${name} is highly versatile and works excellently with most standard pod systems. Check the packaging for specific device recommendations.\` },
-      { q: \`How should I store my \${name} to maintain flavour in Bangalore's climate?\`, a: \`For the best flavour longevity, store your \${name} in a cool, dark place away from direct sunlight. Ensure the cap is tightly sealed to prevent oxidation.\` },
-      { q: \`Is \${name} safe and 100% authentic?\`, a: \`Yes, we only stock 100% authentic products sourced from authorized distributors. Every item has batch tracking and authenticity verification.\` },
-      { q: \`How fast is delivery for \${name} in Bangalore?\`, a: \`We deliver \${name} across all major Bangalore areas (Koramangala, HSR, Whitefield, Indiranagar, etc.) in 30-45 minutes via secure, discreet packaging.\` }
+      { q: `What devices are compatible with ${name}?`, a: `The ${name} is highly versatile and works excellently with most standard pod systems. Check the packaging for specific device recommendations.` },
+      { q: `How should I store my ${name} to maintain flavour in Bangalore's climate?`, a: `For the best flavour longevity, store your ${name} in a cool, dark place away from direct sunlight. Ensure the cap is tightly sealed to prevent oxidation.` },
+      { q: `Is ${name} safe and 100% authentic?`, a: `Yes, we only stock 100% authentic products sourced from authorized distributors. Every item has batch tracking and authenticity verification.` },
+      { q: `How fast is delivery for ${name} in Bangalore?`, a: `We deliver ${name} across all major Bangalore areas (Koramangala, HSR, Whitefield, Indiranagar, etc.) in 30-45 minutes via secure, discreet packaging.` }
     ];
   }
 };

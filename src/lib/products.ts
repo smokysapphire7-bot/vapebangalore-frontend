@@ -28,7 +28,12 @@ export interface Product {
 }
 
 export const products: Product[
-{
+
+  ];
+
+
+export const CATEGORIES: ProductCategory[] = [
+  {
     slug: "iget-move-50k",
     name: "IGET Move 50K",
     brand: "IGET",
@@ -45,8 +50,8 @@ export const products: Product[
     ],
     image: "/img-compressed/iget-move-50k.webp",
     inStock: true,
-    isBestseller: true,
     isNew: true,
+    isBestseller: true,
     badge: "PREMIUM DUAL FLAVOUR",
     gradient: "linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%)",
     excerpt: "Premium dual-flavour device with lower nicotine. Ideal for professionals seeking a refined, low-nicotine experience.",
@@ -72,8 +77,8 @@ export const products: Product[
     ],
     image: "/img-compressed/crown-bar-50k.jpg",
     inStock: true,
-    isBestseller: true,
     isNew: true,
+    isBestseller: true,
     badge: "BEGINNER FRIENDLY",
     gradient: "linear-gradient(135deg, #a855f7 0%, #ec4899 100%)",
     excerpt: "Low nicotine alternative to Elfbar. Best for beginners and users wanting to reduce nicotine intake or stop vaping.",
@@ -81,11 +86,8 @@ export const products: Product[
     metaTitle: "Crown Bar 50K - Low Nicotine Beginner Friendly Vape | VapeBangalore",
     metaDescription: "Buy Crown Bar 50K in Bangalore. The ultimate low-nicotine, beginner-friendly disposable vape for those looking to reduce intake or quit.",
     specs: { "Puffs": "50,000", "Nicotine": "Low (2%)", "Charging": "Type-C", "Battery": "650mAh" }
-  }
-];
+  },
 
-
-export const CATEGORIES: ProductCategory[] = [
   "Disposable",
   "Pod Device",
   "Nicotine Pouches",
