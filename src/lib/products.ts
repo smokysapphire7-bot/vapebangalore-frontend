@@ -27,7 +27,7 @@ export interface Product {
   specs: Record<string, string>;
 }
 
-export const products: Product[
+export const products: Product[] = [
 {
     slug: "iget-move-50k",
     name: "IGET Move 50K",
