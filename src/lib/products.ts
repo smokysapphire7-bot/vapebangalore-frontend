@@ -1230,3 +1230,4 @@ export function getProductBySlug(slug: string) {
 export function getBestsellers(limit = 4) {
   return products.filter((p) => p.isBestseller && p.inStock).slice(0, limit);
 }
+];
