@@ -220,8 +220,6 @@ export default async function ProductPage({ params }: Props) {
     ],
   };
 
-  const dynamicFAQs = getLongTailFAQs(product);
-
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
