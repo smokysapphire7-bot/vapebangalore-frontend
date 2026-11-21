@@ -1,3 +1,32 @@
+export type ProductCategory = "Disposable" | "Pod Device" | "Nicotine Pouches" | "E-Liquid" | "Tobacco";
+export type ProductBrand = "Elfbar" | "Lost Mary" | "Caliburn" | "ZYN" | "Nasty" | "IGET" | "Yuoto" | "Velo" | "Pod Salt" | "Amber Leaf" | "Golden Virginia" | "American Spirit" | "Drum" | "Funky Republic" | "Rayya" | "Tesiyi" | "VpoK" | "Marbo" | "Crown Bar";
+
+export interface Product {
+  slug: string;
+  name: string;
+  brand: string;
+  category: ProductCategory;
+  price: number;
+  originalPrice?: number;
+  puffCount?: number;
+  nicotine?: string;
+  battery?: string;
+  charging?: string;
+  capacity?: string;
+  flavours: { name: string; color: string }[];
+  image: string;
+  inStock: boolean;
+  isNew?: boolean;
+  isBestseller?: boolean;
+  badge?: string;
+  gradient?: string;
+  excerpt: string;
+  longDescription: string;
+  metaTitle: string;
+  metaDescription: string;
+  specs: Record<string, string>;
+}
+
 export const products: Product[] = [
 {
     slug: "iget-move-50k",
