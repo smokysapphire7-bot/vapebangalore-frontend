@@ -299,7 +299,7 @@ export default async function ProductPage({ params }: Props) {
                       Available Flavours ({product.flavours.length})
                     </p>
                     <div style={{ display: "flex", gap: "8px", flexWrap: "wrap" }}>
-                      {product.flavours.map((f) => (
+                      {product.flavours.map((f: any) => (
                         <div key={f.name} style={{ display: "flex", alignItems: "center", gap: "6px", background: "var(--s2)", border: "1px solid var(--b0)", borderRadius: "6px", padding: "5px 10px" }}>
                           <span style={{ width: "10px", height: "10px", borderRadius: "50%", background: f.color, flexShrink: 0, display: "inline-block" }} />
                           <span style={{ fontSize: "11px", color: "var(--text)", fontWeight: 500 }}>{f.name}</span>
@@ -497,6 +497,6 @@ export default async function ProductPage({ params }: Props) {
         </div>
       </section>
     </main>
-    </>
-  );
+  </>
+);
 }
