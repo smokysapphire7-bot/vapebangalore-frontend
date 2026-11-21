@@ -286,7 +286,7 @@ export default async function ProductPage({ params }: Props) {
                     {Object.entries(product.specs).map(([key, val]) => (
                       <div key={key} style={{ background: "var(--s2)", border: "1px solid var(--b0)", borderRadius: "6px", padding: "6px 12px" }}>
                         <div style={{ fontSize: "8px", color: "var(--dim)", letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: "2px" }}>{key}</div>
-                        <div style={{ fontSize: "12px", fontWeight: 600, color: "var(--white)", fontFamily: "var(--font-mono)" }}>{val}</div>
+                        <div style={{ fontSize: "12px", fontWeight: 600, color: "var(--white)", fontFamily: "var(--font-mono)" }}>{String(val)}</div>
                       </div>
                     ))}
                   </div>
