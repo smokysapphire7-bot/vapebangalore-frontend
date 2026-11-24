@@ -447,56 +447,11 @@ export default async function ProductPage({ params }: Props) {
         `}</style>
       
       {/* DYNAMIC LONG-TAIL FAQ SECTION */}
-      <section style={{ padding: "40px 0", background: "var(--bg-2, #f8fafc)", borderTop: "1px solid var(--border, #e2e8f0)" }}>
-        <div style={{ maxWidth: "800px", margin: "0 auto", padding: "0 16px" }}>
-          <h2 style={{ fontSize: "1.5rem", fontWeight: 800, color: "var(--text, #0f172a)", marginBottom: "20px" }}>
-            Frequently Asked Questions About {product.name}
-          </h2>
-          <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-            {dynamicFAQs.map((faq, i) => (
-              <div key={i} style={{ background: "var(--bg, #ffffff)", border: "1px solid var(--border, #e2e8f0)", borderRadius: "8px", padding: "16px" }}>
-                <p style={{ fontSize: "0.95rem", fontWeight: 600, color: "var(--text, #0f172a)", marginBottom: "8px" }}>{faq.q}</p>
-                <p style={{ fontSize: "0.9rem", color: "var(--muted, #64748b)", lineHeight: 1.6 }}>{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
     
       {/* DYNAMIC LONG-TAIL FAQ SECTION */}
-      <section className="py-10 bg-slate-50 border-t border-slate-200">
-        <div className="max-w-3xl mx-auto px-4">
-          <h2 className="text-2xl font-bold text-slate-900 mb-6">
-            Frequently Asked Questions About {product.name}
-          </h2>
-          <div className="space-y-4">
-            {dynamicFAQs.map((faq, i) => (
-              <div key={i} className="bg-white border border-slate-200 rounded-lg p-5">
-                <p className="text-base font-semibold text-slate-900 mb-2">{faq.q}</p>
-                <p className="text-sm text-slate-600 leading-relaxed">{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
       
       {/* DYNAMIC LONG-TAIL FAQ SECTION */}
-      <section style={{ padding: "40px 0", background: "var(--bg-2, #f8fafc)", borderTop: "1px solid var(--border, #e2e8f0)" }}>
-        <div style={{ maxWidth: "800px", margin: "0 auto", padding: "0 16px" }}>
-          <h2 style={{ fontSize: "1.5rem", fontWeight: 800, color: "var(--text, #0f172a)", marginBottom: "20px" }}>
-            Frequently Asked Questions About {product.name}
-          </h2>
-          <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-            {dynamicFAQs.map((faq, i) => (
-              <div key={i} style={{ background: "var(--bg, #ffffff)", border: "1px solid var(--border, #e2e8f0)", borderRadius: "8px", padding: "16px" }}>
-                <p style={{ fontSize: "0.95rem", fontWeight: 600, color: "var(--text, #0f172a)", marginBottom: "8px" }}>{faq.q}</p>
-                <p style={{ fontSize: "0.9rem", color: "var(--muted, #64748b)", lineHeight: 1.6 }}>{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
     </main>
-  </>
-);
+    </>
+  );
 }
